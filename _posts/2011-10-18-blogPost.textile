@@ -1,0 +1,10 @@
+---
+layout: post 
+title: Super article 
+---
+
+h2. blah 
+
+blah blah
+
+Mais je ne suis pas sur que l'on se serve d'articles
