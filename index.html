@@ -1,13 +1,16 @@
 ---
 layout: default
-title: Alexandre Stanislawski 
+title: Demo.js 
 ---
-<section class="">
-
+<section class="row">
+<div class="span12 hero-unit">
+  <h1>Welcome</h1>
+  <p>DemoJS is the parisian web demo party.</p>
+</div>
 </section>
 
 <section class="posts">
-<h2>Posts</h2>
+<h2>Last news</h2>
 <ul>
 {% for post in site.posts %}
   <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
@@ -18,4 +21,3 @@ title: Alexandre Stanislawski
 <style>
 </style>
 
-<script src="js/underscore-1.2.3.min.js"></script>
