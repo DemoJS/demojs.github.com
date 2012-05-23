@@ -1,0 +1,53 @@
+─█▀▀▀─────────────────
+─▀──▄─────────────────
+─█▀▀█─████─█▀█▀█─█▀▀█─
+─█▄▄█─█▄▄▄─█─█─█─█▄▄█─
+───────────────▄─▄▄▄▄─
+───────────────█─▀──▄─
+────────────▀▀▀▀─▀▀▀▀─    
+DemoJS 2011 - results
+ http://demojs.org
+
+DemoJS demoparty 2011
+1st & 2nd of July 2011
+2 compos, 2 concerts, 3 conferences
+90+ people attended the party
+52 people voted
+~300 tweets during the event (hashtag #demojs)
+
+Greetings to Mozilla Labs, Mozilla Europe, ISART Digital, Demoscene.fr, ParisJS, Prologin, Popsy Team, onGameStart, Pusher, Bomb! + Syn[Rj] + FRequency, TPOLM, Spintr0nic, all the organizing team, all the contestants, all the attendees, all the supporters, all the demoscene!
+
+
+THE RESULTS
+------------
+
+#rank Title - Groupname                               (number of points, showing order, remote?)
+
+JAVASCRIPT 1K
+   #1 Glenz1k - Log ................................. (412pts, n°8)
+   #2 Creation - Silexars ........................... (388pts, n°9, remote)
+   #3 gl1k Cotton Candy - p01 / ribbon .............. (362pts, n°10, remote)
+   #4 The Ring - Bert Peters ........................ (303pts, n°7, remote)
+   #5 Orange Joy - Trigrou & Bock ................... (296pts, n°11)
+   #6 1kk - Hexapode ................................ (273pts, n°6)
+   #7 Memory - Hello / Sector1 ...................... (196pts, n°4)
+   #8 Pixel Firework - Pilvee ....................... (181pts, n°5)
+   #9 The 1d1k game - Tim Holman .................... (143pts, n°1, remote)
+  #10 JSPaint - Flex ................................ (126pts, n°2, remote)
+  #11 Demo001 - Cheminel ............................ (72pts, #3)
+                                     
+                                     
+FREESTYLE        
+   #1 Flares - tmp .................................. (328pts, n°9)
+   #2 Canvas Trip - Adinpsz ......................... (280pts, n°7)
+   #3 Irrelevant - #ponce / GFM ..................... (202pts, n°8, remote)
+   #4 Particles.js - basecode ....................... (194pts, n°2, remote)
+   #5 Clock Flower - Audrey ......................... (193pts, n°5)
+   #6 Color The Wind - Tarmil / Ctrl-Alt-Test ....... (172pts, n°3, remote)
+   #7 DemoJS - Romain / !!M ......................... (119pts, n°6)
+   #8 Datagalaxy - Bordercloud ...................... (93pts, n°1)
+   #9 A New Hope - Aymeric .......................... (64pts, n°4)
+
+
+See you next year?
+  

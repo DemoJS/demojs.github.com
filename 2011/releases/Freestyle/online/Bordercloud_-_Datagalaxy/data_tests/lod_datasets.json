@@ -1,0 +1,1232 @@
+{ "head": {"vars": [
+ "dataset", "label", "numberOfTriples", "typeDataset"
+] },
+"results": {
+"bindings": [
+
+	{
+		"dataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/Riese"
+		},
+		"label": {
+		 "type": "literal",
+		 "xml:lang": "en",
+		 "value": "Riese"
+		},
+		"typeDataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/Category:Geographic"
+		}
+	},{
+		"dataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/DBpedia"
+		},
+		"label": {
+		 "type": "literal",
+		 "xml:lang": "en",
+		 "value": "DBpedia"
+		},
+		"numberOfTriples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "10000000"
+		},
+		"typeDataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/Category:Cross_domain"
+		}
+	},{
+		"dataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/BBC_Backstage"
+		},
+		"label": {
+		 "type": "literal",
+		 "xml:lang": "en",
+		 "value": "BBC Backstage"
+		},
+		"numberOfTriples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "5000000"
+		},
+		"typeDataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/Category:Media"
+		}
+	},{
+		"dataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/Linked_movie_database"
+		},
+		"label": {
+		 "type": "literal",
+		 "xml:lang": "en",
+		 "value": "Linked movie database"
+		},
+		"numberOfTriples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "6148121"
+		},
+		"typeDataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/Category:Media"
+		}
+	},{
+		"dataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/MusicBrainz"
+		},
+		"label": {
+		 "type": "literal",
+		 "xml:lang": "en",
+		 "value": "MusicBrainz"
+		},
+		"numberOfTriples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "50000000"
+		},
+		"typeDataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/Category:Media"
+		}
+	},{
+		"dataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/Data.gov.uk_Education"
+		},
+		"label": {
+		 "type": "literal",
+		 "xml:lang": "en",
+		 "value": "Data.gov.uk Education"
+		},
+		"typeDataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/Category:Government"
+		}
+	},{
+		"dataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/Data.gov"
+		},
+		"label": {
+		 "type": "literal",
+		 "xml:lang": "en",
+		 "value": "Data.gov"
+		},
+		"numberOfTriples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "3629383785"
+		},
+		"typeDataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/Category:Government"
+		}
+	},
+
+	  {
+		"dataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/1"
+		},
+		"label": {
+		 "type": "literal",
+		 "xml:lang": "en",
+		 "value": "test"
+		},
+		"numberOfTriples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1000000"
+		},
+		"typeDataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/Category:Government"
+		}
+	},
+
+	  {
+		"dataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/2"
+		},
+		"label": {
+		 "type": "literal",
+		 "xml:lang": "en",
+		 "value": "test"
+		},
+		"numberOfTriples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1000000"
+		},
+		"typeDataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/Category:Government"
+		}
+	},
+
+	  {
+		"dataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/3"
+		},
+		"label": {
+		 "type": "literal",
+		 "xml:lang": "en",
+		 "value": "test"
+		},
+		"numberOfTriples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1000000"
+		},
+		"typeDataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/Category:Government"
+		}
+	},
+
+	  {
+		"dataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/13"
+		},
+		"label": {
+		 "type": "literal",
+		 "xml:lang": "en",
+		 "value": "test"
+		},
+		"numberOfTriples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1000000"
+		},
+		"typeDataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/Category:Government"
+		}
+	},
+
+
+	  {
+		"dataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/14"
+		},
+		"label": {
+		 "type": "literal",
+		 "xml:lang": "en",
+		 "value": "test"
+		},
+		"numberOfTriples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1000000"
+		},
+		"typeDataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/Category:Media"
+		}
+	},
+
+	  {
+		"dataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/15"
+		},
+		"label": {
+		 "type": "literal",
+		 "xml:lang": "en",
+		 "value": "test"
+		},
+		"numberOfTriples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1000000"
+		},
+		"typeDataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/Category:Media"
+		}
+	},
+
+	  {
+		"dataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/16"
+		},
+		"label": {
+		 "type": "literal",
+		 "xml:lang": "en",
+		 "value": "test"
+		},
+		"numberOfTriples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1000000"
+		},
+		"typeDataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/Category:Media"
+		}
+	},
+
+
+	  {
+		"dataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/26"
+		},
+		"label": {
+		 "type": "literal",
+		 "xml:lang": "en",
+		 "value": "test"
+		},
+		"numberOfTriples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1000000"
+		},
+		"typeDataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/Category:Life_sciences"
+		}
+	},
+
+
+	  {
+		"dataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/26"
+		},
+		"label": {
+		 "type": "literal",
+		 "xml:lang": "en",
+		 "value": "test"
+		},
+		"numberOfTriples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1000000"
+		},
+		"typeDataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/Category:User_generated_content"
+		}
+	},
+
+	  {
+		"dataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/28"
+		},
+		"label": {
+		 "type": "literal",
+		 "xml:lang": "en",
+		 "value": "test"
+		},
+		"numberOfTriples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1000000"
+		},
+		"typeDataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/Category:Publications"
+		}
+	},
+
+
+	  {
+		"dataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/29"
+		},
+		"label": {
+		 "type": "literal",
+		 "xml:lang": "en",
+		 "value": "test"
+		},
+		"numberOfTriples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1000000"
+		},
+		"typeDataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/Category:Geographic"
+		}
+	},
+
+
+	  {
+		"dataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/30"
+		},
+		"label": {
+		 "type": "literal",
+		 "xml:lang": "en",
+		 "value": "test"
+		},
+		"numberOfTriples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1000000"
+		},
+		"typeDataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/Category:Cross_domain"
+		}
+	},
+
+	  {
+		"dataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/31"
+		},
+		"label": {
+		 "type": "literal",
+		 "xml:lang": "en",
+		 "value": "test"
+		},
+		"numberOfTriples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1000000"
+		},
+		"typeDataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/Category:Life_sciences"
+		}
+	},
+
+
+	  {
+		"dataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/32"
+		},
+		"label": {
+		 "type": "literal",
+		 "xml:lang": "en",
+		 "value": "test"
+		},
+		"numberOfTriples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1000000"
+		},
+		"typeDataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/Category:User_generated_content"
+		}
+	},
+
+	  {
+		"dataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/33"
+		},
+		"label": {
+		 "type": "literal",
+		 "xml:lang": "en",
+		 "value": "test"
+		},
+		"numberOfTriples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1000000"
+		},
+		"typeDataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/Category:Publications"
+		}
+	},
+
+
+	  {
+		"dataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/34"
+		},
+		"label": {
+		 "type": "literal",
+		 "xml:lang": "en",
+		 "value": "test"
+		},
+		"numberOfTriples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1000000"
+		},
+		"typeDataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/Category:Geographic"
+		}
+	},
+
+
+	  {
+		"dataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/35"
+		},
+		"label": {
+		 "type": "literal",
+		 "xml:lang": "en",
+		 "value": "test"
+		},
+		"numberOfTriples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1000000"
+		},
+		"typeDataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/Category:Cross_domain"
+		}
+	},
+
+	  {
+		"dataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/36"
+		},
+		"label": {
+		 "type": "literal",
+		 "xml:lang": "en",
+		 "value": "test"
+		},
+		"numberOfTriples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1000000"
+		},
+		"typeDataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/Category:Life_sciences"
+		}
+	},
+
+
+	  {
+		"dataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/37"
+		},
+		"label": {
+		 "type": "literal",
+		 "xml:lang": "en",
+		 "value": "test"
+		},
+		"numberOfTriples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1000000"
+		},
+		"typeDataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/Category:User_generated_content"
+		}
+	},
+
+	  {
+		"dataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/38"
+		},
+		"label": {
+		 "type": "literal",
+		 "xml:lang": "en",
+		 "value": "test"
+		},
+		"numberOfTriples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1000000"
+		},
+		"typeDataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/Category:Publications"
+		}
+	},
+
+
+	  {
+		"dataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/39"
+		},
+		"label": {
+		 "type": "literal",
+		 "xml:lang": "en",
+		 "value": "test"
+		},
+		"numberOfTriples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1000000"
+		},
+		"typeDataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/Category:Geographic"
+		}
+	},
+
+
+	  {
+		"dataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/40"
+		},
+		"label": {
+		 "type": "literal",
+		 "xml:lang": "en",
+		 "value": "test"
+		},
+		"numberOfTriples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1000000"
+		},
+		"typeDataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/Category:Cross_domain"
+		}
+	},
+
+	  {
+		"dataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/41"
+		},
+		"label": {
+		 "type": "literal",
+		 "xml:lang": "en",
+		 "value": "test"
+		},
+		"numberOfTriples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1000000"
+		},
+		"typeDataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/Category:Life_sciences"
+		}
+	},
+
+
+	  {
+		"dataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/42"
+		},
+		"label": {
+		 "type": "literal",
+		 "xml:lang": "en",
+		 "value": "test"
+		},
+		"numberOfTriples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1000000"
+		},
+		"typeDataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/Category:User_generated_content"
+		}
+	},
+
+	  {
+		"dataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/43"
+		},
+		"label": {
+		 "type": "literal",
+		 "xml:lang": "en",
+		 "value": "test"
+		},
+		"numberOfTriples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1000000"
+		},
+		"typeDataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/Category:Publications"
+		}
+	},
+
+
+	  {
+		"dataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/44"
+		},
+		"label": {
+		 "type": "literal",
+		 "xml:lang": "en",
+		 "value": "test"
+		},
+		"numberOfTriples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1000000"
+		},
+		"typeDataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/Category:Geographic"
+		}
+	},
+
+
+	  {
+		"dataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/45"
+		},
+		"label": {
+		 "type": "literal",
+		 "xml:lang": "en",
+		 "value": "test"
+		},
+		"numberOfTriples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1000000"
+		},
+		"typeDataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/Category:Cross_domain"
+		}
+	},
+
+	  {
+		"dataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/46"
+		},
+		"label": {
+		 "type": "literal",
+		 "xml:lang": "en",
+		 "value": "test"
+		},
+		"numberOfTriples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1000000"
+		},
+		"typeDataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/Category:Life_sciences"
+		}
+	},
+
+
+	  {
+		"dataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/47"
+		},
+		"label": {
+		 "type": "literal",
+		 "xml:lang": "en",
+		 "value": "test"
+		},
+		"numberOfTriples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1000000"
+		},
+		"typeDataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/Category:User_generated_content"
+		}
+	},
+
+	  {
+		"dataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/48"
+		},
+		"label": {
+		 "type": "literal",
+		 "xml:lang": "en",
+		 "value": "test"
+		},
+		"numberOfTriples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1000000"
+		},
+		"typeDataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/Category:Publications"
+		}
+	},
+
+
+	  {
+		"dataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/49"
+		},
+		"label": {
+		 "type": "literal",
+		 "xml:lang": "en",
+		 "value": "test"
+		},
+		"numberOfTriples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1000000"
+		},
+		"typeDataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/Category:Geographic"
+		}
+	},
+
+
+	  {
+		"dataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/50"
+		},
+		"label": {
+		 "type": "literal",
+		 "xml:lang": "en",
+		 "value": "test"
+		},
+		"numberOfTriples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1000000"
+		},
+		"typeDataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/Category:Cross_domain"
+		}
+	},
+
+	  {
+		"dataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/51"
+		},
+		"label": {
+		 "type": "literal",
+		 "xml:lang": "en",
+		 "value": "test"
+		},
+		"numberOfTriples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1000000"
+		},
+		"typeDataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/Category:Life_sciences"
+		}
+	},
+
+
+	  {
+		"dataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/52"
+		},
+		"label": {
+		 "type": "literal",
+		 "xml:lang": "en",
+		 "value": "test"
+		},
+		"numberOfTriples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1000000"
+		},
+		"typeDataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/Category:User_generated_content"
+		}
+	},
+
+	  {
+		"dataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/53"
+		},
+		"label": {
+		 "type": "literal",
+		 "xml:lang": "en",
+		 "value": "test"
+		},
+		"numberOfTriples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1000000"
+		},
+		"typeDataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/Category:Publications"
+		}
+	},
+
+
+	  {
+		"dataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/54"
+		},
+		"label": {
+		 "type": "literal",
+		 "xml:lang": "en",
+		 "value": "test"
+		},
+		"numberOfTriples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1000000"
+		},
+		"typeDataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/Category:Geographic"
+		}
+	},
+
+
+	  {
+		"dataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/55"
+		},
+		"label": {
+		 "type": "literal",
+		 "xml:lang": "en",
+		 "value": "test"
+		},
+		"numberOfTriples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1000000"
+		},
+		"typeDataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/Category:Cross_domain"
+		}
+	},
+
+	  {
+		"dataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/56"
+		},
+		"label": {
+		 "type": "literal",
+		 "xml:lang": "en",
+		 "value": "test"
+		},
+		"numberOfTriples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1000000"
+		},
+		"typeDataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/Category:Life_sciences"
+		}
+	},
+
+
+	  {
+		"dataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/57"
+		},
+		"label": {
+		 "type": "literal",
+		 "xml:lang": "en",
+		 "value": "test"
+		},
+		"numberOfTriples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1000000"
+		},
+		"typeDataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/Category:User_generated_content"
+		}
+	},
+
+	  {
+		"dataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/58"
+		},
+		"label": {
+		 "type": "literal",
+		 "xml:lang": "en",
+		 "value": "test"
+		},
+		"numberOfTriples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1000000"
+		},
+		"typeDataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/Category:Publications"
+		}
+	},
+
+
+	  {
+		"dataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/59"
+		},
+		"label": {
+		 "type": "literal",
+		 "xml:lang": "en",
+		 "value": "test"
+		},
+		"numberOfTriples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1000000"
+		},
+		"typeDataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/Category:Geographic"
+		}
+	},
+
+
+	  {
+		"dataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/60"
+		},
+		"label": {
+		 "type": "literal",
+		 "xml:lang": "en",
+		 "value": "test"
+		},
+		"numberOfTriples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1000000"
+		},
+		"typeDataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/Category:Cross_domain"
+		}
+	},
+
+	  {
+		"dataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/61"
+		},
+		"label": {
+		 "type": "literal",
+		 "xml:lang": "en",
+		 "value": "test"
+		},
+		"numberOfTriples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1000000"
+		},
+		"typeDataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/Category:Life_sciences"
+		}
+	},
+
+
+	  {
+		"dataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/62"
+		},
+		"label": {
+		 "type": "literal",
+		 "xml:lang": "en",
+		 "value": "test"
+		},
+		"numberOfTriples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1000000"
+		},
+		"typeDataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/Category:User_generated_content"
+		}
+	},
+
+	  {
+		"dataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/63"
+		},
+		"label": {
+		 "type": "literal",
+		 "xml:lang": "en",
+		 "value": "test"
+		},
+		"numberOfTriples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1000000"
+		},
+		"typeDataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/Category:Publications"
+		}
+	},
+
+
+	  {
+		"dataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/64"
+		},
+		"label": {
+		 "type": "literal",
+		 "xml:lang": "en",
+		 "value": "test"
+		},
+		"numberOfTriples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1000000"
+		},
+		"typeDataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/Category:Geographic"
+		}
+	},
+
+
+	  {
+		"dataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/65"
+		},
+		"label": {
+		 "type": "literal",
+		 "xml:lang": "en",
+		 "value": "test"
+		},
+		"numberOfTriples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1000000"
+		},
+		"typeDataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/Category:Cross_domain"
+		}
+	},
+
+	  {
+		"dataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/66"
+		},
+		"label": {
+		 "type": "literal",
+		 "xml:lang": "en",
+		 "value": "test"
+		},
+		"numberOfTriples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1000000"
+		},
+		"typeDataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/Category:Life_sciences"
+		}
+	},
+
+
+	  {
+		"dataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/67"
+		},
+		"label": {
+		 "type": "literal",
+		 "xml:lang": "en",
+		 "value": "test"
+		},
+		"numberOfTriples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1000000"
+		},
+		"typeDataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/Category:User_generated_content"
+		}
+	},
+
+	  {
+		"dataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/68"
+		},
+		"label": {
+		 "type": "literal",
+		 "xml:lang": "en",
+		 "value": "test"
+		},
+		"numberOfTriples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1000000"
+		},
+		"typeDataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/Category:Publications"
+		}
+	},
+
+
+	  {
+		"dataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/69"
+		},
+		"label": {
+		 "type": "literal",
+		 "xml:lang": "en",
+		 "value": "test"
+		},
+		"numberOfTriples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1000000"
+		},
+		"typeDataset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/Category:Geographic"
+		}
+	},
+
+
+] } }

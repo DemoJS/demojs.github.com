@@ -1,0 +1,32 @@
+       _____  _        _        __  _    _    _____             _
+      / ___/_/ |_   __| \      /  || \ _/ |_ (_. ,_)___  ___  _/ |_
+     | /   (   _/|`'_/| | __  / 4 || |(   _/__ | | / _ \/ __)(   _/
+     | \____| |_ | |  | |(__)/ _  || | | |_(__)| ||  __/\__ \ | |_
+      \____/\___)|_|  |_\   /_/ |_||_\ \___)   |_| \___/(___/ \___)
+
+                             Color the wind
+
+
+   Code and visuals by Loïc `Tarmil` Denuzière
+
+   The font is "Soup of justice" by Omen Type
+
+
+  Hi, DemoJS!
+
+   This is my  little contribution to this great  party, sent directly
+   from Budapest. It is a simple  2D Canvas demo. No sound, no WebGL —
+   KISS :)
+
+   It is coded using WebSharper,  an F# web development framework. The
+   JavaScript is generated, so please don't bother looking at it, it's
+   quite ugly :) I included the F# source, for those curious enough.
+
+   At the beginning, you can choose the number of particles displayed.
+   I used 1000  particles when developing on a Core  2 E8500 / HD4870,
+   but don't hesitate to augment this number if your setup is better !
+
+   My greetings  go to all the  folks at demoscene.fr,  and my friends
+   from Prologin — thanks guys for your role in organizing this event!
+
+EOF

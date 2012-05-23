@@ -1,0 +1,9 @@
+@font-face {
+    font-family: title;
+    src: url('soupofjustice.ttf');
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
