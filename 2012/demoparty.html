@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>DemoJS - What is a demoparty?</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DemoJS, web only demo party.">
+  <meta name="author" content="DemoJS crew">
+
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" /> 
+  <style type="text/css">
+  body {
+    padding-top: 10px;
+    padding-bottom: 40px;
+  }
+  </style>
+  <link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+  <link href="public/css/all.css" rel="stylesheet">
+
+  <link rel=icon type="image/png" href="/favicon.png"/>
+
+  <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <!-- Le fav and touch icons -->
+  <link rel="shortcut icon" href="favicon.png">
+</head>
+
+<body>
+
+
+  <div class="container">
+
+
+<div class="navbar">
+  <div class="navbar-inner">
+  <div class="container">
+  <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+  <span class="icon-bar"></span>
+  <span class="icon-bar"></span>
+  <span class="icon-bar"></span>
+  </a>
+  <a class="brand" href="index.html"><img src="/public/images/demojs_logo.png" alt=demojs /></a>
+  <div class="nav-collapse">
+  <ul class="nav">
+  <li><a href="http://demojs2012.eventbrite.com" target="_blank">Register</a></li>
+  <li><a href="demoparty.html">Demoparty?</a></li>
+  <li><a href="schedule.html">Schedule, events & conferences</a></li>
+  <li><a href="come.html">How to come</a></li>
+  <li><a href="compos.html">Compos & rules</a></li>
+  <li><a href="tips.html">Tips</a></li>
+  <li><a href="about.html">About</a></li>
+  </ul>
+  </div><!--/.nav-collapse -->
+  </div>
+  </div>
+  </div>
+
+
+
+
+
+
+  <div class="row">
+  <div class="span12">
+    <h2>Demoscene? Demoparty?</h2>
+        <p>The demoscene is a computer art subculture that specializes in producing demos, which are audio-visual presentations that run in real-time on a computer. Demosceners are coders, graphic artists, computer musicians... (<a href="http://en.wikipedia.org/wiki/Demoscene" target="_blank">more info on wikipedia</a>)</p>
+     <p>A demoparty is an event that gathers demosceners and other computer enthusiasts to socialize and compete (<a href="http://en.wikipedia.org/wiki/Demoparty" target="_blank">more info</a>).</p>
+        <p>Indeed, <strong>competitions, or "compos", are the main feature of a demoparty</strong>: the productions made by the demosceners are shown on the bigscreen, then the public vote to rank them. An important rule in all the demoscene competitions is that <strong>the production must be new</strong>, ie the production should not have been previously released or publicly shown. Also, it's important to understand that you don't need to wait for the demoparty to start your production. The demoparty just acts as a deadline.</p>
+      <p><strong>We strongly recommend to take part in at least one competition</strong>. Having YOUR production showed on the bigscreen in front of a relevant audience is awesome, and will fulfill your party experience.</p>
+        <h2>DemoJS?</h2>
+    <p>DemoJS demoparty is a demoparty specialized in web technologies.</p>
+    <p>We welcome both experienced demosceners and people who have never been to a demoparty.</p>
+    <p>Our aim is to bring together the best of the two worlds (demoscene &amp; javascript) to make a great event.</p>
+    <p>If you are a beginner in web technologies, <a href="/tips.html">here are some links</a> to help you. Also, you will find help at the party place, don't hesitate to ask people around you!</p>
+    <p>DemoJS has 4 competitions: <strong>1K, 10k, wild, and demo</strong>. You don't need to be physically present at DemoJS to compete (of course, if you can, we strongly recommend to actually BE at the partyplace). All the details about the DemoJS competitions are on the <a href="/compos.html">compos & rules page</a>.
+        <h2>What to bring to a demoparty?</h2>
+     <ul>
+     <li>your computer</li>
+     <li>an ethernet cable</li>
+     <li>a sleeping bag (if you plan to sleep at the partyplace)</li>
+     <li>your creativity!</li>
+     </ul>
+     <h2>See you at DemoJS 2012!</h2s>
+
+  </div>
+</div>
+
+
+    <hr>
+
+    <footer>
+    <p>&copy; DemoJS 2011-2012 // Main sponsor: <a href="http://developer.mozilla.org/" target="_blank">Mozilla Developer Network</a> // Compos sponsors: <a href="http://www.dotjs.eu/" target="_blank">DotJS</a>, <a href="http://ongamestart.com/" target="_blank">OnGameStart</a>, <a href="http://demodays.org/" target="_blank">Demodays</a>, <a href="http://mainparty.net/" target="_blank">MAIN</a>, <a href="http://www.prologin.org/" target="_blank">Prologin</a></p>
+    </footer>
+  </div>
+
+</div> <!-- /container -->
+
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="js/underscore-1.2.3.min.js"></script>
+
+<script type="text/javascript">
+  $('ul.nav li').addClass(function(){
+    if(this.childNodes[0].href === document.location.href){
+      return 'active';
+    }
+    return '';
+  })
+</script>
+ <script type="text/javascript">
+   var _gaq = _gaq || [];
+   _gaq.push(['_setAccount', 'UA-23979135-1']);
+   _gaq.push(['_trackPageview']);
+
+   (function() {
+     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+   })();
+</script>
+
+</body>
+</html>
+

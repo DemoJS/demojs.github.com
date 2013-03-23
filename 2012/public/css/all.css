@@ -1,0 +1,32 @@
+.navbar {
+  
+}
+
+.navbar .nav > li > a:hover {
+  color:#FF6701;
+}
+
+.navbar .nav .active > a, .navbar .nav .active > a:hover{
+  background-color:#AAA;
+}
+
+.navbar .brand{
+  padding: 4px 20px 6px;
+}
+
+
+.navbar-inner{
+  background-color: #2C2C2C;
+  background-image: -moz-linear-gradient(top, #FFF, #EEE);
+  background-image: -ms-linear-gradient(top, #FFF, #EEE);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#FFF), to(#EEE));
+  background-image: -webkit-linear-gradient(top, #FFF, #EEE);
+  background-image: -o-linear-gradient(top, #FFF, #EEE);
+  background-image: linear-gradient(top, #FFF, #EEE);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#EEEEEE', GradientType=0);
+}
+
+a {
+  color : #E60;
+}

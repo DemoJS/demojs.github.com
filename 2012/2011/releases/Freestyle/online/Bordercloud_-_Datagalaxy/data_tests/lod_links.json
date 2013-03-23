@@ -1,0 +1,1445 @@
+{ "head": {"vars": [
+ "subset", "target", "triples"
+] },
+"results": {
+"bindings": [
+
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/Linked_movie_database"
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/DBpedia"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	},{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/MusicBrainz"
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/DBpedia"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	}
+
+	,
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/50"
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/DBpedia"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	},
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/50"
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/DBpedia"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	},
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/56"
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/DBpedia"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	},
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/57"
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/DBpedia"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	},
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/60"
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/DBpedia"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	},
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/61"
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/DBpedia"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	},
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/62"
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/DBpedia"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	},
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/63"
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/DBpedia"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	},
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/64"
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/DBpedia"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	},
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/65"
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/DBpedia"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	},
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/66"
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/DBpedia"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	}
+
+,
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/DBpedia" 
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/67"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	}
+,
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/DBpedia" 
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/68"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	}
+,
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/DBpedia" 
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/69"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	}
+,
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/DBpedia" 
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/20"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	}
+,
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/DBpedia" 
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/21"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	}
+,
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/DBpedia" 
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/22"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	}
+,
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/DBpedia" 
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/23"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	}
+,
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/1" 
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/2"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	}
+,
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/1" 
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/3"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	}
+,
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/2" 
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/5"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	}
+,
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/2" 
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/6"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	}
+,
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/4" 
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/7"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	}
+,
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/7" 
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/8"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	}
+,
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/9" 
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/8"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	}
+,
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/9" 
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/10"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	}
+,
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/10" 
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/11"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	}
+,
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/11" 
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/12"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	}
+,
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/11" 
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/13"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	}
+,
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/11" 
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/14"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	}
+,
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/11" 
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/16"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	}
+,
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/10" 
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/17"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	}
+,
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/17" 
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/18"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	}
+,
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/17" 
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/19"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	}
+,
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/17" 
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/20"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	}
+,
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/17" 
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/21"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	}
+,
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/21" 
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/22"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	}
+,
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/22" 
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/23"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	}
+,
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/23" 
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/5"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	}
+,
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/23" 
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/24"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	}
+,
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/24" 
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/25"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	}
+,
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/25" 
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/26"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	}
+,
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/20" 
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/27"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	}
+,
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/20" 
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/28"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	}
+,
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/20" 
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/29"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	}
+,
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/20" 
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/30"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	}
+,
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/19" 
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/31"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	}
+,
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/19" 
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/32"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	}
+,
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/19" 
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/33"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	}
+,
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/19" 
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/34"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	}
+,
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/19" 
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/35"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	}
+,
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/19" 
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/36"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	}
+,
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/18" 
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/37"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	}
+,
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/18" 
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/38"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	}
+,
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/17" 
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/39"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	}
+,
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/17" 
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/40"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	}
+,
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/17" 
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/41"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	}
+,
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/16" 
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/42"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	}
+,
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/56" 
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/42"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	}
+,
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/56" 
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/30"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	}
+,
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/46" 
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/20"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	}
+,
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/36" 
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/15"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	}
+,
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/56" 
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/43"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	}
+,
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/46" 
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/44"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	}
+,
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/36" 
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/45"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	}
+,
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/26" 
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/46"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	}
+,
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/16" 
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/47"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	}
+,
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/56" 
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/48"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	}
+,
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/46" 
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/49"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	}
+,
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/36" 
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/50"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	}
+,
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/26" 
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/51"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	}
+,
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/16" 
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/52"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	}
+,
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/56" 
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/53"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	}
+,
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/BBC_Backstage" 
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/DBpedia"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	}
+,
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/Data.gov" 
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/Special:URIResolver/DBpedia"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	},
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/50"
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/32"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	},
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/50"
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/4"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	},
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/56"
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/20"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	},
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/57"
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/52"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	},
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/60"
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/wiki/13"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	},
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/61"
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/40"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	},
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/62"
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/40"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	},
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/63"
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/50"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	},
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/64"
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/20"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	},
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/65"
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/16"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	},
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/66"
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/14"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	}
+
+,
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pr/42" 
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/67"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	}
+,
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/45" 
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/68"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	}
+,
+	{
+		"subset": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/50" 
+		},
+		"target": {
+		 "type": "uri",
+		 "value": "http://en.sparql.pro/69"
+		},
+		"triples": {
+		 "type": "typed-literal",
+		 "datatype": "http://www.w3.org/2001/XMLSchema#double",
+		 "value": "1"
+		}
+	}
+,
+] } }
+
+
