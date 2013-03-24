@@ -1,4 +1,6 @@
 
+![DemoJS](images/demojs_normal.png)
+
 # 2013, here we come!
 
 ## We are back!
