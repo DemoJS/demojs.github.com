@@ -43,9 +43,8 @@ jQuery( function($){
   // 2 - Handler for moving around
 
   function setupMove($container, $links, $bg){
-
-    $links.each(function(){
-      var $link         = $(this),
+    var fForLinks = _.reduce($links, function(memo, link){
+      var $link         = $(link),
           targetContent = $link.attr("href"),
           $targetContent= $(targetContent),
           offset        = $targetContent.position(),
@@ -54,17 +53,25 @@ jQuery( function($){
           bgTranslateX  = offset.left?"-"+(offset.left/2)+"px":"0",
           bgTranslateY  = offset.top?"-"+(offset.top/2)+"px":"0",
           zTransform    = Zanimo.transitionf("transform", "translate("+translateX+", "+translateY+")", 1000, "ease-in-out"),
-          bgTransform  = Zanimo.transitionf("transform", "translate("+bgTranslateX+", "+bgTranslateY+")", 1000, "ease-in-out");
+          bgTransform   = Zanimo.transitionf("transform", "translate("+bgTranslateX+", "+bgTranslateY+")", 1000, "ease-in-out");
 
-      $link.click(function(e){
-        e.preventDefault();
-        Q.all( [
-          Zanimo($container[0]).then(zTransform),
-          Zanimo($bg[0]).then(bgTransform)
-        ]).fail(function(e){console.log(e)})
-      });
+      $targetContent.attr("id", targetContent + "_inactive");
         
-    });
+      memo[targetContent] = [
+        zTransform, 
+        bgTransform
+      ];
+      return memo;
+    }, {});
+
+    window.onhashchange = function(e){
+      var f         = fForLinks[location.hash],
+          functions = f?f:fForLinks["#index"];
+      Q.all( [
+        Zanimo($container[0]).then(functions[0]),
+        Zanimo($bg[0]).then(functions[1])
+      ]).fail(function(e){console.log(e)})
+    };
 
   }
 
@@ -86,5 +93,10 @@ jQuery( function($){
   setupMove($container, $navLinks, $bg);
   resizeSections();
   window.onresize = _.debounce( resizeSections , 200);
+
+  setTimeout(function(){
+      window.scroll(0,0);
+      location.hash = location.hash;
+  }, 300);
 
 })

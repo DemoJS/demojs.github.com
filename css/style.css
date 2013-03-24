@@ -65,6 +65,7 @@ nav > ul {
 
 nav > ul > li{
   display: inline;
+  padding-right : 15px;
 }
 
 .background{
