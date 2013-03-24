@@ -1,121 +1,108 @@
 ---
 layout: default
-title: DEMOJS 2013 - June, 28, 29, 30 
+title: DEMOJS 2013 - June 28th, 29th, 30th 
 ---
 <h1>DemoJS 2013</h1>
-<nav>
-<ul>
-	<li>
-		<a href="#index">Front page</a>
-	</li>
-	<li>
-		<a href="#demoparty"></a>
-	</li>
-	<li>
-		<a href="#schedule"></a>
-	</li>
-	<li>
-		<a href="#tips"></a>
-	</li>
-	<li>
-		<a href="#come"></a>
-	</li>
-	<li>
-		<a href="#compos"></a>
-	</li>
-	<li>
-		<a href="#about"></a>
-	</li>
-</ul>
-</nav>
 
-<div role="main">
+{% capture nav %}{% include nav.md %}{% endcapture %}
+<nav>{{ nav | markdownify }}</nav>
 
-<section>
+<div class="background">
+</div>
+
+<div id="content">
+
+<section id="index" class="cloudContent" data-x="0" data-y="0">
 <hgroup>
-<a id="index"></a>
+<div class="content">
 {% capture index %}
   {% include index.md %}
 {% endcapture %}
 {{ index | markdownify }}
+</div>
 </hgroup>
 </section>
 
-<section>
+<section id="demoparty" class="cloudContent" data-x="2000" data-y="0">
 <hgroup>
-<a id="demoparty"></a>
+<div class="content">
 {% capture demoparty %}
   {% include demoparty.md %}
 {% endcapture %}
 {{ demoparty | markdownify }}
+</div>
 </hgroup>
 </section>
 
-<section>
+<section id="schedule" class="cloudContent" data-x="0" data-y="2000">
 <hgroup>
-<a id="schedule"></a>
+<div class="content">
 {% capture schedule %}
   {% include schedule.md %}
 {% endcapture %}
 {{ schedule | markdownify }}
+</div>
 </hgroup>
 </section>
 
-<section>
+<section id="tips" class="cloudContent" data-x="2000" data-y="2000"> 
 <hgroup>
-<a id="tips"></a>
+<div class="content">
 {% capture tips %}
   {% include tips.md %}
 {% endcapture %}
 {{ tips | markdownify }}
+</div>
 </hgroup>
 </section>
 
-<section>
+<section id="come" class="cloudContent" data-x="000" data-y="3000">
 <hgroup>
-<a id="come"></a>
+<div class="content">
 {% capture come %}
   {% include come.md %}
 {% endcapture %}
 {{ come | markdownify }}
+</div>
 </hgroup>
 </section>
 
-<section>
+<section id="compos" class="cloudContent" data-x="4000" data-y="1000">
 <hgroup>
-<a id="compos"></a>
+<div class="content">
 {% capture compos %}
   {% include compos.md %}
 {% endcapture %}
 {{ compos | markdownify }}
+</div>
 </hgroup>
 </section>
 
-<section>
+<section id="about" class="cloudContent" data-x="4000" data-y="4000">
 <hgroup>
-<a id="about"></a>
+<div class="content">
 {% capture about %}
   {% include about.md %}
 {% endcapture %}
 {{ about | markdownify }}
+</div>
 </hgroup>
 </section>
 
-<section>
+<section id="sponsors" class="cloudContent" data-x="1000" data-y="4000">
 <hgroup>
-<a id="sponsors"></a>
+<div class="content">
 {% capture sponsors %}
   {% include sponsors.md %}
 {% endcapture %}
 {{ sponsors | markdownify }}
+</div>
 </hgroup>
 </section>
+
 </div>
 
 <footer>
 
 </footer>
 
-</div>
-</body>
-</html>

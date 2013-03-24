@@ -14,6 +14,7 @@ DemoJS is brought to you by <a href="http://www.demoscene.fr" target="_blank">fr
     
 ## Greetings
 Mad props to&nbsp;:
+
  * [made](http://www.m4de.com/) / Bomb!, for the DemoJS logo
     
 ## Contact us

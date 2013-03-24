@@ -1,0 +1,8 @@
+* [Front page](#index)
+* [Demoparty?](#demoparty)
+* [Sponsors](#sponsors)
+* [Schedule](#schedule)
+* [Help?](#tips)
+* [How to come](#come)
+* [Rules](#compos)
+* [About](#about)
