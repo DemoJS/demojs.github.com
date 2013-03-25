@@ -5,6 +5,8 @@
  *********/
 
 jQuery( function($){
+  var oldHashLocation = location.hash;
+  location.hash = "";
 
   function resizeSections(){
     var height  = window.innerHeight,
@@ -95,8 +97,7 @@ jQuery( function($){
   window.onresize = _.debounce( resizeSections , 200);
 
   setTimeout(function(){
-      window.scroll(0,0);
-      location.hash = location.hash;
-  }, 300);
+      location.hash = oldHashLocation;
+  }, 50);
 
 })
