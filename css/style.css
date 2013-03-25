@@ -12,6 +12,31 @@ p, ol, ul, blockquote, pre, code{
   line-height: 1.5;
 }
 
+ a {
+  color:#604040;
+}
+ a:hover{
+  color:inherit;
+}
+ li:nth-child(6n):hover{
+  color:red;
+}
+ li:nth-child(6n+1):hover{
+  color:orange;
+}
+ li:nth-child(6n+2):hover{
+  color:yellow;
+}
+ li:nth-child(6n+3):hover{
+  color:green;
+}
+ li:nth-child(6n+4):hover{
+  color:blue;
+}
+ li:nth-child(6n+5):hover{
+  color:purple;
+}
+
 h1, h2, h3, h4, h5, h6 {
   letter-spacing:-0.05em;
   color:#606060;
@@ -66,6 +91,17 @@ nav > ul {
 nav > ul > li{
   display: inline;
   padding-right : 15px;
+}
+
+nav > .social{
+  position: absolute;
+  top : 0;
+  right : 0;
+  font-size:24px;
+}
+
+.social a {
+  text-decoration: none;
 }
 
 .background{

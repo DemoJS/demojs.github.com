@@ -87,7 +87,7 @@ jQuery( function($){
   }
 
   var $container  = $("#content"),
-      $navLinks   = $("nav a"),
+      $navLinks   = $("nav ul:first-child a"),
       $bg         = setupBackground();
   setupContainer( $container ).find("section").each(setElementPosition);
   setupMove($container, $navLinks, $bg);
