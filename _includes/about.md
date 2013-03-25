@@ -8,7 +8,7 @@ DemoJS is brought to you by <a href="http://www.demoscene.fr" target="_blank">fr
  * cb / Adinpsz [@cboccato](http://twitter.com/cboccato)
  * JeFfR3y  / Vital Motion [@amigavibes](http://twitter.com/amigavibes)
  * latortue / Punk Floyd [@pinkarcadia](http://twitter.com/pinkarcadia)
- * maracuja / ZUUL [@__maracuja__](http://twitter.com/__maracuja__)
+ * maracuja / ZUUL [@\_\_maracuja\_\_](http://twitter.com/__maracuja__)
  * TiteiKo  / Popsy Team [@Titeiko](http://twitter.com/TiteiKo)
  * wullon   / Adinpsz [@wullon](http://twitter.com/gatuingt)
     
