@@ -1,86 +1,86 @@
 *{
-  letter-spacing: 0.05em;
-  word-spacing:0.1em;
+  letter-spacing  : 0.05em;
+  word-spacing    : 0.1em;
 }
 
 html, body{
-  height:100%;
+  height : 100%;
 }
 
 p, ol, ul, blockquote, pre, code{
-  font-size:12px/1.5;
-  line-height: 1.5;
+  font-size   : 12px/1.5;
+  line-height : 1.5;
 }
 
- a {
-  color:#604040;
+a {
+  color : #604040;
 }
- a:hover{
-  color:inherit;
+a:hover{
+  color : inherit;
 }
- li:nth-child(6n):hover{
-  color:red;
+li:nth-child(6n):hover{
+  color : red;
 }
- li:nth-child(6n+1):hover{
-  color:orange;
+li:nth-child(6n+1):hover{
+  color : orange;
 }
- li:nth-child(6n+2):hover{
-  color:yellow;
+li:nth-child(6n+2):hover{
+  color : yellow;
 }
- li:nth-child(6n+3):hover{
-  color:green;
+li:nth-child(6n+3):hover{
+  color : green;
 }
- li:nth-child(6n+4):hover{
-  color:blue;
+li:nth-child(6n+4):hover{
+  color : blue;
 }
- li:nth-child(6n+5):hover{
-  color:purple;
+li:nth-child(6n+5):hover{
+  color : purple;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  letter-spacing:-0.05em;
-  color:#606060;
+  letter-spacing: -0.05em;
+  color         : #606060;
 }
 
 h1 {
-  line-height:0.5;
+  line-height : 0.5;
 }
 
 h2 {
-  line-height:1; 
+  line-height : 1; 
 }
 
 h3{
-  line-height:1.28;
+  line-height : 1.28;
 }
 
 body {
-  overflow:hidden;
+  overflow : hidden;
 }
 
 .wrapper{
-  position:relative;
-  width:100%;
-  height:100%;
-  top:0;
-  left:0;
+  position  : relative;
+  width     : 100%;
+  height    : 100%;
+  top       : 0;
+  left      : 0;
 }
 
 .wrapper > * {
-  background:#fff;
-  position: absolute;
-  top:0;
-  left:0;
-  background: rgba(255,255,255,0.8);
+  position    : absolute;
+  top         : 0;
+  left        : 0;
+  background  : #fff;
+  background  : rgba(255,255,255,0.8);
 }
 
 .wrapper > nav {
-  position : fixed;
-  top : 1%;
-  left: 50px;
-  right:50px;
-  z-index:100;
-  padding: 5px 50px;
+  position  : fixed;
+  top       : 1%;
+  left      : 50px;
+  right     : 50px;
+  z-index   : 100;
+  padding   : 5px 50px;
 }
 
 nav > ul {
@@ -89,30 +89,23 @@ nav > ul {
 }
 
 nav > ul > li{
-  display: inline;
+  display       : inline;
   padding-right : 15px;
 }
 
 nav > .social{
-  position: absolute;
-  top : 0;
-  right : 0;
-  font-size:24px;
+  position  : absolute;
+  top       : 0;
+  right     : 0;
+  font-size : 24px;
 }
 
-.social a {
-  text-decoration: none;
+nav a {
+  text-decoration : none;
+  font-weight     : bold;
 }
 
 .background{
-/*  background-color:#269;
-  background-image: -webkit-linear-gradient(white 2px, transparent 2px),
-  -webkit-linear-gradient(0deg, white 2px, transparent 2px),
-  -webkit-linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px),
-  -webkit-linear-gradient(0deg, rgba(255,255,255,.3) 1px, transparent 1px);
-  background-size:100px 100px, 100px 100px, 20px 20px, 20px 20px;
-  background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px;
-  */
   background-color:blue;
   background-image: -webkit-linear-gradient( rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 50%), -webkit-linear-gradient(left, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 50%), -webkit-linear-gradient(top, red, orange, yellow, green, blue, purple, red );
   background-image: -ms-linear-gradient( rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 50%), -ms-linear-gradient(left, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 50%), -ms-linear-gradient(top, red, orange, yellow, green, blue, purple, red );
