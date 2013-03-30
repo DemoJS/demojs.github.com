@@ -61,7 +61,6 @@ h3{
 body {
   overflow : hidden;
 }
-
 .wrapper{
   position  : relative;
   width     : 100%;
@@ -75,20 +74,20 @@ body {
   top         : 0;
   left        : 0;
   background  : #fff;
-  background  : rgba(255,255,255,0.8);
+  background  : rgba(255,255,255,0.9);
 }
 
 .wrapper > nav {
   position  : fixed;
-  top       : 1%;
-  left      : 50px;
-  right     : 50px;
+  top       : 2px;
+  left      : 0;
+  right     : 0;
   z-index   : 100;
   padding   : 5px 50px;
 }
 
 nav > ul {
-  padding: 0;
+  padding-left: 50px;
   margin : auto;
 }
 
@@ -97,11 +96,15 @@ nav > ul > li{
   padding-right : 15px;
 }
 
+nav > ul.social > li{
+  padding-right : 5px;
+}
+
 nav > .social{
   position  : absolute;
-  top       : 0;
-  right     : 0;
-  font-size : 24px;
+  top       : 3px;
+  right     : 50px;
+  font-size : 18px;
 }
 
 nav a {
@@ -111,15 +114,15 @@ nav a {
 
 .background{
   background-color:blue;
-  background-image: -webkit-linear-gradient( rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 50%), -webkit-linear-gradient(left, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 50%), 
+  background-image: -webkit-linear-gradient( rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0) 50%), -webkit-linear-gradient(left, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0) 50%), 
   -webkit-linear-gradient(top, hsl(0,60%,55%) 0%, hsl(30,60%,55%) 17%, hsl(60,60%,55%) 34%, hsl(120,60%,55%) 51%, hsl(240,60%,55%) 68%, hsl(240,60%,55%) 84%, hsl(300, 60%, 55%) 100% );
-  background-image: -ms-linear-gradient( rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 50%), -ms-linear-gradient(left, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 50%), 
+  background-image: -ms-linear-gradient( rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0) 50%), -ms-linear-gradient(left, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0) 50%), 
   -ms-linear-gradient(top, hsl(0,60%,55%) 0%, hsl(30,60%,55%) 17%, hsl(60,60%,55%) 34%, hsl(120,60%,55%) 51%, hsl(240,60%,55%) 68%, hsl(240,60%,55%) 84%, hsl(300, 60%, 55%) 100% );
-  background-image: -o-linear-gradient( rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 50%), -o-linear-gradient(left, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 50%), 
+  background-image: -o-linear-gradient( rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0) 50%), -o-linear-gradient(left, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0) 50%), 
   -o-linear-gradient(top, hsl(0,60%,55%) 0%, hsl(30,60%,55%) 17%, hsl(60,60%,55%) 34%, hsl(120,60%,55%) 51%, hsl(240,60%,55%) 68%, hsl(240,60%,55%) 84%, hsl(300, 60%, 55%) 100% );
-  background-image: -moz-linear-gradient( rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 50%), -moz-linear-gradient(left, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 50%), 
+  background-image: -moz-linear-gradient( rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0) 50%), -moz-linear-gradient(left, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0) 50%), 
   -moz-linear-gradient(top, hsl(0,60%,55%) 0%, hsl(30,60%,55%) 17%, hsl(60,60%,55%) 34%, hsl(120,60%,55%) 51%, hsl(240,60%,55%) 68%, hsl(240,60%,55%) 84%, hsl(300, 60%, 55%) 100% );
-  background-image: linear-gradient( rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 50%), linear-gradient(left, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 50%), 
+  background-image: linear-gradient( rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0) 50%), linear-gradient(left, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0) 50%), 
   linear-gradient(top, hsl(0,60%,55%) 0%, hsl(30,60%,55%) 17%, hsl(60,60%,55%) 34%, hsl(120,60%,55%) 51%, hsl(240,60%,55%) 68%, hsl(240,60%,55%) 84%, hsl(300, 60%, 55%) 100% );
   background-size: 50px 50px, 50px 50px, 500px 500px;
 }
@@ -130,11 +133,19 @@ section {
 
 section .content{
   text-align        : left;
-  background        : rgba(255,255,255,0.6);
+  background        : rgba(255,255,255,0.9);
   -moz-box-sizing   : border-box;
   -webkit-box-sizing: border-box;
   box-sizing        : border-box;
   padding           : 50px;
   margin            : 50px;
   overflow-y        : auto;
+}
+
+.background, .content{
+  perspective: 500px;
+}
+
+p:nth-child(1) {
+  text-align:center
 }

@@ -43,6 +43,10 @@ jQuery( function($){
   }
 
   // 2 - Handler for moving around
+  //
+  function currentPosition(){
+  
+  }
 
   function setupMove($container, $links, $bg){
     var fForLinks = _.reduce($links, function(memo, link){
@@ -68,7 +72,9 @@ jQuery( function($){
 
     window.onhashchange = function(e){
       var f         = fForLinks[location.hash],
-          functions = f?f:fForLinks["#index"];
+          functions = f?f:fForLinks["#index"],
+          upTransform   = Zanimo.transitionf("transform", "translate3d(-100px)", 200, "ease-in-out"),
+          downTransform = Zanimo.transitionf("transform", "translate3d(100px)", 200, "ease-in-out");
       Q.all( [
         Zanimo($container[0]).then(functions[0]),
         Zanimo($bg[0]).then(functions[1])
