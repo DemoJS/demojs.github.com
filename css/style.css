@@ -14,6 +14,10 @@ p, ol, ul, blockquote, pre, code{
 
 a {
   color : #604040;
+  -webkit-transition: color 500ms;
+  -moz-transition: color 500ms;
+  -ms-transition: color 500ms;
+  transition: color 500ms;
 }
 a:hover{
   color : inherit;
@@ -107,13 +111,17 @@ nav a {
 
 .background{
   background-color:blue;
-  background-image: -webkit-linear-gradient( rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 50%), -webkit-linear-gradient(left, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 50%), -webkit-linear-gradient(top, red, orange, yellow, green, blue, purple, red );
-  background-image: -ms-linear-gradient( rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 50%), -ms-linear-gradient(left, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 50%), -ms-linear-gradient(top, red, orange, yellow, green, blue, purple, red );
-  background-image: -o-linear-gradient( rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 50%), -o-linear-gradient(left, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 50%), -o-linear-gradient(top, red, orange, yellow, green, blue, purple, red );
-  background-image: -moz-linear-gradient( rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 50%), -moz-linear-gradient(left, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 50%), -moz-linear-gradient(top, red, orange, yellow, green, blue, purple, red );
-  background-image: linear-gradient( rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 50%), linear-gradient(left, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 50%), linear-gradient(top, red, orange, yellow, green, blue, purple, red );
-  background-size: 500px 500px, 500px 500px;
-
+  background-image: -webkit-linear-gradient( rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 50%), -webkit-linear-gradient(left, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 50%), 
+  -webkit-linear-gradient(top, hsl(0,60%,55%) 0%, hsl(30,60%,55%) 17%, hsl(60,60%,55%) 34%, hsl(120,60%,55%) 51%, hsl(240,60%,55%) 68%, hsl(240,60%,55%) 84%, hsl(300, 60%, 55%) 100% );
+  background-image: -ms-linear-gradient( rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 50%), -ms-linear-gradient(left, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 50%), 
+  -ms-linear-gradient(top, hsl(0,60%,55%) 0%, hsl(30,60%,55%) 17%, hsl(60,60%,55%) 34%, hsl(120,60%,55%) 51%, hsl(240,60%,55%) 68%, hsl(240,60%,55%) 84%, hsl(300, 60%, 55%) 100% );
+  background-image: -o-linear-gradient( rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 50%), -o-linear-gradient(left, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 50%), 
+  -o-linear-gradient(top, hsl(0,60%,55%) 0%, hsl(30,60%,55%) 17%, hsl(60,60%,55%) 34%, hsl(120,60%,55%) 51%, hsl(240,60%,55%) 68%, hsl(240,60%,55%) 84%, hsl(300, 60%, 55%) 100% );
+  background-image: -moz-linear-gradient( rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 50%), -moz-linear-gradient(left, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 50%), 
+  -moz-linear-gradient(top, hsl(0,60%,55%) 0%, hsl(30,60%,55%) 17%, hsl(60,60%,55%) 34%, hsl(120,60%,55%) 51%, hsl(240,60%,55%) 68%, hsl(240,60%,55%) 84%, hsl(300, 60%, 55%) 100% );
+  background-image: linear-gradient( rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 50%), linear-gradient(left, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 50%), 
+  linear-gradient(top, hsl(0,60%,55%) 0%, hsl(30,60%,55%) 17%, hsl(60,60%,55%) 34%, hsl(120,60%,55%) 51%, hsl(240,60%,55%) 68%, hsl(240,60%,55%) 84%, hsl(300, 60%, 55%) 100% );
+  background-size: 50px 50px, 50px 50px, 500px 500px;
 }
 
 section {
