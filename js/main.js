@@ -65,20 +65,23 @@ jQuery( function($){
         
       memo[targetContent] = [
         zTransform, 
-        bgTransform
+        bgTransform,
+        [translateX, translateY]
       ];
       return memo;
     }, {});
 
     window.onhashchange = function(e){
       var f         = fForLinks[location.hash],
-          functions = f?f:fForLinks["#index"],
-          upTransform   = Zanimo.transitionf("transform", "translate3d(-100px)", 200, "ease-in-out"),
-          downTransform = Zanimo.transitionf("transform", "translate3d(100px)", 200, "ease-in-out");
+          functions = f?f:fForLinks["#index"];
       Q.all( [
         Zanimo($container[0]).then(functions[0]),
         Zanimo($bg[0]).then(functions[1])
-      ]).fail(function(e){console.log(e)})
+      ]).fail(function(e){
+        console.log(e);
+        //If we can't do a transition, let's show the page at least :P
+        $container.css("transform", "translate("+functions[2][0]+", "+functions[2][1]+")");
+      });
     };
 
   }
