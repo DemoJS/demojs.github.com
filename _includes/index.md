@@ -5,7 +5,7 @@
 
 ## We are back!
 
-After last year success, we are thrilled to announce you the new release of DemoJS team : DEMOJS 2013 - JS Pride. 
+After last year success (100+ sceners coming, 27 prods), we are thrilled to invite you the new release of DemoJS team : DEMOJS 2013 - JS Pride. 
 
 Little summary of the event to come : 
 
@@ -21,9 +21,5 @@ Little summary of the event to come :
  * Friendly atmosphere
  * And more…
 
-REGISTER… Soon :)
-
-## 2012, debrief
-
-In 2012, there were around 100 sceners coming from all over the world. 27 demos were released including 5 remotes. More infos in the [about part](#about)
+REGISTER… Soon :) So stay tuned on (twitter)[https://twitter.com/demojsorg/] for more infos.
 

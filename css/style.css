@@ -104,6 +104,10 @@ nav > ul.social > li{
   padding-right : 5px;
 }
 
+.social a:hover{
+  text-decoration:none;
+}
+
 nav > .social{
   position  : absolute;
   top       : 3px;
