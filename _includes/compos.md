@@ -10,7 +10,7 @@
  * The organizing team may disqualify inappropriate entries (pornography, illegal content...).
  * The organizing team may disqualify entries that don’t follow the rules expressed here. If you have any questions regarding one of those rules, you can email us : rules@demojs.org.
  * You CAN start working on your production NOW. The production does NOT need to be made 100% at the party place.
- * Deadline is ??
+ * Deadline is saturday june 29th @ 7PM CEST
 
 ## Compo machine
 
@@ -53,13 +53,11 @@ Play with a few bytes !
  * You can use built-in generic fonts such as serif, sans-serif.
  * No shim is provided.
  * Total size must not exceed size limit.
- * Prod examples : ???
 
 ### Browser 8k
 Try to put cool visuals and music in 8k !
 
  * Same rules as in 1k category except the size allowed here 8k wich is 8192 bytes.
- * Prod examples : ???
 
 ### Browser demo
 THE compo
@@ -67,7 +65,6 @@ THE compo
  * No maximum filesize. However don’t try to run a movie in an iframe.
  * Must be a non-interactive.
  * You can retrieve external content from the Internet, but it is at **your own risk**. We shall not be liable for connection problems during demo projection.
- * Prod examples : ???
 
 ### Fast prodz
 These compos will be focused on specific aspects of demos, such as 3D modeling or specific platforms, with a specific theme revealed the day of the demoparty. More on those will be announced soon.
