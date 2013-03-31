@@ -1,7 +1,7 @@
 
 ![DemoJS](images/demojs_normal.png)
 
-# 2013, here we come!
+# DEMOJS 2013 - JS pride!
 
 ## We are back!
 
