@@ -156,6 +156,10 @@ section .content{
   overflow-y        : auto;
 }
 
+.content a {
+  text-decoration : underline;
+}
+
 
 .sponsors li {
   display: inline-block;
