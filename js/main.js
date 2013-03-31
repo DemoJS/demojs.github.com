@@ -100,11 +100,17 @@ jQuery( function($){
     return $bg;
   }
 
+  function sendLinksToOtherWindow($links){
+    $links.attr("target", "_blank");
+  }
+
   var $container  = $("#content"),
       $navLinks   = $("nav ul:first-child a"),
-      $bg         = setupBackground();
+      $bg         = setupBackground(),
+      $outLinks   = $("a[href^='http://'], a[href^='https://']");
   setupContainer( $container ).find("section").each(setElementPosition);
   setupMove($container, $navLinks, $bg);
+  sendLinksToOtherWindow($outLinks);
   resizeSections();
   window.onresize = _.debounce( resizeSections , 200);
 
