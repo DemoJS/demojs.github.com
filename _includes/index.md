@@ -21,5 +21,5 @@ Little summary of the event to come :
  * Friendly atmosphere
  * And more…
 
-REGISTER… Soon :) So stay tuned on [twitter](https://twitter.com/demojsorg/) for more infos.
+<a href="http://www.eventbrite.com/event/6080656407?ref=ebtnebregn" target="_blank"><img src="http://www.eventbrite.com/custombutton?eid=6080656407" alt="Eventbrite - DemoJS 2013 - JS pride" /></a>
 
