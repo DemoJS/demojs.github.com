@@ -1,45 +1,123 @@
 ---
 layout: default
-title: the browser demoparty - Paris, 29-30 June 2012 
+title: DEMOJS 2013 - June 28th, 29th, 30th 
 ---
-<!-- Main hero unit for a primary marketing message or call to action -->
-<div class="hero-unit">
-  <h1>DemoJS 2012!</h1>
-  <p>After last year success, we are proud to announce you the second edition of <strong>DemoJS, the browser demoparty.</strong></p>
-  <p>TL;DR :</p>
-  <ul>
-    <li><strong>29-30 June</strong> 2012</li>
-    <li>@ <a href="/come.html">Isart Digital, <strong>Paris</strong> (next to the Opera Bastille)</a></li>
-    <li><strong>FREE!</strong></li>
-    <li>Room for 150 people</li>
-    <li>4 compos : <strong>1k</strong>, <strong>10k</strong>, <strong>demo</strong>, <strong>wild</strong></li>
-    <li>... and remote entrie are welcome <a href="/compos.html">more infos about the compos</a></li>
-    <li>Also: conferences, demoscene documentary, chiptune concert, friendly atmopshere, free sleeping area booth the friday night and the saturday night ...</li>
-  </ul>
 
-  <p><a class="btn btn-warning btn-large" href="/2012/releases/results.txt" target="_blank">Results &raquo;</a></p>
+{% capture nav %}{% include nav.md %}{% endcapture %}
+<nav class="rainbow">
+{{ nav | markdownify }}
+<ul class="social">
+  <li>
+    <a href="https://www.facebook.com/DemoJS" ><i class="icon-facebook"></i></a>
+  </li> 
+  <li>
+    <a href="https://plus.google.com/118223385142306295225/posts" ><i class="icon-google-plus"></i></a>
+  </li> 
+  <li>
+    <a href="https://twitter.com/demojsorg/" ><i class="icon-twitter"></i></a>
+  </li>
+</ul>
+
+<img class="logo" src="images/demojs_logo.png" alt="DemoJS logo" height="29" width="46"/>
+
+</nav>
+
+<div class="background">
 </div>
 
-<!-- Example row of columns -->
-<div class="row">
-  <div class="span4">
-    <h2>Invitation intro</h2>
-    <p><a href="http://adinpsz.org" target="_blank">Adinpsz</a> released an invitation intro, "<a href="http://pouet.net/prod.php?which=59071" target="_blank">Fabrik</a>". It's only 4kb and still contains both visuals and music! Please wait ~60s for decrunching (or <a href="http://www.youtube.com/watch?v=LDcoviHBq1M" target="_blank">view it on YouTube</a>).
-    <p><a class="btn" href="http://adinpsz.org/online/fabrik/" target="_blank">Launch the invitro! &raquo;</a></p>
-  </div>
-  <div class="span4">
-    <h2>DemoJS 2011</h2>
-    <p>Last year, more than 90 people attended the party, 20 productions were released, and everybody was happy ;).</p>
-    <p>You can have a look <a href="http://www.flickr.com/photos/isartdigital/sets/72157627113872240/" target="_blank">at the pix</a> or <a href="/2011/#results">watch last year productions</a>.
-    <p><a class="btn" href="/2011/">2011 edition &raquo;</a></p>
-  </div>
-  <div class="span4">
-    <h2>Contact us</h2>
-        <ul>
-      <li>by email: <a href="mailto:contact@demojs.org" target="_blank">contact@demojs.org</a></li>
-      <li>on Facebook: <a href="https://www.facebook.com/events/365781143470172/" target="_blank">event page</a> &amp; <a href="https://www.facebook.com/demojs" target="_blank">fanpage</a></li>
-      <li>on Twitter: <a href="http://twitter.com/demojsorg/" target="_blank">@demojsorg</a> &amp; <a href="https://twitter.com/#!/search/%23demojs" target="_blank">#demojs</a></li>
-          </ul>
-    <p><a class="btn" href="/about.html">About DemoJS &raquo;</a></p>
-  </div>
+<div id="content">
+
+<section id="index" class="cloudContent" data-x="0" data-y="0">
+<hgroup>
+<div class="content">
+{% capture index %}
+  {% include index.md %}
+{% endcapture %}
+{{ index | markdownify }}
 </div>
+</hgroup>
+</section>
+
+<section id="demoparty" class="cloudContent" data-x="2000" data-y="0">
+<hgroup>
+<div class="content">
+{% capture demoparty %}
+  {% include demoparty.md %}
+{% endcapture %}
+{{ demoparty | markdownify }}
+</div>
+</hgroup>
+</section>
+
+<section id="schedule" class="cloudContent" data-x="0" data-y="2000">
+<hgroup>
+<div class="content">
+{% capture schedule %}
+  {% include schedule.md %}
+{% endcapture %}
+{{ schedule | markdownify }}
+</div>
+</hgroup>
+</section>
+
+<section id="tips" class="cloudContent" data-x="2000" data-y="2000"> 
+<hgroup>
+<div class="content">
+{% capture tips %}
+  {% include tips.md %}
+{% endcapture %}
+{{ tips | markdownify }}
+</div>
+</hgroup>
+</section>
+
+<section id="come" class="cloudContent" data-x="000" data-y="3000">
+<hgroup>
+<div class="content">
+{% capture come %}
+  {% include come.md %}
+{% endcapture %}
+{{ come | markdownify }}
+</div>
+</hgroup>
+</section>
+
+<section id="compos" class="cloudContent" data-x="4000" data-y="1000">
+<hgroup>
+<div class="content">
+{% capture compos %}
+  {% include compos.md %}
+{% endcapture %}
+{{ compos | markdownify }}
+</div>
+</hgroup>
+</section>
+
+<section id="about" class="cloudContent" data-x="4000" data-y="4000">
+<hgroup>
+<div class="content">
+{% capture about %}
+  {% include about.md %}
+{% endcapture %}
+{{ about | markdownify }}
+</div>
+</hgroup>
+</section>
+
+<section id="partners" class="cloudContent" data-x="1000" data-y="4000">
+<hgroup>
+<div class="content">
+{% capture sponsors %}
+  {% include sponsors.md %}
+{% endcapture %}
+{{ sponsors | markdownify }}
+</div>
+</hgroup>
+</section>
+
+</div>
+
+<footer>
+
+</footer>
+

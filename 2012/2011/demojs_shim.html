@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+  <head>
+    <title>DemoJS submission template</title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <canvas id="c"></canvas>
+    <script>
+var a = document.body;
+var b = document.getElementsByTagName('canvas')[0];
+
+function getContext(s) {
+  try {
+    return b.getContext(s); 
+  } catch(e) {
+    return null;
+  }
+}
+
+function c() {
+  return getContext('2d');
+}
+
+function d() {
+  var ret =  return getContext('webgl') || getContext('experimental-webgl') || getContext('webkit-3d') || getContext('moz-webgl');
+  if (!ret)
+    alert("Your browser doesn't support WebGL");
+    return ret;
+  }
+}
+
+document.body.clientWidth; // fix bug in webkit: http://qfox.nl/weblog/218
+    </script>
+
+    <script>
+    // insert your entry here
+
+    // RULES (thx to @kuvos for inspiration)
+    //  1. Submissions may be up to 1k (1024 bytes). Fill those damn bytes.
+    //  2. Submissions must consist of only js.
+    //  3. Any and all externals are strictly forbidden.
+    //  4. Must work on the last version of Mozilla Firefox and Google Chrome (more support appreciated of course :)
+    //  5. It should look roughly similar under both browsers.
+    //  6. As you might have seen, you get canvas object and context creation for FREE!
+    //  7. Your demo must work in this shim, tell us if there are problems with context creation.
+    //  8. GO MAD, audio, eval and WebGL allowed!
+    </script>
+  </body>
+</html>

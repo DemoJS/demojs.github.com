@@ -1,0 +1,8 @@
+* [Welcome!](#index)
+* [Partners](#partners)
+* [Schedule](#schedule)
+* [How to come](#come)
+* [Demoparty?](#demoparty)
+* [Help?](#tips)
+* [Rules](#compos)
+* [About us](#about)
