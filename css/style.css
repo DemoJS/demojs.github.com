@@ -159,3 +159,59 @@ section .content{
 p:nth-child(1) {
   text-align:center
 }
+
+.bus{
+  display       : inline-block;
+  height        : 1.5em;
+  width         : 1.5em;
+  text-align    : center;
+  line-height   : 1.7;
+}
+
+.b86 {
+  background-color:#ED1B2A;
+  color:#fff;
+}
+.b76 {
+  background-color:#652C90;
+  color:#fff;
+}
+.b65 {
+  background-color:#008C5A;
+  color:#fff;
+}
+.b29 {
+  background-color:#87D3DF;
+}
+.b20 {
+  background-color:#F78F4B;
+}
+.b69 {
+  background-color:#87D3DF;
+}
+.b87 {
+  background-color:#662C91;
+  color:#fff;
+}
+
+.metro{
+  display       : inline-block;
+  font-weight   : bold;
+  height        : 1.5em;
+  width         : 1.5em;
+  text-align    : center;
+  border-radius : 1.5em;
+  line-height   : 1.7;
+}
+
+.m1{
+  background-color: rgb(242, 201, 49);
+}
+
+.m5{
+  background-color:rgb(222, 139, 83);
+}
+
+.m8{
+  background-color:rgb(197, 163, 202);
+}
