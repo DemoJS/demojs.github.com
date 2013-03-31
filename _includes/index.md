@@ -21,5 +21,5 @@ Little summary of the event to come :
  * Friendly atmosphere
  * And more…
 
-REGISTER… Soon :) So stay tuned on (twitter)[https://twitter.com/demojsorg/] for more infos.
+REGISTER… Soon :) So stay tuned on [twitter](https://twitter.com/demojsorg/) for more infos.
 
