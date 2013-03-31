@@ -26,22 +26,22 @@ a:hover{
   color           : inherit;
   text-decoration : underline;
 }
-li:nth-child(6n):hover a{
+li:nth-child(6n):hover a, li:nth-child(6n) a.current{
   color : red;
 }
-li:nth-child(6n+1):hover a{
+li:nth-child(6n+1):hover a, li:nth-child(6n+1) a.current{
   color : orange;
 }
-li:nth-child(6n+2):hover a{
+li:nth-child(6n+2):hover a, li:nth-child(6n+2) a.current{
   color : yellow;
 }
-li:nth-child(6n+3):hover a{
+li:nth-child(6n+3):hover a, li:nth-child(6n+3) a.current{
   color : green;
 }
-li:nth-child(6n+4):hover a {
+li:nth-child(6n+4):hover a, li:nth-child(6n+4) a.current {
   color : blue;
 }
-li:nth-child(6n+5):hover a{
+li:nth-child(6n+5):hover a, li:nth-child(6n+5) a.current{
   color : purple;
 }
 

@@ -66,7 +66,8 @@ jQuery( function($){
       memo[targetContent] = [
         zTransform, 
         bgTransform,
-        [translateX, translateY]
+        [translateX, translateY],
+        $link
       ];
       return memo;
     }, {});
@@ -74,6 +75,8 @@ jQuery( function($){
     window.onhashchange = function(e){
       var f         = fForLinks[location.hash],
           functions = f?f:fForLinks["#index"];
+      $links.removeClass("current");
+      functions[3].addClass("current");
       Q.all( [
         Zanimo($container[0]).then(functions[0]),
         Zanimo($bg[0]).then(functions[1])
