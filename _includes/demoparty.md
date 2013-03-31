@@ -29,5 +29,3 @@ DemoJS 2013 has 3 competitions: **1K, 8k, and demo**. You don't need to be physi
  * a sleeping bag (if you plan to sleep at the partyplace)
  * your creativity!
      
-See you at DemoJS 2012!
-

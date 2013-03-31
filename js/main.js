@@ -5,6 +5,8 @@
  *********/
 
 jQuery( function($){
+  var oldHashLocation = location.hash;
+  location.hash = "";
 
   function resizeSections(){
     var height  = window.innerHeight,
@@ -41,6 +43,10 @@ jQuery( function($){
   }
 
   // 2 - Handler for moving around
+  //
+  function currentPosition(){
+  
+  }
 
   function setupMove($container, $links, $bg){
     var fForLinks = _.reduce($links, function(memo, link){
@@ -59,7 +65,9 @@ jQuery( function($){
         
       memo[targetContent] = [
         zTransform, 
-        bgTransform
+        bgTransform,
+        [translateX, translateY],
+        $link
       ];
       return memo;
     }, {});
@@ -67,10 +75,16 @@ jQuery( function($){
     window.onhashchange = function(e){
       var f         = fForLinks[location.hash],
           functions = f?f:fForLinks["#index"];
+      $links.removeClass("current");
+      functions[3].addClass("current");
       Q.all( [
         Zanimo($container[0]).then(functions[0]),
         Zanimo($bg[0]).then(functions[1])
-      ]).fail(function(e){console.log(e)})
+      ]).fail(function(e){
+        console.log(e);
+        //If we can't do a transition, let's show the page at least :P
+        $container.css("transform", "translate("+functions[2][0]+", "+functions[2][1]+")");
+      });
     };
 
   }
@@ -86,17 +100,22 @@ jQuery( function($){
     return $bg;
   }
 
+  function sendLinksToOtherWindow($links){
+    $links.attr("target", "_blank");
+  }
+
   var $container  = $("#content"),
       $navLinks   = $("nav ul:first-child a"),
-      $bg         = setupBackground();
+      $bg         = setupBackground(),
+      $outLinks   = $("a[href^='http://'], a[href^='https://']");
   setupContainer( $container ).find("section").each(setElementPosition);
   setupMove($container, $navLinks, $bg);
+  sendLinksToOtherWindow($outLinks);
   resizeSections();
   window.onresize = _.debounce( resizeSections , 200);
 
   setTimeout(function(){
-      window.scroll(0,0);
-      location.hash = location.hash;
-  }, 300);
+      location.hash = oldHashLocation;
+  }, 50);
 
 })

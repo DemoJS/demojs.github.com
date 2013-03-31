@@ -14,26 +14,34 @@ p, ol, ul, blockquote, pre, code{
 
 a {
   color : #604040;
+  -webkit-transition: color 500ms;
+  -moz-transition: color 500ms;
+  -ms-transition: color 500ms;
+  transition: color 500ms;
+}
+a{
+  text-decoration: none;
 }
 a:hover{
-  color : inherit;
+  color           : inherit;
+  text-decoration : underline;
 }
-li:nth-child(6n):hover{
+li:nth-child(6n):hover a, li:nth-child(6n) a.current{
   color : red;
 }
-li:nth-child(6n+1):hover{
+li:nth-child(6n+1):hover a, li:nth-child(6n+1) a.current{
   color : orange;
 }
-li:nth-child(6n+2):hover{
+li:nth-child(6n+2):hover a, li:nth-child(6n+2) a.current{
   color : yellow;
 }
-li:nth-child(6n+3):hover{
+li:nth-child(6n+3):hover a, li:nth-child(6n+3) a.current{
   color : green;
 }
-li:nth-child(6n+4):hover{
+li:nth-child(6n+4):hover a, li:nth-child(6n+4) a.current {
   color : blue;
 }
-li:nth-child(6n+5):hover{
+li:nth-child(6n+5):hover a, li:nth-child(6n+5) a.current{
   color : purple;
 }
 
@@ -57,7 +65,6 @@ h3{
 body {
   overflow : hidden;
 }
-
 .wrapper{
   position  : relative;
   width     : 100%;
@@ -71,20 +78,20 @@ body {
   top         : 0;
   left        : 0;
   background  : #fff;
-  background  : rgba(255,255,255,0.8);
+  background  : rgba(255,255,255,0.9);
 }
 
 .wrapper > nav {
   position  : fixed;
-  top       : 1%;
-  left      : 50px;
-  right     : 50px;
+  top       : 2px;
+  left      : 0;
+  right     : 0;
   z-index   : 100;
   padding   : 5px 50px;
 }
 
 nav > ul {
-  padding: 0;
+  padding-left: 50px;
   margin : auto;
 }
 
@@ -93,11 +100,19 @@ nav > ul > li{
   padding-right : 15px;
 }
 
+nav > ul.social > li{
+  padding-right : 5px;
+}
+
+.social a:hover{
+  text-decoration:none;
+}
+
 nav > .social{
   position  : absolute;
-  top       : 0;
-  right     : 0;
-  font-size : 24px;
+  top       : 3px;
+  right     : 50px;
+  font-size : 18px;
 }
 
 nav a {
@@ -105,15 +120,25 @@ nav a {
   font-weight     : bold;
 }
 
+nav > img.logo{
+  position  : absolute;
+  top       : 2px;
+  left      : 25px;
+}
+
 .background{
   background-color:blue;
-  background-image: -webkit-linear-gradient( rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 50%), -webkit-linear-gradient(left, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 50%), -webkit-linear-gradient(top, red, orange, yellow, green, blue, purple, red );
-  background-image: -ms-linear-gradient( rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 50%), -ms-linear-gradient(left, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 50%), -ms-linear-gradient(top, red, orange, yellow, green, blue, purple, red );
-  background-image: -o-linear-gradient( rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 50%), -o-linear-gradient(left, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 50%), -o-linear-gradient(top, red, orange, yellow, green, blue, purple, red );
-  background-image: -moz-linear-gradient( rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 50%), -moz-linear-gradient(left, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 50%), -moz-linear-gradient(top, red, orange, yellow, green, blue, purple, red );
-  background-image: linear-gradient( rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 50%), linear-gradient(left, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 50%), linear-gradient(top, red, orange, yellow, green, blue, purple, red );
-  background-size: 500px 500px, 500px 500px;
-
+  background-image: -webkit-linear-gradient( rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0) 50%), -webkit-linear-gradient(left, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0) 50%), 
+  -webkit-linear-gradient(top, hsl(0,60%,55%) 0%, hsl(30,60%,55%) 17%, hsl(60,60%,55%) 34%, hsl(120,60%,55%) 51%, hsl(240,60%,55%) 68%, hsl(240,60%,55%) 84%, hsl(300, 60%, 55%) 100% );
+  background-image: -ms-linear-gradient( rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0) 50%), -ms-linear-gradient(left, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0) 50%), 
+  -ms-linear-gradient(top, hsl(0,60%,55%) 0%, hsl(30,60%,55%) 17%, hsl(60,60%,55%) 34%, hsl(120,60%,55%) 51%, hsl(240,60%,55%) 68%, hsl(240,60%,55%) 84%, hsl(300, 60%, 55%) 100% );
+  background-image: -o-linear-gradient( rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0) 50%), -o-linear-gradient(left, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0) 50%), 
+  -o-linear-gradient(top, hsl(0,60%,55%) 0%, hsl(30,60%,55%) 17%, hsl(60,60%,55%) 34%, hsl(120,60%,55%) 51%, hsl(240,60%,55%) 68%, hsl(240,60%,55%) 84%, hsl(300, 60%, 55%) 100% );
+  background-image: -moz-linear-gradient( rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0) 50%), -moz-linear-gradient(left, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0) 50%), 
+  -moz-linear-gradient(top, hsl(0,60%,55%) 0%, hsl(30,60%,55%) 17%, hsl(60,60%,55%) 34%, hsl(120,60%,55%) 51%, hsl(240,60%,55%) 68%, hsl(240,60%,55%) 84%, hsl(300, 60%, 55%) 100% );
+  background-image: linear-gradient( rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0) 50%), linear-gradient(left, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0) 50%), 
+  linear-gradient(top, hsl(0,60%,55%) 0%, hsl(30,60%,55%) 17%, hsl(60,60%,55%) 34%, hsl(120,60%,55%) 51%, hsl(240,60%,55%) 68%, hsl(240,60%,55%) 84%, hsl(300, 60%, 55%) 100% );
+  background-size: 50px 50px, 50px 50px, 500px 500px;
 }
 
 section {
@@ -122,11 +147,84 @@ section {
 
 section .content{
   text-align        : left;
-  background        : rgba(255,255,255,0.6);
+  background        : rgba(255,255,255,0.9);
   -moz-box-sizing   : border-box;
   -webkit-box-sizing: border-box;
   box-sizing        : border-box;
   padding           : 50px;
   margin            : 50px;
   overflow-y        : auto;
+}
+
+
+.sponsors li {
+  display: inline-block;
+}
+.sponsors {
+  list-style: none;
+  text-align: center;
+}
+
+.background, .content{
+  perspective: 500px;
+}
+
+p:nth-child(1) {
+  text-align:center
+}
+
+.bus{
+  display       : inline-block;
+  height        : 1.5em;
+  width         : 1.5em;
+  text-align    : center;
+  line-height   : 1.7;
+}
+
+.b86 {
+  background-color:#ED1B2A;
+  color:#fff;
+}
+.b76 {
+  background-color:#652C90;
+  color:#fff;
+}
+.b65 {
+  background-color:#008C5A;
+  color:#fff;
+}
+.b29 {
+  background-color:#87D3DF;
+}
+.b20 {
+  background-color:#F78F4B;
+}
+.b69 {
+  background-color:#87D3DF;
+}
+.b87 {
+  background-color:#662C91;
+  color:#fff;
+}
+
+.metro{
+  display       : inline-block;
+  font-weight   : bold;
+  height        : 1.5em;
+  width         : 1.5em;
+  text-align    : center;
+  border-radius : 1.5em;
+  line-height   : 1.7;
+}
+
+.m1{
+  background-color: rgb(242, 201, 49);
+}
+
+.m5{
+  background-color:rgb(222, 139, 83);
+}
+
+.m8{
+  background-color:rgb(197, 163, 202);
 }
