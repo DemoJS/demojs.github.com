@@ -5,7 +5,7 @@
 
 <ul class="sponsors"> 
   <li>
-    <a href="http://www.isartdigital.com/"><img src="images/ISARTDigital.png" alt="Isart Digital" height="150" width="330" /></a>
+    <a href="http://www.isartdigital.com/"><img src="images/ISARTdigital.png" alt="Isart Digital" height="150" width="330" /></a>
   </li>
 </ul>
 
