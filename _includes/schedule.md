@@ -10,7 +10,7 @@ All times are given in local time CEST. This program is subject to change (but n
 ### Saturday, June 29th 2013
  * 2PM : Tech talks
  * 8PM : Deadline for demos submission
- * 10PM : DEMOSHOW
+ * 10PM : COMPOS
 
 ### Sunday, June 30th 2013
  * 11AM : Competitions results
