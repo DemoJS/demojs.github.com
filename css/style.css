@@ -152,6 +152,15 @@ section .content{
   overflow-y        : auto;
 }
 
+
+.sponsors li {
+  display: inline-block;
+}
+.sponsors {
+  list-style: none;
+  text-align: center;
+}
+
 .background, .content{
   perspective: 500px;
 }
