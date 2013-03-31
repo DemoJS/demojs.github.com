@@ -13,7 +13,7 @@
  * [SoundBox lite](http://www.bitsnbites.eu/?p=155)&nbsp;: evolution of Sonant Js
     
 ### Frameworks
- * [fakeplasticcubes]("https://github.com/gasman/fakeplasticcubes")&nbsp;: a 9K demoscene intro in Javascript (and framework for future 4-64K intros)
+ * [fakeplasticcubes](https://github.com/gasman/fakeplasticcubes)&nbsp;: a 9K demoscene intro in Javascript (and framework for future 4-64K intros)
 
 ## All compos
 
