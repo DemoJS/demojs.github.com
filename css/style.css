@@ -19,25 +19,29 @@ a {
   -ms-transition: color 500ms;
   transition: color 500ms;
 }
-a:hover{
-  color : inherit;
+a{
+  text-decoration: none;
 }
-li:nth-child(6n):hover{
+a:hover{
+  color           : inherit;
+  text-decoration : underline;
+}
+li:nth-child(6n):hover a{
   color : red;
 }
-li:nth-child(6n+1):hover{
+li:nth-child(6n+1):hover a{
   color : orange;
 }
-li:nth-child(6n+2):hover{
+li:nth-child(6n+2):hover a{
   color : yellow;
 }
-li:nth-child(6n+3):hover{
+li:nth-child(6n+3):hover a{
   color : green;
 }
-li:nth-child(6n+4):hover{
+li:nth-child(6n+4):hover a {
   color : blue;
 }
-li:nth-child(6n+5):hover{
+li:nth-child(6n+5):hover a{
   color : purple;
 }
 
@@ -110,6 +114,12 @@ nav > .social{
 nav a {
   text-decoration : none;
   font-weight     : bold;
+}
+
+nav > img.logo{
+  position  : absolute;
+  top       : 2px;
+  left      : 25px;
 }
 
 .background{
