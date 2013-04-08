@@ -7,7 +7,13 @@
 
 After last year success (100+ sceners coming, 27 prods), we are thrilled to invite you the new release of DemoJS team : DEMOJS 2013 - JS Pride. 
 
-Little summary of the event to come : 
+[Check out our invitro](http://share.titeiko.com/js_pride/release/js-pride.html) [(Also on Pouet)](http://www.pouet.net/prod.php?which=61280)
+
+<a href="http://www.eventbrite.com/event/6080656407?ref=ebtnebregn" target="_blank"><img src="http://www.eventbrite.com/custombutton?eid=6080656407" alt="Eventbrite - DemoJS 2013 - JS pride" /></a>
+
+<hr/>
+
+## Highlights of the week-end 
 
  * starts friday June 28th @ 8PM CEST
  * ends sunday June 30th @ noon CEST
@@ -20,6 +26,3 @@ Little summary of the event to come :
  * Concerts
  * Friendly atmosphere
  * And more…
-
-<a href="http://www.eventbrite.com/event/6080656407?ref=ebtnebregn" target="_blank"><img src="http://www.eventbrite.com/custombutton?eid=6080656407" alt="Eventbrite - DemoJS 2013 - JS pride" /></a>
-

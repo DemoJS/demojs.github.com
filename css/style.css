@@ -174,7 +174,14 @@ section .content{
 }
 
 p:nth-child(1) {
-  text-align:center
+  text-align  : center;
+  width       : 50%;
+  float       : left;
+}
+
+hr {
+  clear     : both;
+  visibility: hidden;
 }
 
 .bus{
