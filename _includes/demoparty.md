@@ -4,7 +4,7 @@
 ## Demoscene? Demoparty?
 The demoscene is a computer art subculture that specializes in producing demos, which are audio-visual presentations that run in real-time on a computer. Demosceners are coders, graphic artists, computer musicians… [More infos on wikipedia](http://en.wikipedia.org/wiki/Demoscene)
 
-A demoparty is an event that gathers demosceners and other computer enthusiasts to socialize and compete. You can find more about demoparties (onwikipedia)[http://en.wikipedia.org/wiki/Demoparty] 
+A demoparty is an event that gathers demosceners and other computer enthusiasts to socialize and compete. You can find more about demoparties [on wikipedia](http://en.wikipedia.org/wiki/Demoparty) 
         
 Indeed, **competitions, or "compos", are the main feature of a demoparty**&nbsp;: the productions made by the demosceners are shown on the bigscreen, then the public vote to rank them. 
 
