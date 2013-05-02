@@ -34,6 +34,7 @@
     
 
 ### Tools
+ * [jsRocket] (https://github.com/mog/jsRocket) **recommended**&nbsp;: to easily sync your demos!
  * [ShaderToy](http://www.iquilezles.org/apps/shadertoy/)&nbsp;: play with shaders + a lot of examples
  * [GLSL sandbox](http://glsl.heroku.com/)&nbsp;: Same as above, with different samples 
  * [WebGLU](https://github.com/OneGeek/WebGLU)
@@ -84,5 +85,5 @@ If you are a lonely coder looking for a soundtrack or some graphics for a demo/i
  * [Pouet.net BBS](http://pouet.net/bbs.php)
  * [DemoJS team](mailto:contact@demojs.org)&nbsp;: feel free to drop us an email
 
-Also, don't forget, DemoJS is a friendly place with friendly people where you can find help; don't hesitate to ask people around you!.
+Also, don't forget, DemoJS is a friendly place with friendly people where you can find help; don't hesitate to ask people around you!
 
