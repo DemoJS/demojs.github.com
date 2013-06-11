@@ -163,6 +163,7 @@ section .content{
 
 .sponsors li {
   display: inline-block;
+  vertical-align:middle;
 }
 .sponsors {
   list-style: none;

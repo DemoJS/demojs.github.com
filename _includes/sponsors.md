@@ -5,18 +5,40 @@
 
 <ul class="sponsors"> 
   <li>
-    <a href="http://www.isartdigital.com/"><img src="images/ISARTdigital.png" alt="Isart Digital" height="150" width="330" /></a>
+    <a href="http://www.isartdigital.com/">
+        <img src="images/ISARTdigital.png" alt="Isart Digital" width="330" />
+    </a>
   </li>
 </ul>
+
+## Main sponsors
+
+<ul class="sponsors"> 
+  <li>
+    <a href="http://www.visibrain.com/">
+        <img src="images/visibrain.jpg" alt="Visibrain"  width="330" />
+    </a>
+  </li>
+  <li>
+    <a href="http://www.prologin.org/">
+        <img src="images/prologin.png" alt="Prologin"  width="330" />
+    </a>
+  </li>
+</ul>
+
 
 ## Organization partners
 
 <ul class="sponsors"> 
   <li>
-    <a href="http://www.popsyteam.org/"><img src="images/logo_popsy2.png" alt="Popsy team" height="100" width="154" /></a>
+    <a href="http://www.popsyteam.org/">
+        <img src="images/popsyteam_sd.png" alt="Popsy team" width="100" />
+    </a>
   </li>
   <li>
-    <a href="http://www.parisjs.org/"><img src="images/parisjsLogo_white.png" alt="ParisJS" height="100" width="100" /></a>
+    <a href="http://www.parisjs.org/">
+        <img src="images/parisjsLogo_white.png" alt="ParisJS" height="100" width="100" />
+    </a>
   </li>
 </ul>
 
