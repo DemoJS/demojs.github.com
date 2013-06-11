@@ -85,13 +85,13 @@ A DemoJS’s panel will give special awards to compos chosen based on the follow
  * **The most original demo**&nbsp;: Unusual browser technologies and original concepts will be appreciated.
 
 ### Prizes
-We will have various prizes from our sponsors to offer:
+We have some bounties from our sponsors to offer to the winners:
 
- * a 3D printed trophy for the top 3 entries of each compo
- * free tickets to [Evoke] (http://www.evoke.eu/2013/), [Demodays] (http://demodays.org/) and [DotJS] (http://www.dotjs.eu/)
- * Goodies: hoodies, t-shirt, USB keys, ...
+ * a **3D printed trophy** for the top 3 entries of each compo
+ * **free tickets** to [Evoke](http://www.evoke.eu/2013/), [Demodays](http://demodays.org/) and [DotJS](http://www.dotjs.eu/)
+ * **Goodies**: hoodies, t-shirt, USB keys, ...
 
-But most importantly, you will obtain PRIDE of winning a recognized challenge in the JS and demoscene communities!
+But most importantly, you will obtain **PRIDE** of winning a recognized challenge in the JS and demoscene communities!
 
 ## Questions?
 If you have any question about the rules, drop us an email: [contact@demojs.org](mailto:contact@demojs.org).
