@@ -86,6 +86,7 @@ A DemoJS’s panel will give special awards to compos chosen based on the follow
 
 ### Prizes
 We will have various prizes from our sponsors to offer:
+
  * a 3D printed trophy for the top 3 entries of each compo
  * free tickets to [Evoke] (http://www.evoke.eu/2013/), [Demodays] (http://demodays.org/) and [DotJS] (http://www.dotjs.eu/)
  * Goodies: hoodies, t-shirt, USB keys, ...
