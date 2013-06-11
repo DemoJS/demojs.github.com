@@ -11,6 +11,7 @@
  * The organizing team may disqualify entries that don’t follow the rules expressed here. If you have any questions regarding one of those rules, you can email us : rules@demojs.org.
  * You CAN start working on your production NOW. The production does NOT need to be made 100% at the party place.
  * Deadline is saturday june 29th @ 7PM CEST
+ * The visitors of the party will vote and chose the winners for each compo. 
 
 ## Compo machine
 
@@ -66,9 +67,15 @@ THE compo
  * Must be a non-interactive.
  * You can retrieve external content from the Internet, but it is at **your own risk**. We shall not be liable for connection problems during demo projection.
 
-### Fast prodz
-These compos will be focused on specific aspects of demos, such as 3D modeling or specific platforms, with a specific theme revealed the day of the demoparty. More on those will be announced soon.
+### 3D gfx fast compo
+This is a special compo in partnership with [SketchFab] (http://sketchfab.com)
+Sketchfab is a web service to publish and embed interactive 3D models on any web page, and display them in real-time without a plugin. Sketchfab natively supports 27 3D formats and is integrated with major 3D software platforms, allowing users to publish 3D models from their working tools to the web in 1 click.
 
+We will announce a theme on friday evening, and you will have 24 hours to create a 3D model and compete in this compo.
+
+To submit your entry, upload your model on sketchfab.com by 2013/06/29 at 19:00 CET with the tag demojs.
+
+Winners will get SketchFab licenses and gooodies.
 
 ### Special prizes
 

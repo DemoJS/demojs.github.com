@@ -64,7 +64,7 @@
  * [Optimizing canvas](http://www.demoscene.fr/files/html5-optimiser-le-canvas.pdf) _french_&nbsp;:some advices to optimize canvas performance
 
 ## JS demo examples
- * [DemoJS 2012 invitation](http://pouet.net/prod.php?which=59071)
+ * [DemoJS 2012 productions](http://pouet.net/party.php?which=1570&when=2012)
  * [DemoJS 2011 productions](/2011/#results) 
  * [JS1k](http://js1k.com)&nbsp;: the original JS 1K intro competition
  * [WebGL ports of classics](http://baktery.appspot.com/index.html)
