@@ -77,12 +77,20 @@ To submit your entry, upload your model on sketchfab.com by 2013/06/29 at 19:00 
 
 Winners will get SketchFab licenses and gooodies.
 
-### Special prizes
+### Special awards
 
 A DemoJS’s panel will give special awards to compos chosen based on the following criteria :
 
  * **The most browser-compatible demo**&nbsp;: The whole world does not use last version of Chrome, and compatibility between browsers remains a key issue of web development. Also we prefer well-coded generic demos that behave equal in all browsers, than demos which works nice because of browser specific hacks.
  * **The most original demo**&nbsp;: Unusual browser technologies and original concepts will be appreciated.
+
+### Prizes
+We will have various prizes from our sponsors to offer:
+* a 3D printed trophy for the top 3 entries of each compo
+* free tickets to [Evoke] (http://www.evoke.eu/2013/), [Demodays] (http://demodays.org/) and [DotJS] (http://www.dotjs.eu/)
+* Goodies: hoodies, t-shirt, USB keys, ...
+
+But most importantly, you will obtain PRIDE of winning a recognized challenge in the JS and demoscene communities!
 
 ## Questions?
 If you have any question about the rules, drop us an email: [contact@demojs.org](mailto:contact@demojs.org).
