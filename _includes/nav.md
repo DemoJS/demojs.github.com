@@ -4,5 +4,5 @@
 * [How to come](#come)
 * [Demoparty?](#demoparty)
 * [Help?](#tips)
-* [Rules](#compos)
+* [Compos](#compos)
 * [About us](#about)
