@@ -154,6 +154,7 @@ section .content{
   padding           : 50px;
   margin            : 50px;
   overflow-y        : auto;
+  -webkit-overflow-scrolling: touch; 
 }
 
 .content a {

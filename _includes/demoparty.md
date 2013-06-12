@@ -21,7 +21,7 @@ Our aim is to bring together the best of the two worlds (demoscene &amp; javascr
 
 If you are a beginner in web technologies, [here are some links](#tips) to help you. Also, you will find help at the party place, don't hesitate to ask people around you! 
 
-DemoJS 2013 has 3 competitions: **1K, 8k, and demo**. You don't need to be physically present at DemoJS to compete (of course, if you can, we strongly recommend to actually BE at the partyplace). All the details about the DemoJS competitions are on the [compos & rules page](#compo)
+DemoJS 2013 has 3 competitions: **1K, 8k, and demo**. You don't need to be physically present at DemoJS to compete (of course, if you can, we strongly recommend to actually BE at the partyplace). All the details about the DemoJS competitions are on the [compos & rules page](#compos)
 
 ## What to bring to a demoparty?
  * your computer
