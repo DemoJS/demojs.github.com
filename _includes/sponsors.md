@@ -26,8 +26,32 @@
   </li>
 </ul>
 
+## Compo sponsors
+<ul class="sponsors"> 
+  <li>
+    <a href="http://demodays.org/">
+        <img src="images/demodays.png" alt="Demodays demoparty"  height="100" />
+    </a>
+  </li>
+  <li>
+    <a href="http://www.echojs.com/">
+        <img src="images/echoJS.png" alt="EchoJS"  height="100" />
+    </a>
+  </li>
 
-## Organization partners
+  <li>
+    <a href="http://www.evoke.eu/">
+        <img src="images/Evoke.jpg" alt="Evoke demoparty"  height=100 />
+    </a>
+  </li>
+  <li>
+    <a href="https://sketchfab.com/">
+        <img src="images/sketchfab.png" alt="Sketchfab"  height="100" />
+    </a>
+  </li>
+</ul>
+
+## Organization and comm' partners
 
 <ul class="sponsors"> 
   <li>
@@ -37,10 +61,11 @@
   </li>
   <li>
     <a href="http://www.parisjs.org/">
-        <img src="images/parisjsLogo_white.png" alt="ParisJS" height="100" width="100" />
+        <img src="images/parisjsLogo_white.png" alt="ParisJS" height="75"  />
     </a>
   </li>
 </ul>
+
 
 ## Be part of the team
 
