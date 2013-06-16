@@ -55,6 +55,11 @@
 
 <ul class="sponsors"> 
   <li>
+    <a href="http://www.demoscene.fr/">
+        <img src="images/demoscenefr.png" alt="Demoscene.fr" height="44"  />
+    </a>
+  </li>
+  <li>
     <a href="http://www.popsyteam.org/">
         <img src="images/popsyteam_sd.png" alt="Popsy team" width="100" />
     </a>
