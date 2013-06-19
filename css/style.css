@@ -161,14 +161,15 @@ section .content{
   text-decoration : underline;
 }
 
+.sponsors {
+  list-style: none;
+  text-align: center;
+  background: #fff;
+}
 
 .sponsors li {
   display: inline-block;
   vertical-align:middle;
-}
-.sponsors {
-  list-style: none;
-  text-align: center;
 }
 
 .background, .content{

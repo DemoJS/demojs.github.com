@@ -15,13 +15,18 @@
 
 <ul class="sponsors"> 
   <li>
-    <a href="http://www.visibrain.com/">
-        <img src="images/visibrain.jpg" alt="Visibrain"  width="330" />
+    <a href="http://www.mozilla.org/">
+        <img src="images/mozilla.png" alt="Mozilla"  width="330" />
     </a>
   </li>
   <li>
     <a href="http://www.prologin.org/">
         <img src="images/prologin.png" alt="Prologin"  width="330" />
+    </a>
+  </li>
+  <li>
+    <a href="http://www.visibrain.com/">
+        <img src="images/visibrain.jpg" alt="Visibrain"  width="330" />
     </a>
   </li>
 </ul>
@@ -60,13 +65,18 @@
     </a>
   </li>
   <li>
+    <a href="http://www.parisjs.org/">
+        <img src="images/parisjsLogo_white.png" alt="ParisJS" height="75"  />
+    </a>
+  </li>
+  <li>
     <a href="http://www.popsyteam.org/">
         <img src="images/popsyteam_sd.png" alt="Popsy team" width="100" />
     </a>
   </li>
   <li>
-    <a href="http://www.parisjs.org/">
-        <img src="images/parisjsLogo_white.png" alt="ParisJS" height="75"  />
+    <a href="http://www.amigavibes.org/">
+        <img src="images/amigavibes.jpg" alt="Amiga vibes" height="75"  />
     </a>
   </li>
 </ul>
