@@ -68,7 +68,7 @@ THE compo
  * You can retrieve external content from the Internet, but it is at **your own risk**. We shall not be liable for connection problems during demo projection.
 
 ### 3D gfx fast compo
-This is a special compo in partnership with [SketchFab] (http://sketchfab.com)
+This is a special compo in partnership with [SketchFab](http://sketchfab.com)
 Sketchfab is a web service to publish and embed interactive 3D models on any web page, and display them in real-time without a plugin. Sketchfab natively supports 27 3D formats and is integrated with major 3D software platforms, allowing users to publish 3D models from their working tools to the web in 1 click.
 
 We will announce a theme on friday evening, and you will have 24 hours to create a 3D model and compete in this compo.
