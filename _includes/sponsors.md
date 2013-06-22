@@ -54,6 +54,11 @@
         <img src="images/sketchfab.png" alt="Sketchfab"  height="100" />
     </a>
   </li>
+  <li>
+    <a href="http://dotjs.eu/">
+        <img src="images/dotjs.png" alt="Dot JS conference"  height="100" />
+    </a>
+  </li>
 </ul>
 
 ## Organization and comm' partners
