@@ -5,8 +5,6 @@
  *********/
 
 jQuery( function($){
-  var oldHashLocation = location.hash;
-  location.hash = "";
 
   function resizeSections(){
     var height  = window.innerHeight,
@@ -73,7 +71,11 @@ jQuery( function($){
     }, {});
 
     window.onhashchange = function(e){
-      var f         = fForLinks[location.hash],
+      window.moveToHash(location.hash);
+    };
+
+    window.moveToHash = function(hash){
+      var f         = fForLinks[hash],
           functions = f?f:fForLinks["#index"];
       $links.removeClass("current");
       functions[3].addClass("current");
@@ -86,8 +88,8 @@ jQuery( function($){
         $container.css("transform", "translate("+functions[2][0]+", "+functions[2][1]+")");
       });
     };
-
   }
+
 
   function setupBackground(){
     var $bg = $(".background");
@@ -115,7 +117,7 @@ jQuery( function($){
   window.onresize = _.debounce( resizeSections , 200);
 
   setTimeout(function(){
-      location.hash = oldHashLocation;
+      window.moveToHash(location.hash);
   }, 50);
 
 })
