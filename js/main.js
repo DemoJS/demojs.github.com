@@ -4,6 +4,16 @@
  *
  *********/
 
+// Request animation frame polyfill by Paul Irish... 
+window.requestAnimFrame = (function(){
+    return  window.requestAnimationFrame       ||
+            window.webkitRequestAnimationFrame ||
+            window.mozRequestAnimationFrame    ||
+            function( callback ){
+                          window.setTimeout(callback, 1000 / 60);
+            };
+})();
+
 jQuery( function($){
 
   function resizeSections(){
@@ -116,8 +126,9 @@ jQuery( function($){
   resizeSections();
   window.onresize = _.debounce( resizeSections , 200);
 
-  setTimeout(function(){
+  window.requestAnimFrame(function(){
       window.moveToHash(location.hash);
-  }, 50);
+      $(window.body).addClass("Loaded");
+  });
 
 })
