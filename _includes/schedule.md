@@ -12,17 +12,17 @@ All times are given in local time CEST. This program is subject to change (but n
 
 *Ninterido is a music project mainly oriented towards Chipmusic, demoscene and electronic. Check him out on [Soundcloud](https://soundcloud.com/ninterido)*
 
- * 10:45PM : Get inspired! A selection of demos by @Wullon and @cb
+ * 10:45PM : Get inspired! A selection of demos by [Wullon](https://twitter.com/gatuingt) and @cb
 
 ### Saturday, June 29th 2013
  * 2:00PM : Tech talks
- * 2:15PM : Syncing your demo is rocket science by Mog
+ * 2:15PM : Syncing your demo is rocket science by [Mog](https://twitter.com/mehmog)
 
 *There are a couple of ways to sync your demo to the music, some are more tedious than others - and of course the results differ. Let me show you what you could use to sync your demo, and how Rocket is the best tool for the job if you have 4k to spare*
 
  * 3:00PM : Matraka : lessons learnt in 4 weeks and 1k by [@P01](https://twitter.com/p01)
  * 3:55PM : Digital Artisanry: Passion between Lines of Code by [@romancortes](https://twitter.com/romancortes)
- * 4:40PM : To be announced 
+ * 4:40PM : ACME javascript demo generator by [@ehouais](https://twitter.com/ehouais)
  * 5:25PM : La renaissance de la demoscene (talk in french) by [JeFfR3y/VitalMotion](https://twitter.com/amigavibes) and [Hello/Sector One](https://twitter.com/hellosct1)
 
 *Dans toutes les productions industrielles, un produit fonctionne par cycle avec des hausses et des baisses d'activités.*
