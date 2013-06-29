@@ -14,7 +14,7 @@ After last year success (100+ sceners coming, 27 prods), we are thrilled to invi
 <hr/>
 
 ## Highlights of the week-end 
-
+ * <strong><a href="http://stream.demojs.org" target="_blank">live stream</a></strong>
  * **starts friday June 28th @ 8PM CEST**
  * **ends sunday June 30th @ noon CEST**
  * hosted by Isart DIGITAL, the videogame and 3D movie school
