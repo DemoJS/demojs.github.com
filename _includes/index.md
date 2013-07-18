@@ -14,7 +14,7 @@ After last year success (100+ sceners coming, 27 prods), we are thrilled to invi
 <hr/>
 
 ## Highlights of the week-end 
- * <strong><a href="http://stream.demojs.org" target="_blank">live stream</a></strong>
+ * DemoJS 2013 is over! Huge thanks to our partners: [ISART Digital](http://www.isartdigital.com), [Mozilla](http://www.mozilla.org), [Prologin](http://prologin.org), [Visibrain](http://www.visibrain.com) and [many others](#partners).
  * **starts friday June 28th @ 8PM CEST**
  * **ends sunday June 30th @ noon CEST**
  * hosted by Isart DIGITAL, the videogame and 3D movie school
