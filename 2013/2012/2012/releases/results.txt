@@ -1,0 +1,54 @@
+                           
+                >>> DemoJS 2012 results - http://demojs.org <<<                                           
+                                         
+ #rank Title - Groupname                               (number of points,
+                                                        showing order,
+                                                        remote?)
+
+BROWSER 1K
+   #1 MATRAKA - p01 / ribbon + 4mat / ate bit ....... (500pts, 14, remote)
+   #2 Smoke VS Structure - Rift ..................... (410pts, 13)
+   #3 spelunking - orbitaldecay ..................... (336pts, 2, remote)
+   #4 Bended - Log .................................. (285pts, 12)
+   #5 Morning Job - hexapode ........................ (275pts, 9)
+   #6 Nufl0wer - Straylight ......................... (262pts, 3, remote)
+   #7 adinpsz - 512 bytes ........................... (247pts, 1)
+   #8 raster 1k - Popsy Team ........................ (220pts, 7)
+   #9 Way of Css - bobylito ......................... (214pts, 8)
+  #10 TunnelMaze - Tarmil/Ctrl-Alt-Test ............. (210pts, 11)
+  #11 liquid pixel - Noctis ......................... (160pts, 10)
+  #12 La 3D en folie - Sector One ................... (155pts, 4)  
+  #13 SkrE7ch - Kane ................................ (126pts, 5)                                     
+  #14 Catarakt - Kane ............................... (104pts, 6)
+ 
+ Special prize:
+   DemoJS Matrix - Martin Amps ...................... (jury)
+     
+                                       
+BROWSER 10K
+   #1 mwwnwormer - Rift ............................. (182pts, 2)
+   #2 reborn - tmp in cooperation with adinpsz....... (170pts, 1)
+   #3 parsley state - tpolm ......................... (113pts, 3)
+   
+
+BROWSER WILD
+   #1 route101 - Siorki ............................. (246pts, 4, remote)
+   #2 1700 - kalachnikov ............................ (195pts, 3)
+   #3 Minitel - yGG4x ............................... (85pts, 2)
+   #x macchina - 5013 ............................... (xxpts, 1, remote)
+   An inopportune chrome update during the saturday screwed up things for
+   macchina, which was shown without working audio (which is quite a bummer
+   for a generative music experiment!).
+   Don't forget to try the prod on your computer, and our apologies to 5013
+   for this inconvenience.
+   
+
+BROWSER DEMO
+   #1 Burnt - Game From Mars ........................ (219pts, 3)
+   #2 muf - trambz .................................. (179pts, 2)
+   #3 BIGintro - The Matadors ....................... (178pts, 5)
+   #4 peer pressure - bilotrip ...................... (113pts, 4, remote)
+   #5 mute - yGG4x .................................. (76pts, 1)
+   
+
+------------------------------------EOF-----------------------------------------

@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+<head>
+<title>DemoJS demoparty - Paris - 1st & 2nd July 2011</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+<link rel="shortcut icon" type="image/png" href="favicon.png" />
+<script src="lib/jquery.js"></script>
+<script src="lib/underscore.js"></script>
+</head>
+<body>
+
+<div id="container" itemscope itemtype="http://schema.org/Event">
+  <div id="logo"><h1 itemprop="name"><span class="logoFallback">Demo.js Paris</span></h1></div>
+  <div id="content" class="shadow" >
+ <h2>DemoJS demoparty - Paris - 1st & 2nd July 2011</h2>
+    <p>DemoJS party is a french <strong>demoparty focused on web technologies</strong> (JavaScript, Canvas, SVG, Audio... well everything in the web). The event is part of the <a href="http://mozillalabs.com/demoparty/paris">Mozilla Labs demoparty initiative</a>.</p>
+    <p>Coders and artists will gather in Paris during 2 days to socialize, party, and produce audiovisual web demos that will compete in three categories.</p>
+<ul>
+<li><strong>1st & 2nd july 2011</strong> (from friday 19:30 to saturday 23:30) (<a href="#schedule">schedule</a>)</li>
+<li><strong>@ ISART Digital</strong> - 2 rue de la Roquette (Passage du Cheval Blanc) - 75011 Paris (<a href="#map">map</a>)</li>
+<li><strong>3 compos:</strong> one effect, 1k, no limit. And <strong>cool prizes</strong>! (<a href="#compos">more infos</a>)</li>
+<li><strong>remote entries allowed (<a href="#remote">more infos</a>)</strong></li>
+<li><strong>conferences & workshops (<a href="#conf">more infos</a>)</strong></li>
+<li><strong>free entrance!</strong></li>
+<li><a href="#register">REGISTER NOW</a></li>
+</ul>
+<p>You can come on friday and sleep at the party place, or arrive on saturday.</p>
+<p>Contact us by <a href="contact@demojs.org">email</a>, on <a href="http://twitter.com/demojsorg">Twitter</a> (hashtag: <a href="http://search.twitter.com/search?q=%23demojs">#demojs</a>), on <a href="https://www.facebook.com/pages/DemoJS/173071902751973">Facebook</a> (<a href="https://www.facebook.com/event.php?eid=226012780761812">event</a>) or on <a href="irc://irc.freenode.net/demojs">IRC</a> (#demojs on Freenode).</p>
+
+<br />
+<h2 id="demoscene">Demoscene? Demoparty?</h2>
+<p>The demoscene is a computer art subculture that specializes in producing demos, which are non-interactive audio-visual presentations that run in real-time on a computer. Demosceners are coders, graphicians, computer musicians... (<a href="http://en.wikipedia.org/wiki/Demoscene">more infos</a>)</p>
+<p>A demoparty is an event that gathers demosceners and other computer enthusiasts to compete in competitions (<a href="http://en.wikipedia.org/wiki/Demoparty">more infos</a>).</p>
+<p>DemoJS demoparty is a demoparty specialized in web technologies. We welcome both experienced demosceners and people who have never been to a demoparty.</p>
+<p>If you are a beginner in web technologies, <a href="#beginner">here are some links</a> to help you. Also, you will find help at the party place, feel free to ask around you!</p>
+
+
+<br />
+<h2 id="schedule">Schedule</h2>
+<ul class="schedule">
+<li>friday <strong>19:30 - <em>party starts!</em></strong></li>
+<li>saturday <strong>10:00 - <em>breakfast</em></strong></li>
+<li>saturday <strong>14:00 > 17:00 - <em>conferences</em></strong></li>
+<li>saturday <strong>19:00 - <em>deadline for remote entries</em></strong></li>
+<li>saturday <strong>20:00 - <em>deadline for party entries</em></strong></li>
+<li>saturday <strong>21:00 - <em>entries are shown on the bigscreen!</em></strong></li>
+<li>saturday <strong>22:00 - <em>public vote</em></strong></li>
+<li>saturday <strong>23:00 - <em>prizegiving</em></strong></li>
+<li>saturday <strong>23:00 - <em>party ends</em></strong></li>
+</ul>
+
+<br />
+<h2 id="map">Venue: Isart Digital - right next to the Opera Bastille</h2>
+    <p>
+    <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.fr/maps?f=q&amp;source=s_q&amp;hl=fr&amp;geocode=&amp;q=ISART+DIGITAL,+Rue+de+la+Roquette,+Paris&amp;aq=0&amp;sll=46.75984,1.738281&amp;sspn=10.178118,19.204102&amp;ie=UTF8&amp;hq=ISART+DIGITAL,&amp;hnear=Rue+de+la+Roquette,+75011+Paris&amp;ll=48.856386,2.370901&amp;spn=0.013553,0.027466&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
+    <br />
+    <a href="http://maps.google.fr/maps?f=q&amp;source=embed&amp;hl=fr&amp;geocode=&amp;q=ISART+DIGITAL,+Rue+de+la+Roquette,+Paris&amp;aq=0&amp;sll=46.75984,1.738281&amp;sspn=10.178118,19.204102&amp;ie=UTF8&amp;hq=ISART+DIGITAL,&amp;hnear=Rue+de+la+Roquette,+75011+Paris&amp;t=h&amp;ll=48.856386,2.370901&amp;spn=0.013553,0.027466&amp;z=15&amp;iwloc=A">zoom</a>
+    <p>
+
+
+<br />
+<h2 id="compos">Compos & prizes</h2>
+<p>Open Web technologies only, no plug-ins, no extras. The demo should not have been released previously, shoud not include copyrighted material, should work on the last version of Firefox & Chrome, and should work offline.</p>
+<ul>
+<li><strong>Single effect:</strong> one scene, one effect, max playing time of 60 seconds (<a href="http://plopbyte.net/webgl-particles-demo/">example</a>)</li>
+<li><strong>JavaScript 1k:</strong> play with a few bytes.</li>
+<li><strong>Full demo</strong>
+</ul>
+<p>Compo machines specs coming soon.</p>
+<p>The orga team reserve the right to disqualify entries that are inappropriate (pornography, illegal content, ...).</p>
+<p><strong>The winning demo of each category will be featured on <a href="http://mozillalabs.com">the Mozilla Labs website</a>.<br />
+We have also cool prizes for the top entries: books, tshirts, ...</strong></p>
+
+
+<br />
+<h2>Remote participation</h2>
+<p>
+<br />
+<h2 id="register">Register</h2>
+  <div id="registration">
+<iframe src="http://www.eventbrite.com/tickets-external?eid=1795958761&ref=etckt" frameborder="0" height="224" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
+      </div>
+
+<br />
+<h2 id="contast">Contact us</h2>
+<p>You can contact us:</p>
+<ul>
+<li>by email: <a href="mailto:contact@demojs.org">contact@demojs.org</a></li>
+<li>on Twitter: <a href="http://twitter.com/demojs.org">@demojsorg</a> (hashtag: <a href="http://search.twitter.com/search?q=%23demojs">#demojs</a>) </li>
+<li>on Facebook: <a href="https://www.facebook.com/pages/DemoJS/173071902751973">page</a> - <a href="https://www.facebook.com/event.php?eid=226012780761812">event</a></li>
+<li>on IRC: <a href="irc://irc.freenode.net">#demojs @ freenode</a></li>
+</ul>
+<p>Many thanks to the <a href="https://twitter.com/demojsorg/orga/members">orga team</a>, to <a href="http://twitter.com/tbx">@tbx</a> from Mozilla Labs and to <a href="http://m4de.com">@m4de</a> for the nice logo.</p>
+
+<br />
+<br />
+<br />
+
+<div class="center">
+<a href="http://mozillalabs.com"><img src="img/logoMozillaLabs_sd.png" alt="Mozilla Labs"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.demoscene.fr"><img src="img/logoDemoscenefr_sd.png" alt="Demoscene.fr"></a><br />
+<br />
+<a href="http://parisjs.org"><img alt="ParisJS community" src="img/logoParisJS_sd.png"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.isartdigital.com/"><img src="img/logoIsart_sd.png" alt="Isart Digital" /></a><br />
+<br />
+<a href="http://www.prologin.org"><img src="img/logoPrologin_sd.png" alt="Prologin" /></a>
+<br />
+</div>
+
+
+</div>
+
+<script>
+jQuery(function($){
+  $("a.moreInfos").click(function(e){
+    e.preventDefault();
+    e.stopPropagation();
+    var $link = $(this);
+    var target = $link.attr("href");
+    var $t = $(target);
+    $t.height( $t.height()===0?$t.attr("data-targetSize"):0);
+  });
+
+  $("p.moreInfos").each(function(i, elt){ 
+    var $elt = $(elt);
+    $elt.attr("data-targetSize", $elt.height());
+    $elt.height(0);
+  });
+/*
+  $.getJSON("registered.json.php", function(data){
+    console.log(data);
+    var $t = $("#public");
+    _.each(data.contestants, function(t){$t.append("<li>"+t+"</li>")}); 
+  });*/
+});
+</script>
+</body>
+</html>

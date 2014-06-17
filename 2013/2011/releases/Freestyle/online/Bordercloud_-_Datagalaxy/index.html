@@ -1,0 +1,97 @@
+<html>
+<head>
+<title>Graph Linked Open Data of Sparql.pro</title>
+<script language="javascript" type="text/javascript" src="yu-lod.js"></script>
+<script language="javascript">
+//tests offline
+  var requestGetSparqlDatasetJson ='data_tests/lod_datasets.json';
+  var requestGetSparqlLinksetJson ="data_tests/lod_links.json";
+
+/*
+var query_find_dataset = "PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>   " +
+"PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>   " +
+"PREFIX a:<http://en.sparql.pro/wiki/Special:URIResolver/>   " +
+"PREFIX prop:<http://en.sparql.pro/wiki/Special:URIResolver/Property:>   " +
+"PREFIX void:<http://rdfs.org/ns/void#> " +
+"PREFIX scovo:<http://purl.org/NET/scovo#> " +
+" " +
+"SELECT ?dataset ?label  ?numberOfTriples  ?typeDataset  " +
+"WHERE { " +
+"	?dataset 	rdf:type void:Dataset ; " +
+"				rdf:type ?typeDataset ; " +
+"				rdfs:label ?label ; " +
+"				rdf:type ?typeDataset . " +
+"	a:Graph_of_Linked_Open_Data prop:Type_of_dataset ?typeDataset . " +
+"	OPTIONAL { 	?dataset  void:statItem ?item. " +
+"				?item 	scovo:dimension void:numberOfTriples ; " +
+"						rdf:value ?numberOfTriples. }          " +
+"	}";
+
+var query_find_linkset = "PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#> " +
+"PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>   " +
+"PREFIX a:<http://en.sparql.pro/wiki/Special:URIResolver/>   " +
+"PREFIX prop:<http://en.sparql.pro/wiki/Special:URIResolver/Property:>   " +
+"PREFIX void:<http://rdfs.org/ns/void#> " +
+" " +
+"SELECT ?subset ?target ?triples " +
+"WHERE { " +
+"	?linkset 	rdf:type void:Linkset ; " +
+"				void:subset ?subset ; " +
+"				void:target ?target ; " +
+"				void:triples ?triples . " +
+"	?subset rdf:type ?typeDataset . " +
+"	a:Graph_of_Linked_Open_Data prop:Type_of_dataset ?typeDataset . " +
+"	?target rdf:type ?typeDatasetLinked . " +
+"	a:Graph_of_Linked_Open_Data prop:Type_of_dataset ?typeDatasetLinked . " +
+"	FILTER (?subset != ?target) " +
+"}" ;
+
+var endpointQueryJson = "http://"+window.location.hostname+"/sparql/?output=json&query=";
+var requestGetSparqlDatasetJson = endpointQueryJson + escape(query_find_dataset);
+var requestGetSparqlLinksetJson = endpointQueryJson + escape(query_find_linkset);
+*/
+</script>
+</head>
+<body  onload="init_lod(requestGetSparqlDatasetJson,requestGetSparqlLinksetJson);">
+<div style="position: relative;">
+<canvas id="lod"  onMousedown="ev_mousemove(event)"
+	style="position: fixed; left: 0; top: 0; z-index: 0;border-style:solid;border-width:1px;">test
+</canvas>
+<canvas id="lod_legend" 
+  	style="position: fixed; left: 0; top: 0; z-index: 1;border-style:solid;border-width:1px;"
+></canvas>
+
+<div id="logohtml"  >
+<a href="http://www.w3.org/html/logo/">
+<img src="html5-badge-h-graphics-multimedia-semantics.png"  border="0" width="197" height="64" alt="HTML5 Powered with Graphics, 3D &amp; Effects, Multimedia, and Semantics" title="HTML5 Powered with Graphics, 3D &amp; Effects, Multimedia, and Semantics">
+</a>
+</div>
+<div id="logo" >
+<a href="http://www.bordercloud.com">
+<img src="logo.png"  border="0"  alt="BorderCloud" title="BorderCloud">
+</a>
+</div>
+<canvas id="lod_tooltip" style="position: absolute;left: 0; top: 0; z-index: 2;">
+</canvas>
+</div>
+<div style="display: none;">
+<img id="canvas-image-bysa" width="68" height="22" src="by-sa.png"></img>
+<img id="canvas-image-wait" src="wait.png"></img>
+</div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-19098546-2']);
+  _gaq.push(['_setDomainName', '.sparql.pro']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
+
