@@ -1,7 +1,7 @@
 
 ![DemoJS](images/demojs_normal.png)
 
-Save the dates : 10-11 october 2014!
+Save the dates : 10-11 october 2014 in Paris!
 
 Stay tuned!
 
