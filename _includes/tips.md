@@ -35,6 +35,7 @@
 
 ### Tools
  * [jsRocket](https://github.com/mog/jsRocket) **recommended**&nbsp;: to easily sync your demos!
+ * [LeSequencer](https://github.com/kaneel/LeSequencer)&nbsp;: A simple sequencer written in javascript (convert the current ms into ticks and beats & more)  
  * [ShaderToy](http://www.iquilezles.org/apps/shadertoy/)&nbsp;: play with shaders + a lot of examples
  * [GLSL sandbox](http://glsl.heroku.com/)&nbsp;: Same as above, with different samples 
  * [WebGLU](https://github.com/OneGeek/WebGLU)
