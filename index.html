@@ -4,33 +4,31 @@ title: DEMOJS 2014
 ---
 
 <script id="2d-vertex-shader" type="x-shader/x-vertex">
-  attribute vec2 a_position;
+attribute vec2 a_position;
 
-  void main(){
-      gl_Position = vec4(a_position, 0, 1);
-    }
-    </script>
-    <script id="2d-fragment-shader" type="x-shader/x-fragment">
-    precision mediump float;
+void main(){
+  gl_Position = vec4(a_position, 0, 1);
+}
+</script>
+<script id="2d-fragment-shader" type="x-shader/x-fragment">
+precision mediump float;
 
-    uniform vec2 u_center;
-    uniform vec2 u_center2;
+uniform vec2 u_center;
+uniform vec2 u_center2;
 
-    void main(){
-      float v_comp1 = sin( (distance( gl_FragCoord.xy, u_center ) ) / 200.0 );
-      float v_comp2 = sin( gl_FragCoord.x / 200.0 );
-      float v_comp3 = sin( (distance( gl_FragCoord.xy, u_center2 ) ) / 200.0 );
-      float v_comp4 = (v_comp1 + v_comp2 + v_comp3) / 3.0 ;
-      gl_FragColor = vec4(
-      //0.2 + sin( (v_comp4 * 3.14) ) * 0.8,
-      0.53 + cos( (v_comp4 * 3.14) ) / 4.0 ,
-      0.5 + cos( (v_comp4 * 3.14) ) / 4.0 ,
-      0.5 + cos( (v_comp4 * 3.14) ) / 4.0 ,
-      //0.2,
-      1
-      );
-    }
-    </script>
+void main(){
+  float v_comp1 = sin( (distance( gl_FragCoord.xy, u_center ) ) / 200.0 );
+  float v_comp2 = sin( gl_FragCoord.x / 200.0 );
+  float v_comp3 = sin( (distance( gl_FragCoord.xy, u_center2 ) ) / 200.0 );
+  float v_comp4 = (v_comp1 + v_comp2 + v_comp3) / 3.0 ;
+  gl_FragColor = vec4(
+    0.53 + cos( (v_comp4 * 3.14) ) / 4.0 ,
+    0.5 + cos( (v_comp4 * 3.14) ) / 4.0 ,
+    0.4 + cos( (v_comp4 * 3.14) ) / 4.0 ,
+    1
+  );
+}
+</script>
 
 <div id="background"></div>
 
