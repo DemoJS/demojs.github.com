@@ -50,7 +50,7 @@ body {
 
 .wrapper > * {
   background  : #fff;
-  background  : rgba(255,255,255,0.2);
+  background  : transparent;
 }
 
 .wrapper > nav {
@@ -111,7 +111,7 @@ section {
 
 section .content{
   text-align        : center;
-  background        : rgba(255,255,255,0.9);
+  background        : transparent;
   -moz-box-sizing   : border-box;
   -webkit-box-sizing: border-box;
   box-sizing        : border-box;
