@@ -1,10 +1,14 @@
 *{
   letter-spacing  : 0.05em;
   word-spacing    : 0.1em;
+  color : #333;
 }
 
 html, body{
   height : 100%;
+}
+div{
+  background: black;
 }
 
 p, ol, ul, blockquote, pre, code{
@@ -27,25 +31,16 @@ a:hover{
   text-decoration : underline;
 }
 h1, h2, h3, h4, h5, h6 {
+  font-family: 'Exo', sans-serif;
   letter-spacing: -0.05em;
   color         : #606060;
 }
 
-h1 {
-  line-height : 0.5;
-}
-
-h2 {
-  line-height : 1; 
-}
-
-h3{
-  line-height : 1.28;
-}
 
 body {
 }
 .wrapper{
+  min-height:100%
 }
 
 .wrapper > * {
@@ -99,10 +94,6 @@ nav > img.logo{
 }
 
 #background{
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 0;
 }
 
 section {
@@ -110,20 +101,36 @@ section {
 }
 
 section .content{
+  width: 100%;
   text-align        : center;
-  background        : transparent;
+  background:#cfccc1;
   -moz-box-sizing   : border-box;
   -webkit-box-sizing: border-box;
   box-sizing        : border-box;
-  padding           : 50px;
-  margin            : 50px;
   overflow-y        : auto;
-  -webkit-overflow-scrolling: touch; 
+  -webkit-overflow-scrolling: touch;
+  text-align:left;
+}
+
+.content > h1 {
+  background:black;
+  margin-top: 0;
+  padding: 50px;
+}
+.content > *{
+  padding           : 0 50px;
 }
 
 #index{
   font-family: 'Exo', sans-serif;
   font-size:xx-large
+}
+
+#index .content{
+  background : transparent;
+  position : absolute;
+  top:0;
+  text-align:center;
 }
 
 #index ul {
@@ -135,7 +142,6 @@ section .content{
 #index a{
   text-decoration: none;
 }
-
 
 .content a {
   text-decoration : underline;
@@ -152,8 +158,9 @@ section .content{
   vertical-align:middle;
 }
 
-.background, .content{
-  perspective: 500px;
+.background{
+  overflow:hidden;
+  height:100%;
 }
 
 
@@ -217,3 +224,4 @@ hr {
 .m8{
   background-color:rgb(197, 163, 202);
 }
+
