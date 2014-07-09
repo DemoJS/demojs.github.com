@@ -142,9 +142,16 @@ section .content{
 #index a{
   text-decoration: none;
 }
+#index img{
+  max-width: 400px;
+  width: 100%;
+}
 
 .content a {
   text-decoration : underline;
+}
+.content div{
+  background: transparent;
 }
 
 .sponsors {

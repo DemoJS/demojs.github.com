@@ -53,3 +53,14 @@ title: DEMOJS 2014
       </div>
     </section>
   </div>
+
+  <div class="wrapper" >
+    <section >
+      <div class="content">
+        {% capture schedule %}
+          {% include schedule.md %}
+        {% endcapture %}
+        {{ schedule | markdownify }}
+      </div>
+    </section>
+  </div>
