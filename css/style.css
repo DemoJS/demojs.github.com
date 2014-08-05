@@ -6,6 +6,7 @@
 
 html, body{
   height : 100%;
+  background: black;
 }
 div{
   background: black;
@@ -48,17 +49,19 @@ body {
   background  : transparent;
 }
 
-.wrapper > nav {
-  position  : fixed;
-  top       : 2px;
-  left      : 0;
-  right     : 0;
+nav {
   z-index   : 100;
   padding   : 5px 50px;
 }
 
+nav.topNav {
+  position:fixed;
+  top:0;
+  left:0;
+}
+
 nav > ul {
-  padding-left: 50px;
+  padding: 0;
   margin : auto;
 }
 

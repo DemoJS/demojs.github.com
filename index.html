@@ -32,18 +32,35 @@ title: DEMOJS 2014
   </script>
 
   <div class="background" id="background"></div>
-  <section id="index">
-    <div class="content">
-      {% capture index %}
-      {% include index.md %}
-      {% endcapture %}
-      {{ index | markdownify }}
-    </div>
-  </section>
-
+    <section id="index">
+      <div class="content">
+        {% capture index %}
+        {% include index.md %}
+        {% endcapture %}
+        {{ index | markdownify }}
+      </div>
+    </section>
   </div>
 
+  <nav id="mainNav" class="undef">
+    {% capture nav %}
+    {% include nav.md %}
+    {% endcapture %}
+    {{ nav | markdownify }}
+  </nav>
+
   <div class="wrapper" >
+    <section >
+      <div class="content">
+        {% capture demoparty %}
+          {% include demoparty.md %}
+        {% endcapture %}
+        {{ demoparty | markdownify }}
+      </div>
+    </section>
+  </div>
+
+  <div class="wrapper">
     <section >
       <div class="content">
         {% capture come %}

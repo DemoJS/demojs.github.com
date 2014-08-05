@@ -1,8 +1,6 @@
-* [Welcome!](#index)
-* [Partners](#partners)
-* [Schedule](#schedule)
+
+* [DemoJS](#index)
 * [How to come](#come)
-* [Demoparty?](#demoparty)
-* [Help?](#tips)
+* [Schedule](#schedule)
 * [Compos](#compos)
-* [About us](#about)
+* [Partners](#partners)

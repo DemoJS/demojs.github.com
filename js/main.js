@@ -14,7 +14,7 @@ window.requestAnimFrame = (function(){
   };
 })();
 
-jQuery( function($){
+document.addEventListener("DOMContentLoaded", function(){
 
   function createShaderFromScriptElement(doc, glCtx, scriptId){
     var shaderElt   = doc.getElementById(scriptId),
@@ -37,7 +37,7 @@ jQuery( function($){
     return shader;
   };
 
-  (function(container){
+  (function setupShaderStuff(container){
     var canvas  = document.createElement("canvas"),
         ctx     = canvas.getContext("experimental-webgl"),
         vShader = createShaderFromScriptElement(document, ctx, "2d-vertex-shader"),
@@ -93,4 +93,16 @@ jQuery( function($){
 
     container.appendChild(canvas);
   })(document.getElementById("background"));
+
+  (function setupNavBar( navElement ){
+    var checkNavBar = function check(){
+          var top = (document.documentElement && document.documentElement.scrollTop) ||
+                    document.body.scrollTop,
+              fullHeight = window.innerHeight;
+          if(top > fullHeight) navElement.className = "topNav";
+          else navElement.className = "flowNav";
+        };
+    checkNavBar();
+    window.addEventListener("scroll", _.throttle(checkNavBar, 60))
+  })(document.getElementById("mainNav"))
 })
