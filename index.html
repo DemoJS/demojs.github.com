@@ -63,7 +63,7 @@ title: DEMOJS 2014
   </div>
 
   <div class="wrapper">
-    <section >
+    <section id="come">
       <div class="content">
         {% capture come %}
           {% include come.md %}
@@ -74,12 +74,34 @@ title: DEMOJS 2014
   </div>
 
   <div class="wrapper" >
-    <section >
+    <section id="schedule">
       <div class="content">
         {% capture schedule %}
           {% include schedule.md %}
         {% endcapture %}
         {{ schedule | markdownify }}
+      </div>
+    </section>
+  </div>
+
+  <div class="wrapper" >
+    <section id="compos">
+      <div class="content">
+        {% capture compos %}
+          {% include compos.md %}
+        {% endcapture %}
+        {{ compos | markdownify }}
+      </div>
+    </section>
+  </div>
+
+  <div class="wrapper" >
+    <section id="partners">
+      <div class="content">
+        {% capture sponsors %}
+          {% include sponsors.md %}
+        {% endcapture %}
+        {{ sponsors | markdownify }}
       </div>
     </section>
   </div>
