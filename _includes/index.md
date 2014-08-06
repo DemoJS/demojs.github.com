@@ -3,7 +3,7 @@
 
 Save the dates : 10-11 october 2014 in Paris!
 
-<a href="#index">Learn more about DemoJS</a>
+<a href="#about">Learn more about DemoJS</a>
 
 <ul>
   <li>
