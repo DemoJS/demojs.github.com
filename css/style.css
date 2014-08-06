@@ -190,6 +190,10 @@ section .content{
   height:100%;
 }
 
+.background canvas{
+  display:block;
+}
+
 
 hr {
   clear     : both;
