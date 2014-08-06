@@ -49,15 +49,31 @@ body {
   background  : transparent;
 }
 
+.navContainer {
+  position:relative;
+}
+
 nav {
   z-index   : 100;
   padding   : 5px 50px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 nav.topNav {
   position:fixed;
   top:0;
   left:0;
+}
+
+nav.flowNav {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+nav.spacing{
+  visibility:hidden;
 }
 
 nav > ul {

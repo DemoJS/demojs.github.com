@@ -88,21 +88,24 @@ document.addEventListener("DOMContentLoaded", function(){
           center  = ctx.uniform2f( centerLoc, x, y),
           center2 = ctx.uniform2f( centerLoc2, x2, y2);
       ctx.drawArrays(ctx.TRIANGLES, 0, 6);
-      requestAnimationFrame(update);
+      requestAnimFrame(update);
     });
 
     container.appendChild(canvas);
   })(document.getElementById("background"));
 
   (function setupNavBar( navElement ){
-    var checkNavBar = function check(){
+    var parent      = navElement.parentElement,
+        src         = parent.innerHTML.replace("mainNav", "").replace("undef", "spacing"),
+        checkNavBar = function check(){
           var top = (document.documentElement && document.documentElement.scrollTop) ||
                     document.body.scrollTop,
               fullHeight = window.innerHeight;
           if(top > fullHeight) navElement.className = "topNav";
           else navElement.className = "flowNav";
         };
+    parent.insertAdjacentHTML("beforeend", src);
     checkNavBar();
-    window.addEventListener("scroll", _.throttle(checkNavBar, 60))
+    window.addEventListener("scroll", requestAnimFrame.bind(window, checkNavBar))
   })(document.getElementById("mainNav"))
 })

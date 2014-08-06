@@ -42,12 +42,14 @@ title: DEMOJS 2014
     </section>
   </div>
 
-  <nav id="mainNav" class="undef">
-    {% capture nav %}
-    {% include nav.md %}
-    {% endcapture %}
-    {{ nav | markdownify }}
-  </nav>
+  <div class="navContainer">
+    <nav id="mainNav" class="undef">
+      {% capture nav %}
+      {% include nav.md %}
+      {% endcapture %}
+      {{ nav | markdownify }}
+    </nav>
+  </div>
 
   <div class="wrapper" >
     <section >
