@@ -108,4 +108,21 @@ document.addEventListener("DOMContentLoaded", function(){
     checkNavBar();
     window.addEventListener("scroll", requestAnimFrame.bind(window, checkNavBar))
   })(document.getElementById("mainNav"))
-})
+
+  //Smooth scrooll
+  // FIXME : this jQuery animate, and we do not like that
+  // Script originally found on http://css-tricks.com/snippets/jquery/smooth-scrolling/
+  $('a[href*=#]:not([href=#])').click(function(e) {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        window.location.href=this.hash;
+        e.preventDefault();
+      }
+    }
+  });
+});
