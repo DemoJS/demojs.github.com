@@ -54,11 +54,16 @@ body {
 }
 
 nav {
-  background: rgba(245, 245, 245, 0.88);
+  background: rgba(245, 245, 245, 0.70);
   z-index   : 100;
   padding   : 5px 50px;
   width: 100%;
   box-sizing: border-box;
+  transition: background 1s;
+}
+
+nav:hover{
+  background: rgba(245, 245, 245, 0.9);
 }
 
 nav.topNav {
@@ -136,6 +141,15 @@ section .content{
   background:black;
   margin-top: 0;
   padding: 50px;
+  border-bottom: 4px solid grey;
+/*
+ * Could use that for a neat effect...
+  background-attachment: fixed;
+  background-position: 80px 80px;
+  background-repeat:no-repeat;
+  background-image:url("/images/demojs_normal.png");
+  background-size:80px 80px
+*/
 }
 .content > *{
   padding           : 0 50px;
