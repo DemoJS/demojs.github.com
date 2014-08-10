@@ -141,6 +141,11 @@ section .content{
   padding           : 0 50px;
 }
 
+.content li {
+  list-style-type: square;
+  margin-left: 25px;
+}
+
 #index{
   font-family: 'Exo', sans-serif;
   font-size:xx-large
