@@ -120,7 +120,7 @@ document.addEventListener("DOMContentLoaded", function(){
         $('html,body').animate({
           scrollTop: target.offset().top
         }, 1000);
-        window.location.href=this.hash;
+        window.location.hash=this.hash;
         e.preventDefault();
       }
     }
