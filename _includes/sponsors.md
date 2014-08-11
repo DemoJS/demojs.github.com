@@ -9,6 +9,7 @@
   </li>
 </ul>
 
+<!--
 ## Main sponsors
 
 <ul class="sponsors"> 
@@ -58,6 +59,7 @@
     </a>
   </li>
 </ul>
+-->
 
 ## Organization and comm' partners
 
