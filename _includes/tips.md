@@ -1,6 +1,4 @@
 
-# Tools of the trade
-
 ## 1k || 8k
 
 ### Packers

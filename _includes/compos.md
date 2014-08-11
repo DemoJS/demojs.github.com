@@ -1,6 +1,4 @@
 
-# Rules
-
 ## General rules
 
  * Native browser web technologies only, like WebGL or Canvas. No plug-ins (e.g Flash or Silverlight), no extras.

@@ -1,9 +1,5 @@
 
-# Come to DemoJS - Paris, France
-
-## At Isart Digital : near Opéra Bastille
-
-<div><iframe style="width:100%; height:400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.fr/maps?f=q&amp;source=s_q&amp;hl=fr&amp;geocode=&amp;q=ISART+DIGITAL,+Rue+de+la+Roquette,+Paris&amp;aq=0&amp;sll=46.75984,1.738281&amp;sspn=10.178118,19.204102&amp;ie=UTF8&amp;hq=ISART+DIGITAL,&amp;hnear=Rue+de+la+Roquette,+75011+Paris&amp;ll=48.856386,2.370901&amp;spn=0.013553,0.027466&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe></div>
+<div class="map"><iframe style="width:100%; height:400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.fr/maps?f=q&amp;source=s_q&amp;hl=fr&amp;geocode=&amp;q=ISART+DIGITAL,+Rue+de+la+Roquette,+Paris&amp;aq=0&amp;sll=46.75984,1.738281&amp;sspn=10.178118,19.204102&amp;ie=UTF8&amp;hq=ISART+DIGITAL,&amp;hnear=Rue+de+la+Roquette,+75011+Paris&amp;ll=48.856386,2.370901&amp;spn=0.013553,0.027466&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe></div>
 
 <a href="http://maps.google.fr/maps?f=q&amp;source=embed&amp;hl=fr&amp;geocode=&amp;q=ISART+DIGITAL,+Rue+de+la+Roquette,+Paris&amp;aq=0&amp;sll=46.75984,1.738281&amp;sspn=10.178118,19.204102&amp;ie=UTF8&amp;hq=ISART+DIGITAL,&amp;hnear=Rue+de+la+Roquette,+75011+Paris&amp;t=h&amp;ll=48.856386,2.370901&amp;spn=0.013553,0.027466&amp;z=15&amp;iwloc=A">View this map on Google Map website</a>
 

@@ -1,6 +1,4 @@
 
-# Schedule
-
 ## Highlights of the party
 All times are given in local time CEST. This program is subject to change (but not that much). 
 

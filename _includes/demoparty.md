@@ -1,6 +1,4 @@
 
-# About DemoJS
-
 **We strongly recommend to take part in at least one competition**. Having YOUR production showed on the **bigscreen** in front of a relevant audience is awesome, and will fulfill your party experience.
 
 DemoJS is a [demoparty](http://en.wikipedia.org/wiki/Demoparty), but maybe not the one you expect :

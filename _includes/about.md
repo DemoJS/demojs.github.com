@@ -1,5 +1,3 @@
-    
-# About DemoJS
 
 ## Team
 DemoJS is brought to you by <a href="http://www.demoscene.fr" target="_blank">french demosceners</a> and JS coders from the <a href="http://parisjs.org/" target="_blank">Paris.js community</a>&nbsp;:

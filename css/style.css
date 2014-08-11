@@ -54,17 +54,13 @@ body {
 }
 
 nav {
-  background: rgba(245, 245, 245, 0.70);
+  background: rgba(245, 245, 245, 0.90);
   z-index   : 100;
   padding   : 5px 50px;
   width: 100%;
   box-sizing: border-box;
-  transition: background 1s;
 }
 
-nav:hover{
-  background: rgba(245, 245, 245, 0.9);
-}
 
 nav.topNav {
   position:fixed;
@@ -85,6 +81,7 @@ nav.spacing{
 nav > ul {
   padding: 0;
   margin : auto;
+  max-width: 670px;
 }
 
 nav > ul > li{
@@ -137,11 +134,13 @@ section .content{
   text-align:left;
 }
 
-.content > h1 {
+section > h1 {
   background:black;
   margin-top: 0;
   padding: 50px;
   border-bottom: 4px solid grey;
+  margin-bottom:0;
+  text-align:left;
 /*
  * Could use that for a neat effect...
   background-attachment: fixed;
@@ -151,8 +150,26 @@ section .content{
   background-size:80px 80px
 */
 }
+section > h1 > span {
+  max-width: 670px;
+  width: 100%;
+  display: block;
+  margin: auto;
+  color: #726A42;
+}
+
 .content > *{
   padding           : 0 50px;
+  max-width: 670px;
+  width: 100%;
+  display: block;
+  margin: 20px auto;
+  line-height: 2.5;
+
+}
+
+.content > p {
+  
 }
 
 .content li {
@@ -168,7 +185,7 @@ section .content{
 #index .content{
   background : transparent;
   position : absolute;
-  top:0;
+  top:70px;
   text-align:center;
 }
 
@@ -179,7 +196,8 @@ section .content{
   display:inline-block;
 }
 #index a{
-  text-decoration: none;
+  text-decoration: underline;
+  color: rgb(204, 86, 0);
 }
 #index img{
   max-width: 400px;
@@ -193,10 +211,18 @@ section .content{
   background: transparent;
 }
 
+.map{
+  padding:0;
+  max-width: 100%;
+  margin-top:0;
+}
+
 .sponsors {
   list-style: none;
   text-align: center;
   background: #fff;
+  max-width: 100%;
+  padding: 0;
 }
 
 .sponsors li {

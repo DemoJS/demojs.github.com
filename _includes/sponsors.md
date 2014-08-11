@@ -1,6 +1,4 @@
 
-# Partners
-
 ## Main event partners 
 
 <ul class="sponsors"> 
