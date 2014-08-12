@@ -5,11 +5,11 @@ Save the dates : 10-11 october 2014 in Paris!
 
 <a href="#about">Learn more about DemoJS</a>
 
-<ul>
+<ul class="social">
   <li>
-    <a href="https://www.facebook.com/DemoJS" ><i class="icon-facebook"></i></a>
+    <a href="https://www.facebook.com/DemoJS" target="_blank"><i class="fa fa-facebook-square"></i></a>
   </li> 
   <li>
-    <a href="https://twitter.com/demojsorg/" ><i class="icon-twitter"></i></a>
+    <a href="https://twitter.com/demojsorg/" target="_blank"><i class="fa fa-twitter-square"></i></a>
   </li>
 </ul>

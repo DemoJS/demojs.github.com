@@ -11,8 +11,8 @@
  * Bus : <span class="bus b86">86</span> <span class="bus b76">76</span> <span class="bus b65">65</span> <span class="bus b29">29</span> <span class="bus b20">20</span> <span class="bus b69">69</span> <span class="bus b87">87</span> 
  * Velib' (city bike rental) : <a href="http://en.velib.paris.fr/Stations-in-Paris/Find-a-station">Find a station</a>
 
-## Sleeping at the party place
-There will be a quiet room, <strong>both the friday night</strong> but nothing will be provided like bed or mattress.
+## Staying at the party place
+There will be a quiet room <strong>friday night</strong> but nothing will be provided like bed or mattress.
 
 ## Still lost?
 Feel free to reach us [by email](mailto:contact@demojs.org) if you have any other questions.

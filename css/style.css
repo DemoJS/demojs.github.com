@@ -41,7 +41,6 @@ h1, h2, h3, h4, h5, h6 {
 body {
 }
 .wrapper{
-  min-height:100%
 }
 
 .wrapper > * {
@@ -91,6 +90,11 @@ nav > ul > li{
 
 nav > ul.social > li{
   padding-right : 5px;
+}
+
+nav a:hover {
+  text-decoration:none;
+  border-bottom: 1px solid;
 }
 
 .social a:hover{
@@ -170,6 +174,14 @@ section > h1 > span {
 
 .content > p {
   
+}
+
+.content .chapo{
+  font-size: xx-large;
+  text-align: center;
+  padding: 100px;
+  font-weight: 100;
+  font-variant: small-caps;
 }
 
 .content li {
