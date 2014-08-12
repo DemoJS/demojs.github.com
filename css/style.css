@@ -7,6 +7,7 @@
 html, body{
   height : 100%;
   background: black;
+  font-family: 'Open Sans', sans-serif;
 }
 div{
   background: black;
@@ -163,7 +164,6 @@ section > h1 > span {
 }
 
 .content > *{
-  padding           : 0 50px;
   max-width: 670px;
   width: 100%;
   display: block;
@@ -179,7 +179,7 @@ section > h1 > span {
 .content .chapo{
   font-size: xx-large;
   text-align: center;
-  padding: 100px;
+  padding: 100px 0;
   font-weight: 100;
   font-variant: small-caps;
 }
@@ -197,8 +197,9 @@ section > h1 > span {
 #index .content{
   background : transparent;
   position : absolute;
-  top:70px;
+  top:0px;
   text-align:center;
+  min-height:100%;
 }
 
 #index ul {
