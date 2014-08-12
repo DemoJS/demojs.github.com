@@ -43,8 +43,9 @@ document.addEventListener("DOMContentLoaded", function(){
         vShader = createShaderFromScriptElement(document, ctx, "2d-vertex-shader"),
         fShader = createShaderFromScriptElement(document, ctx, "2d-fragment-shader"),
         program = ctx.createProgram(),
-        X       = window.innerWidth,
-        Y       = window.innerHeight;
+        contentSize = document.querySelector("#index .content").getBoundingClientRect();
+        X       = contentSize.width,
+        Y       = contentSize.height;
 
     canvas.width  = X;
     canvas.height = Y;
