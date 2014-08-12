@@ -1,21 +1,10 @@
 
-# Schedule
-
 ## Highlights of the party
-All times are given in local time CEST. This program is subject to change (but not that much). 
 
-### Friday, June 28th 2013
- * 8PM : doors open, sceners install their stuff and start coding
+The party starts friday evening and ends saturday night.
 
-### Saturday, June 29th 2013
- * 2PM : Tech talks
- * 8PM : Deadline for demos submission
- * 10PM : DEMOSHOW
+Friday is open to the sceners who want to polish (or start) their entries or to meet other sceners.
 
-### Sunday, June 30th 2013
- * 11AM : Competitions results
- * noon : The party ends
+Saturday is the day of the conferences during the afternoon and the demo competition at night.
 
-## Tech talks and concerts
-
-The complete program for the tech talks and concerts will announced soon.
+More detailed informations soon!

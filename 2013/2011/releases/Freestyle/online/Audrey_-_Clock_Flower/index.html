@@ -1,0 +1,422 @@
+<html>
+  <head>
+    <title>(: AU'GRAPH FLOWER CLOCK :)</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	
+    <script src="date.format.js" type="text/javascript"></script>
+    <script src="sylvester.js" type="text/javascript"></script>
+    <script src="glUtils.js" type="text/javascript"></script>
+    <script src="webgl-demo.js" type="text/javascript"></script>
+    <script src="ball.js" type="text/javascript"></script>
+	<script type="text/javascript" src="tdl/base.js"></script>
+	<script type="text/javascript" src="flower.js"></script>
+	<script type="text/javascript" src="postprocess.js"></script>
+
+	<style type="text/css" media="screen, print">
+		@font-face {
+		  font-family: "Street";
+		  src: url("STRLN___.ttf");
+		}
+		
+		body { background-color:#000000; font-family: "Street", sans-serif }
+	</style>
+	
+	
+  
+<script type="text/javascript">
+
+	//SOUND
+	var paused = false;
+	
+	//TEXT CLOCK
+	var textureCanvas ;
+	var textureCanvasContainer ;
+	var text;
+	var ctx ;
+	
+	function stoporplaysound() 
+	{
+		if(!paused)
+		{
+			paused = true;
+			document.getElementById("music").pause();
+			setOpacity(5);
+		}
+		else
+		{
+			paused = false;
+			document.getElementById("music").play();
+			setOpacity(100);
+		}
+	}
+
+	function setOpacity(value) {
+		document.getElementById("btnsound").style.opacity = value/10;
+		document.getElementById("btnsound").style.filter = 'alpha(opacity=' + value*10 + ')';
+	}
+		
+	
+	tdl.require('tdl.fast');
+	tdl.require('tdl.math');
+	tdl.require('tdl.primitives');
+	tdl.require('tdl.shader');
+	tdl.require('tdl.programs');
+	tdl.require('tdl.log');
+	tdl.require('tdl.models');
+	tdl.require('tdl.buffers');
+	tdl.require('tdl.framebuffers');
+	tdl.require('tdl.textures');
+	tdl.require('tdl.webgl');
+
+	var gl;
+	var canvas;
+	var aspect;
+	// Use this to refer to the backbuffer as if it were another framebuffer
+	var backbuffer;
+	var post;
+	var quad;
+	var g_postProc;
+	var up = new Float32Array([0, 1, 0]);
+	var output = alert;
+	var curBeat = 0;
+	var glTime = 0;
+	var objDiv;
+	if (!window.Float32Array) {
+	  // This just makes some errors go away when there is no WebGL.
+	  window.Float32Array = function() { };
+	}
+
+	function mainloop() 
+	{
+
+	  // Repeatedly run render(), attempt to hold 60 but the demo is
+	  // framerate independent so we will still keep sync even if we
+	  // lose frames.
+	  var bootTime = (new Date()).getTime();
+	  var singleEffect = new FlowerEffect();
+	  function render() {
+		tdl.webgl.requestAnimationFrame(render, canvas);
+		var now = ((new Date()).getTime() - bootTime) * 0.001;
+		var music_time = now;
+		aspect = canvas.clientWidth / canvas.clientHeight
+		var framebuffer = backbuffer;
+		singleEffect.render(framebuffer, music_time, g_postProc)
+	  }
+	  render();
+	}
+	function initializeGraphics() {
+		canvas = document.getElementById('render_area');
+		canvas.width = window.innerWidth;
+		canvas.height = window.innerHeight;
+		gl = tdl.webgl.setupWebGL(canvas);
+		if (!gl) {
+			return false;
+		}
+		aspect = canvas.clientWidth / canvas.clientHeight
+		quad = new QuadDrawer()
+		backbuffer = tdl.framebuffers.getBackBuffer(canvas)
+		post = new PostProcessor(canvas.width, canvas.height)
+		// Set some sane defaults.
+		gl.disable(gl.BLEND);
+		gl.depthFunc(gl.LEQUAL);
+		gl.blendFunc(gl.SRC_ALPHA, gl.ONE_MINUS_SRC_ALPHA);
+		return true;
+	}
+
+	function setSetting(id)
+	{
+		g_postProc = id;
+		for (var i = 0; i < 4; i++) {
+      //g_setSettingElements[i].style.color = "gray";
+		}
+	}
+	
+
+	function initflowerdep()
+	{
+		
+
+		startCube();
+		initsound();
+		initClock();
+		initball();
+		setSetting(1);
+		if(initializeGraphics()) 
+			mainloop();
+	}
+	function initball()
+	{
+		//var ball1 = new Ball(); 
+		//var myCanvasBall1 = document.getElementById('canvasBall1');
+		//ball1.vCtxBall  = document.getElementById('canvasBall1').getContext('2d');
+		//var ball2 = new Ball(document.getElementById(canvasBall2));
+		doDrawBall();
+		setTimeout("doDrawBall2()",3000);
+	}
+	function initsound()
+	{
+		music = document.getElementById("music");
+		music.peakData = { left : 0.5, right : 0.5 };
+		music.volume = 0.4;
+		music.play();
+	}
+	
+	function initWebGLTimeContainer() 
+	{
+		glTime = null;
+		var names = [ "webgl", "experimental-webgl", "moz-webgl", "webkit-3d" ];
+		for (var i=0; names.length>i; i++) {
+			try { 
+				glTime = textureCanvasContainer.getContext(names[i]);
+				if (glTime) { break; }
+			 } catch (e) { }
+		 }
+		// If we don't have a GL context, give up now
+	  if (!glTime) {
+		alert("Unable to initialize WebGL. Your browser may not support it.");
+	  }
+	}
+	function initClock()
+	{
+		textureCanvasContainer  = document.getElementById('canvas2DContainer');
+		textureCanvas  = document.getElementById('canvas2D');
+		initWebGLTimeContainer();
+		textureCanvas.width = window.innerWidth;
+		textureCanvas.height = 200;
+		ctx = textureCanvas.getContext("2d");
+		ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+		setInterval('displaytime()', 1000);
+	}
+	
+	function displaytime()
+	{
+		ctx.clearRect(0,0, ctx.canvas.width,ctx.canvas.height);
+		ctx.fillStyle = "#CBD9ED";
+		ctx.lineWidth = 4.5;
+		ctx.strokeStyle = "#E3E9EA";
+		ctx.save();
+		ctx.font = "40pt Street";
+		ctx.textAlign = "center";
+		ctx.textBaseline = "middle";
+		var leftOffset = ctx.canvas.width / 2;
+		var topOffset = ctx.canvas.height / 2;
+		
+		var now = new Date();
+		text = dateFormat(now, "dd mm yyyy h:MM:ss");
+		ctx.strokeText(text, leftOffset, topOffset);
+		ctx.fillText(text, leftOffset, topOffset);
+		ctx.restore();
+
+		// bind our canvas to a 2D texture
+		var textureCanvas = glTime.createTexture();
+		glTime.bindTexture(glTime.TEXTURE_2D, textureCanvas);
+		glTime.texImage2D(glTime.TEXTURE_2D, 0,glTime.RGBA, glTime.RGBA, glTime.UNSIGNED_BYTE, textureCanvas);
+		glTime.bindTexture(glTime.TEXTURE_2D, null);
+	}
+	</script>
+	
+	<script id="shader-fs" type="x-shader/x-fragment">
+	  #ifdef GL_ES
+	  precision highp float;
+	  #endif
+	  uniform vec4 uColor;
+
+	  varying float vLifetime;
+	  varying vec2 vTextureCoords;
+		varying lowp vec4 vColor;
+	  uniform sampler2D sTexture;
+		void main(void) 
+		{
+		gl_FragColor = vColor;
+		}
+	</script>
+
+	<script id="shader-vs" type="x-shader/x-vertex">
+		  uniform float uTime;
+		  uniform vec3 uCenterPosition;
+
+		  attribute float aLifetime;
+		  attribute vec3 aStartPosition;
+		  attribute vec3 aEndPosition;
+		  attribute vec2 aOffset;
+		  attribute vec2 aTextureCoords;
+
+		  varying float vLifetime;
+		  varying vec2 vTextureCoords;
+		 attribute vec3 aVertexPosition;
+			attribute vec4 aVertexColor;
+			
+			uniform mat4 uMVMatrix;
+			uniform mat4 uPMatrix;
+			  
+			varying lowp vec4 vColor;
+
+		  void main(void) 
+		  {
+		
+			gl_Position = uPMatrix * uMVMatrix * vec4(aVertexPosition, 1.0);
+			vColor = aVertexColor;
+			}
+	</script>
+
+   
+</head>
+<body onload="initflowerdep();" style="width:100%; height:100%; margin:0; padding:0;">
+	
+	<div id="sonwavball"></div>
+	<img onclick="stoporplaysound();" style="width:40px; cursor:pointer; z-index:100; position:absolute; top:5px; left:5px; " id="btnsound" src="play.png" />
+	<audio src="funk.ogg" id="music"></audio>
+    <div id="digitalclock" class="styling" style="z-index:1;"></div>
+	<canvas id="canvas2DContainer" style=" z-index:1; position:absolute; margin:auto; background-color: transparent; width: 100%; height: 100%;"></canvas>
+	<canvas id="render_area" style="  z-index:3; position:absolute; margin:auto; background-color: transparent; width: 100%; height: 100%;"></canvas>
+	<div align="center"  style=" vertical-align:bottom; position:absolute; z-index:2; bottom:5px; left:0; width:100%; height:100%; background-color: transparent;">
+		<canvas id="canvas2D" style=" vertical-align:bottom; width:100%; height:120px; background-color: transparent;" />
+	</div>
+	<!--<canvas id="canvasPieuvre" style="z-index:12; float:right; top:0px; right:30px; border: none; background-color: transparent;" width="400" height="400"></canvas>-->
+	<canvas id="canvasBall2" style="position:absolute;   z-index:10; top:0; left:0;  width:100%; height:100%; background-color: transparent;"></canvas>
+	<canvas id="canvasBall1" style="position:absolute;   z-index:10; top:0; left:0;  width:100%; height:100%; background-color: transparent;"></canvas>
+	<canvas id="canvasCube" style="position:absolute;   z-index:12; top:0; left:0;  width:100%; height:100%; background-color: transparent;"></canvas>
+	
+</body>
+  
+<script id="flower_fs" type="x-shader/x-fragment">
+  #ifdef GL_ES
+  precision highp float;
+  #endif
+  varying vec4 v_color;
+  void main(void) {
+    gl_FragColor = v_color;
+  }
+</script>
+
+<script id="flower_vs" type="x-shader/x-vertex">
+  attribute vec3 position;
+  attribute vec2 texCoord;
+
+  uniform vec4 u_color;
+  uniform vec4 u_color2;
+  uniform mat4 u_worldviewproj;
+  uniform float u_time;
+  varying vec4 v_color;
+  varying vec2 v_texCoord;
+
+  vec3 rotateX(vec3 v, float angle) {
+    float s = sin(angle);
+    float c = cos(angle);
+    return vec3(v.x, c * v.y + s * v.z, -s * v.y + c * v.z);
+  }
+  vec3 rotateY(vec3 v, float angle) {
+    float s = sin(angle);
+    float c = cos(angle);
+    return vec3(c * v.x + s * v.z, v.y, -s * v.x + c * v.z);
+  }
+  vec3 rotateZ(vec3 v, float angle) {
+    float s = sin(angle);
+    float c = cos(angle);
+    return vec3(c * v.x + s * v.y, -s * v.x + c * v.y, v.z);
+  }
+
+  void main(void) {
+    vec2 tc = texCoord;
+    v_texCoord = tc;
+    v_color = mix(u_color, u_color2, tc.x);
+    v_color *= v_color.w;
+    vec3 pos = rotateZ(rotateX(rotateY(position,
+       -u_time + tc.x*6.1), -u_time * 0.6 + tc.x*8.1), -u_time * 0.7 + tc.x*7.12);
+    // pos.x += sin(u_time - tc.x*3.0);
+    gl_Position = u_worldviewproj * vec4(pos, 1.0);
+  }
+</script>
+
+<script id="quad_vs" type="text/something-not-javascript">
+  attribute vec4 position;
+  varying vec4 v_position;
+  varying vec2 v_texCoord;
+  void main() {
+    vec2 tc = (position.xy + vec2(1.0, 1.0)) / 2.0;
+    v_texCoord = tc;
+    gl_Position = position;
+  }
+</script>
+
+<script id="blur_fs" type="text/something-not-javascript">
+  #ifdef GL_ES
+  precision highp float;
+  #endif
+  varying vec2 v_texCoord;
+  uniform vec2 blurSize;
+  uniform vec4 subtract;
+  uniform sampler2D mainSampler;
+  void main() {
+     vec4 sum = vec4(0.0);
+     sum += texture2D(mainSampler, v_texCoord - 4.0 * blurSize) * 0.05;
+     sum += texture2D(mainSampler, v_texCoord - 3.0 * blurSize) * 0.09;
+     sum += texture2D(mainSampler, v_texCoord - 2.0 * blurSize) * 0.12;
+     sum += texture2D(mainSampler, v_texCoord - 1.0 * blurSize) * 0.15;
+     sum += texture2D(mainSampler, v_texCoord                 ) * 0.16;
+     sum += texture2D(mainSampler, v_texCoord + 1.0 * blurSize) * 0.15;
+     sum += texture2D(mainSampler, v_texCoord + 2.0 * blurSize) * 0.12;
+     sum += texture2D(mainSampler, v_texCoord + 3.0 * blurSize) * 0.09;
+     sum += texture2D(mainSampler, v_texCoord + 4.0 * blurSize) * 0.05;
+     gl_FragColor = sum - subtract;
+  }
+</script>
+
+<script id="radial_vs" type="text/something-not-javascript">
+  attribute vec4 position;
+  attribute vec2 texCoord;
+  varying vec4 v_position;
+  varying vec2 v_texCoord0, v_texCoord1, v_texCoord2, v_texCoord3;
+  uniform float amount;
+  void main() {
+    vec2 tc = (position.xy + vec2(1.0, 1.0)) / 2.0;
+    // tc.y = 1.0 - tc.y;
+    v_texCoord0 = tc;
+    v_texCoord1 = 0.5 + (tc-0.5) * (1.0 / (1.0 + amount));
+    v_texCoord2 = 0.5 + (tc-0.5) * (1.0 / (1.0 + amount * 0.5));
+    v_texCoord3 = 0.5 + (tc-0.5) * (1.0 / (1.0 + amount * 1.5));
+    gl_Position = position;
+  }
+</script>
+
+<script id="radial_fs" type="text/something-not-javascript">
+  #ifdef GL_ES
+  precision highp float;
+  #endif
+  varying vec2 v_texCoord0, v_texCoord1, v_texCoord2, v_texCoord3;
+  uniform sampler2D mainSampler;
+  uniform float amount;
+  uniform float glow;
+  void main() {
+    vec4 c1 = texture2D(mainSampler, v_texCoord0);
+    vec4 c2 = texture2D(mainSampler, v_texCoord1);
+    vec4 c3 = texture2D(mainSampler, v_texCoord2);
+    vec4 c4 = texture2D(mainSampler, v_texCoord3);
+    gl_FragColor = (c1 + c2 + c3 + c4) * glow / 4.0;
+  }
+</script>
+
+<script id="copy_fs" type="text/something-not-javascript">
+  #ifdef GL_ES
+  precision highp float;
+  #endif
+  varying vec2 v_texCoord;
+  uniform sampler2D mainSampler;
+  void main() {
+    gl_FragColor = texture2D(mainSampler, v_texCoord);
+  }
+</script>
+
+<script id="add_fs" type="text/something-not-javascript">
+  #ifdef GL_ES
+  precision highp float;
+  #endif
+  varying vec2 v_texCoord;
+  uniform sampler2D mainSampler;
+  uniform sampler2D secondSampler;
+  void main() {
+    gl_FragColor = texture2D(mainSampler, v_texCoord) + texture2D(secondSampler, v_texCoord);
+  }
+</script>
+
+</html>

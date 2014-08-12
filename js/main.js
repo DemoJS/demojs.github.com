@@ -4,118 +4,125 @@
  *
  *********/
 
-jQuery( function($){
-  var oldHashLocation = location.hash;
-  location.hash = "";
+// Request animation frame polyfill by Paul Irish...
+window.requestAnimFrame = (function(){
+  return  window.requestAnimationFrame       ||
+  window.webkitRequestAnimationFrame ||
+  window.mozRequestAnimationFrame    ||
+  function( callback ){
+    window.setTimeout(callback, 1000 / 60);
+  };
+})();
 
-  function resizeSections(){
-    var height  = window.innerHeight,
-        width   = window.innerWidth;
-    $("section").css({
-        "height"  : height + "px", 
-        "width"   : width + "px"
-    });
-    $("section .content").css({
-        "height"  : (height - 100 ) + "px"
-    })
-  }
+document.addEventListener("DOMContentLoaded", function(){
 
+  function createShaderFromScriptElement(doc, glCtx, scriptId){
+    var shaderElt   = doc.getElementById(scriptId),
+        shaderSrc   = shaderElt.text,
+        shaderType  = (function(ctx, t){
+          if(t === "x-shader/x-vertex")        return ctx.VERTEX_SHADER;
+          else if(t === "x-shader/x-fragment") return ctx.FRAGMENT_SHADER;
+          else throw new Error("Can't guess the type of the shader with id "+scriptId);
+        })(glCtx, shaderElt.type),
+        shader      = glCtx.createShader(shaderType);
 
-  // 1 - place sections correctly (as defined in the markup)
+    glCtx.shaderSource(shader, shaderSrc);
+    glCtx.compileShader(shader);
 
-  function setupContainer( $container ){
-    $container.css({
-      position  : "absolute"
-    });
+    if(!glCtx.getShaderParameter(shader, glCtx.COMPILE_STATUS)){
+      console.log("shader " + shader + " failed with error : " + glCtx.getShaderInfoLog(shader));
+      throw new Error("fuckit!");
+    }
 
-    return $container;
-  }
+    return shader;
+  };
 
-  function setElementPosition(i, elt){
-    var $elt  = $(elt),
-        x     = $elt.data("x"),
-        y     = $elt.data("y");
-    $elt.css({
-      "position": "absolute",
-      "top"     : y+"px",
-      "left"    : x+"px"
-    });
-  }
+  (function setupShaderStuff(container){
+    var canvas  = document.createElement("canvas"),
+        ctx     = canvas.getContext("experimental-webgl"),
+        vShader = createShaderFromScriptElement(document, ctx, "2d-vertex-shader"),
+        fShader = createShaderFromScriptElement(document, ctx, "2d-fragment-shader"),
+        program = ctx.createProgram(),
+        X       = window.innerWidth,
+        Y       = window.innerHeight;
 
-  // 2 - Handler for moving around
-  //
-  function currentPosition(){
-  
-  }
+    canvas.width  = X;
+    canvas.height = Y;
 
-  function setupMove($container, $links, $bg){
-    var fForLinks = _.reduce($links, function(memo, link){
-      var $link         = $(link),
-          targetContent = $link.attr("href"),
-          $targetContent= $(targetContent),
-          offset        = $targetContent.position(),
-          translateX    = offset.left?"-"+offset.left+"px":"0",
-          translateY    = offset.top?"-"+offset.top+"px":"0",
-          bgTranslateX  = offset.left?"-"+(offset.left/2)+"px":"0",
-          bgTranslateY  = offset.top?"-"+(offset.top/2)+"px":"0",
-          zTransform    = Zanimo.transitionf("transform", "translate("+translateX+", "+translateY+")", 1000, "ease-in-out"),
-          bgTransform   = Zanimo.transitionf("transform", "translate("+bgTranslateX+", "+bgTranslateY+")", 1000, "ease-in-out");
+    ctx.viewport(0, 0, X, Y);
 
-      $targetContent.attr("id", targetContent + "_inactive");
-        
-      memo[targetContent] = [
-        zTransform, 
-        bgTransform,
-        [translateX, translateY],
-        $link
-      ];
-      return memo;
-    }, {});
+    ctx.attachShader(program, vShader);
+    ctx.attachShader(program, fShader);
 
-    window.onhashchange = function(e){
-      var f         = fForLinks[location.hash],
-          functions = f?f:fForLinks["#index"];
-      $links.removeClass("current");
-      functions[3].addClass("current");
-      Q.all( [
-        Zanimo($container[0]).then(functions[0]),
-        Zanimo($bg[0]).then(functions[1])
-      ]).fail(function(e){
-        console.log(e);
-        //If we can't do a transition, let's show the page at least :P
-        $container.css("transform", "translate("+functions[2][0]+", "+functions[2][1]+")");
-      });
-    };
+    ctx.linkProgram(program);
 
-  }
+    ctx.useProgram(program);
 
-  function setupBackground(){
-    var $bg = $(".background");
+    var posLoc    = ctx.getAttribLocation(program, "a_position"),
+        buffer    = ctx.createBuffer(),
+        centerLoc = ctx.getUniformLocation(program, "u_center"),
+        centerLoc2 = ctx.getUniformLocation(program, "u_center2");
 
-    $bg.css({
-      "height"  : "1000%",
-      "width"   : "1000%"
+    ctx.bindBuffer(ctx.ARRAY_BUFFER, buffer);
+    ctx.bufferData(
+        ctx.ARRAY_BUFFER,
+        new Float32Array([
+          -1.0, -1.0,
+          1.0, -1.0,
+          -1.0,  1.0,
+          -1.0,  1.0,
+          1.0, -1.0,
+          1.0,  1.0
+          ]),
+        ctx.STATIC_DRAW
+        );
+
+    ctx.enableVertexAttribArray(posLoc);
+    ctx.vertexAttribPointer(posLoc, 2, ctx.FLOAT, false, 0, 0);
+
+    requestAnimFrame(function update(){
+      var x       =  Math.sin( (new Date()).getTime() / 5000 ) * X,
+          y       =  Math.sin( (new Date()).getTime() / 5000 ) * Y,
+          x2      =  Math.sin( (new Date()).getTime() / 4000 ) * X,
+          y2      =  Math.sin( (new Date()).getTime() / 7000 ) * Y,
+          center  = ctx.uniform2f( centerLoc, x, y),
+          center2 = ctx.uniform2f( centerLoc2, x2, y2);
+      ctx.drawArrays(ctx.TRIANGLES, 0, 6);
+      requestAnimFrame(update);
     });
 
-    return $bg;
-  }
+    container.appendChild(canvas);
+  })(document.getElementById("background"));
 
-  function sendLinksToOtherWindow($links){
-    $links.attr("target", "_blank");
-  }
+  (function setupNavBar( navElement ){
+    var parent      = navElement.parentElement,
+        src         = parent.innerHTML.replace("mainNav", "").replace("undef", "spacing"),
+        checkNavBar = function check(){
+          var top = (document.documentElement && document.documentElement.scrollTop) ||
+                    document.body.scrollTop,
+              fullHeight = window.innerHeight;
+          if(top > fullHeight) navElement.className = "topNav";
+          else navElement.className = "flowNav";
+        };
+    parent.insertAdjacentHTML("beforeend", src);
+    checkNavBar();
+    window.addEventListener("scroll", requestAnimFrame.bind(window, checkNavBar))
+  })(document.getElementById("mainNav"))
 
-  var $container  = $("#content"),
-      $navLinks   = $("nav ul:first-child a"),
-      $bg         = setupBackground(),
-      $outLinks   = $("a[href^='http://'], a[href^='https://']");
-  setupContainer( $container ).find("section").each(setElementPosition);
-  setupMove($container, $navLinks, $bg);
-  sendLinksToOtherWindow($outLinks);
-  resizeSections();
-  window.onresize = _.debounce( resizeSections , 200);
-
-  setTimeout(function(){
-      location.hash = oldHashLocation;
-  }, 50);
-
-})
+  //Smooth scrooll
+  // FIXME : this jQuery animate, and we do not like that
+  // Script originally found on http://css-tricks.com/snippets/jquery/smooth-scrolling/
+  $('a[href*=#]:not([href=#])').click(function(e) {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        window.location.hash=this.hash;
+        e.preventDefault();
+      }
+    }
+  });
+});

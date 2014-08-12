@@ -1,6 +1,4 @@
 
-# Tools of the trade
-
 ## 1k || 8k
 
 ### Packers
@@ -34,6 +32,8 @@
     
 
 ### Tools
+ * [jsRocket](https://github.com/mog/jsRocket) **recommended**&nbsp;: to easily sync your demos!
+ * [LeSequencer](https://github.com/kaneel/LeSequencer)&nbsp;: A simple sequencer written in javascript (convert the current ms into ticks and beats & more)  
  * [ShaderToy](http://www.iquilezles.org/apps/shadertoy/)&nbsp;: play with shaders + a lot of examples
  * [GLSL sandbox](http://glsl.heroku.com/)&nbsp;: Same as above, with different samples 
  * [WebGLU](https://github.com/OneGeek/WebGLU)
@@ -63,7 +63,7 @@
  * [Optimizing canvas](http://www.demoscene.fr/files/html5-optimiser-le-canvas.pdf) _french_&nbsp;:some advices to optimize canvas performance
 
 ## JS demo examples
- * [DemoJS 2012 invitation](http://pouet.net/prod.php?which=59071)
+ * [DemoJS 2012 productions](http://pouet.net/party.php?which=1570&when=2012)
  * [DemoJS 2011 productions](/2011/#results) 
  * [JS1k](http://js1k.com)&nbsp;: the original JS 1K intro competition
  * [WebGL ports of classics](http://baktery.appspot.com/index.html)
@@ -84,5 +84,5 @@ If you are a lonely coder looking for a soundtrack or some graphics for a demo/i
  * [Pouet.net BBS](http://pouet.net/bbs.php)
  * [DemoJS team](mailto:contact@demojs.org)&nbsp;: feel free to drop us an email
 
-Also, don't forget, DemoJS is a friendly place with friendly people where you can find help; don't hesitate to ask people around you!.
+Also, don't forget, DemoJS is a friendly place with friendly people where you can find help; don't hesitate to ask people around you!
 

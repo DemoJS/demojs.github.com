@@ -1,0 +1,495 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr">
+	<head>
+		<meta name="author" content="!!M"/>
+		<meta name="description" content="!!M demojs 2011"/>
+		<meta name="keywords" content="demojs, webgl, opengl, intro, demo, demoscene"/>
+		<meta http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+		<title>!!M demojs 2011</title>
+		<script type="text/javascript" src="./js/glMatrix-0.9.5.min.js"/>
+		<style type="text/css" rel="stylesheet">
+			body
+			{
+				margin-top:			16px;
+				background-image:	url('./data/bkg.png');
+			}
+
+			.big
+			{
+				background-color:	#d0d0d0;
+				font-size:			xx-large;
+				font-weight:		bold;
+				display:			block;
+				text-align:			center;	
+			}
+
+			.tiny
+			{
+				background-color:	#d0d0d0;
+				font-size:			xx-small;
+				font-weight:		bold;
+				display:			block;
+				text-align:			center;	
+			}
+			
+			.spacer
+			{
+				display:	block;
+				margin-top:	32px;	
+			}
+
+			#mainContent
+			{
+				width:		800px;
+				display:	block;
+				margin:		0 auto;
+				text-align:	center;
+			}
+
+			#iimdemojs
+			{
+				border:		3px solid #c0c0c0;
+				width:		720px;
+				height:		480px;
+			}
+		</style>
+		<!--
+			SHADERS
+		-->
+		<script id="basicShader-fs" type="x-shader/x-fragment">
+			#ifdef GL_ES
+				precision highp float;
+			#endif
+
+			void main(void)
+			{
+				const float LOG2	= 1.442695;
+				const float density	= 0.0008;
+				float z				= gl_FragCoord.z / gl_FragCoord.w;
+				float fogFactor		= exp2(-density * density * z * z * LOG2);
+				fogFactor			= clamp(fogFactor, 0.0, 1.0);
+				
+				gl_FragColor		= mix(vec4(0.0,0.0,0.0,1.0), vec4(1.0,1.0,1.0,1.0), fogFactor);//vec4(1.0, 1.0, 1.0, 1.0);
+			}
+		</script>
+
+		<script id="basicShader-vs" type="x-shader/x-vertex">
+			attribute vec3 aVertexPosition;
+			attribute vec4 aVertexColor;
+
+			uniform mat4 uMVMatrix;
+			uniform mat4 uPMatrix;
+
+			void main(void)
+			{
+				gl_Position		= uPMatrix * uMVMatrix * vec4(aVertexPosition, 1.0);
+			}
+		</script>
+		
+		<script id="basicTexShader-fs" type="x-shader/x-fragment">
+			#ifdef GL_ES
+				precision highp float;
+			#endif
+
+			varying vec2		vTextureCoord;
+			uniform sampler2D	uSampler;
+
+			void main(void)
+			{
+				gl_FragColor = texture2D(uSampler, vec2(vTextureCoord.s, vTextureCoord.t));
+			}
+		</script>
+
+		<script id="basicTexShader-vs" type="x-shader/x-vertex">
+			attribute vec3 aVertexPosition;
+			attribute vec2 aTextureCoord;
+
+			uniform mat4	uMVMatrix;
+			uniform mat4	uPMatrix;
+			varying vec2	vTextureCoord;
+			
+			void main(void)
+			{
+				gl_Position = uPMatrix * uMVMatrix * vec4(aVertexPosition, 1.0);
+				vTextureCoord = aTextureCoord;
+			}
+		</script>
+
+		<!--
+			CODE
+		-->
+		<script type="text/javascript">
+		<![CDATA[
+			/*
+			 * !!M demojs
+			 * 2011
+			 */
+			var gl			= null;
+			var lastTime	= 0;
+		
+			// Projection matrix
+			var projMtx		= mat4.create();
+		
+			// Stars
+			var MAX_STARS	= 5000;
+			var MAX_Z		= 5000;
+			var starsData	= new Float32Array(MAX_STARS*3); // 3 float per vertices (XYZ)
+			var starsVBO;
+			var starsMtx	= mat4.create();
+			var starsRot	= 0.0;
+			var	starsMov	= 0.0;
+			var starsOffset	= -5000;	
+			
+			// Logo
+			var logoTexture;
+			var wasHereTexture;
+			var logoVBO;
+			var logoTexVBO;
+			var	logoOffset = -256.0;
+			var logoMtx = mat4.create();
+			
+			var logoVertices =
+			[
+				-128.0, -128.0,  0.0,
+				128.0, -128.0,  0.0,
+				128.0,  128.0,  0.0,
+				-128.0, -128.0,  0.0,
+				128.0,  128.0,  0.0,
+				-128.0,  128.0,  0.0		
+			];
+			
+			var logoTexCoords =
+			[
+				0.0, 0.0,
+				1.0, 0.0,
+				1.0, 1.0,
+				0.0, 0.0,
+				1.0, 1.0,
+				0.0, 1.0
+			]
+			
+			// Shaders
+			var basicShader;
+			var texShader;
+
+			/************************************************************
+			 * load a shader (vertex or fragment)
+			 */
+			function getShader(gl, id)
+			{
+				var shaderScript = document.getElementById(id);
+				if (!shaderScript)
+				{
+					return null;
+				}
+
+				var str	= "";
+				var k	= shaderScript.firstChild;
+				while (k)
+				{
+					if (k.nodeType == 3)
+					{
+						str += k.textContent;
+					}
+					k = k.nextSibling;
+				}
+
+				var shader;
+				if (shaderScript.type == "x-shader/x-fragment")
+				{
+					shader = gl.createShader(gl.FRAGMENT_SHADER);
+				}
+				else if (shaderScript.type == "x-shader/x-vertex")
+				{
+					shader = gl.createShader(gl.VERTEX_SHADER);
+				}
+				else
+				{
+					return null;
+				}
+
+				gl.shaderSource		(shader, str);
+				gl.compileShader	(shader);
+
+				if (!gl.getShaderParameter(shader, gl.COMPILE_STATUS))
+				{
+					alert(gl.getShaderInfoLog(shader));
+					return null;
+				}
+
+				return shader;
+			}
+
+			/************************************************************
+			 * create a gl texture
+			 */			
+		    function handleLoadedTexture(texture)
+			{
+				gl.bindTexture		(gl.TEXTURE_2D, texture);
+				gl.pixelStorei		(gl.UNPACK_FLIP_Y_WEBGL, true);
+				gl.texImage2D		(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, texture.image);
+				gl.texParameteri	(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
+				gl.texParameteri	(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR_MIPMAP_LINEAR);
+				gl.generateMipmap	(gl.TEXTURE_2D);
+				gl.bindTexture		(gl.TEXTURE_2D, null);
+			}
+	
+			/************************************************************
+			 * Set some states and initialize whole bullshit
+			 */
+			function initGL()
+			{
+				// init some shaders
+				var fragmentShader;
+				var vertexShader;
+
+				// Basic
+				fragmentShader	= getShader(gl, "basicShader-fs");
+				vertexShader	= getShader(gl, "basicShader-vs");
+				basicShader			= gl.createProgram();
+				gl.attachShader		(basicShader, vertexShader);
+				gl.attachShader		(basicShader, fragmentShader);
+				gl.linkProgram		(basicShader);
+				if (!gl.getProgramParameter(basicShader, gl.LINK_STATUS))
+				{
+				    alert("Could not initialise shaders");
+				}			
+				gl.useProgram							(basicShader);
+				basicShader.vertexPositionAttribute		= gl.getAttribLocation(basicShader, "aVertexPosition");
+				gl.enableVertexAttribArray				(basicShader.vertexPositionAttribute);
+				basicShader.pMatrixUniform				= gl.getUniformLocation(basicShader, "uPMatrix");
+				basicShader.mvMatrixUniform				= gl.getUniformLocation(basicShader, "uMVMatrix");
+
+				// Textured
+				fragmentShader	= getShader(gl, "basicTexShader-fs");
+				vertexShader	= getShader(gl, "basicTexShader-vs");
+				texShader		= gl.createProgram();
+				gl.attachShader	(texShader, vertexShader);
+				gl.attachShader	(texShader, fragmentShader);
+				gl.linkProgram	(texShader);
+				if (!gl.getProgramParameter(texShader, gl.LINK_STATUS))
+				{
+				    alert("Could not initialise shaders");
+				}
+				gl.useProgram							(texShader);
+				texShader.vertexPositionAttribute		= gl.getAttribLocation(texShader, "aVertexPosition");
+				gl.enableVertexAttribArray				(texShader.vertexPositionAttribute);
+		        texShader.textureCoordAttribute			= gl.getAttribLocation(texShader, "aTextureCoord");
+				gl.enableVertexAttribArray				(texShader.textureCoordAttribute);
+				texShader.pMatrixUniform				= gl.getUniformLocation(texShader, "uPMatrix");
+				texShader.mvMatrixUniform				= gl.getUniformLocation(texShader, "uMVMatrix");
+				texShader.samplerUniform				= gl.getUniformLocation(texShader, "uSampler");
+				
+				// Textures
+		        logoTexture = gl.createTexture();
+				logoTexture.image = new Image();
+				logoTexture.image.onload = function ()
+				{
+					handleLoadedTexture(logoTexture)
+				}
+				logoTexture.image.src = "./data/iimlogo.png";
+
+		        wasHereTexture = gl.createTexture();
+				wasHereTexture.image = new Image();
+				wasHereTexture.image.onload = function ()
+				{
+					handleLoadedTexture(wasHereTexture)
+				}
+				wasHereTexture.image.src = "./data/bullshit.png";
+				
+				//	Init stars
+				for(i=0; i<MAX_STARS; i++)
+				{
+					starsData[i] = -(MAX_Z*0.5) + (Math.random() * MAX_Z);
+				}
+				starsVBO			= gl.createBuffer();
+				gl.bindBuffer		(gl.ARRAY_BUFFER, starsVBO);
+				gl.bufferData		(gl.ARRAY_BUFFER, starsData, gl.STATIC_DRAW);
+				starsVBO.itemSize	= 3;
+				starsVBO.numItems	= MAX_STARS; // MAX_STARS * 3 float per Stars
+				
+				// Init logo
+				logoVBO				= gl.createBuffer();
+				gl.bindBuffer		(gl.ARRAY_BUFFER, logoVBO);
+				gl.bufferData		(gl.ARRAY_BUFFER, new Float32Array(logoVertices), gl.STATIC_DRAW);
+				logoVBO.itemSize	= 3;
+				logoVBO.numItems	= 6; // 6 * 3 float
+
+				logoTexVBO			= gl.createBuffer();
+				gl.bindBuffer		(gl.ARRAY_BUFFER, logoTexVBO);
+				gl.bufferData		(gl.ARRAY_BUFFER, new Float32Array(logoTexCoords), gl.STATIC_DRAW);
+				logoTexVBO.itemSize	= 2;
+				logoTexVBO.numItems	= 6; // 6 * 2 float
+				
+				gl.enable		(gl.DEPTH_TEST);
+				gl.depthFunc	(gl.LEQUAL);
+				gl.blendFunc	(gl.SRC_ALPHA, gl.ONE);
+			}
+
+
+			/************************************************************
+			 * Update and Render frame
+			 */
+			function render()
+			{
+				// Update logic *****************************************
+				var timeNow = new Date().getTime();
+				if (lastTime != 0)
+				{
+					var elapsed = timeNow - lastTime;
+					// Update some things here
+					if(starsOffset < 0)
+					{
+						starsOffset+= 7;
+					}
+					else
+					{
+						starsRot += elapsed / 3000.0;
+						starsMov = Math.sin((starsRot*10) * (3.14 / 180))*(MAX_Z*0.20);
+						
+						if(logoOffset < 430)
+						{
+							logoOffset += 2;
+						}
+					}
+				}
+				lastTime = timeNow;
+
+
+				// Render logic *****************************************
+				gl.viewport			(0, 0, gl.viewportWidth, gl.viewportHeight);
+				gl.clearColor		(0.0, 0.0, 0.0, 1.0);
+				gl.clear			(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
+
+				mat4.perspective	(70, gl.viewportWidth / gl.viewportHeight, 0.1, MAX_Z, projMtx);
+				
+				// Draw the stars
+				mat4.identity			(starsMtx);
+				if(starsOffset < 0)
+				{
+					mat4.translate			(starsMtx, [0.0, 0.0, starsOffset]);
+				}
+				else
+				{
+					mat4.translate			(starsMtx, [starsMov, -starsMov, starsMov*0.5]);
+				}
+				mat4.rotateX			(starsMtx, starsRot);
+				mat4.rotateY			(starsMtx, starsRot*1.5);
+				mat4.rotateZ			(starsMtx, starsRot*0.5);
+				gl.bindBuffer			(gl.ARRAY_BUFFER, starsVBO);
+				gl.useProgram			(basicShader);
+				gl.vertexAttribPointer	(basicShader.vertexPositionAttribute, starsVBO.itemSize, gl.FLOAT, false, 0, 0);
+				gl.uniformMatrix4fv		(basicShader.pMatrixUniform, false, projMtx);
+				gl.uniformMatrix4fv		(basicShader.mvMatrixUniform, false, starsMtx);
+		        gl.drawArrays			(gl.POINTS, 0, starsVBO.numItems);
+				
+				// Draw logo
+				mat4.ortho		(0.0, 720, 0.0, 480, 0.0, 1.0, projMtx)
+	
+				gl.bindBuffer			(gl.ARRAY_BUFFER, logoVBO);
+				gl.useProgram			(texShader);
+				gl.vertexAttribPointer	(texShader.vertexPositionAttribute, logoVBO.itemSize, gl.FLOAT, false, 0, 0);
+				gl.bindBuffer			(gl.ARRAY_BUFFER, logoTexVBO);
+				gl.vertexAttribPointer	(texShader.textureCoordAttribute, logoTexVBO.itemSize, gl.FLOAT, false, 0, 0);
+
+				gl.activeTexture		(gl.TEXTURE0);
+				gl.bindTexture			(gl.TEXTURE_2D, logoTexture);
+				gl.uniform1i			(texShader.samplerUniform, 0);
+
+				gl.bindBuffer		(gl.ELEMENT_ARRAY_BUFFER, logoVBO);
+				
+				gl.enable		(gl.BLEND);
+				gl.disable		(gl.DEPTH_TEST);
+				
+				// First logo
+				mat4.identity		(logoMtx);
+				mat4.translate		(logoMtx, [360.0, logoOffset, 0.0]);
+				gl.uniformMatrix4fv	(texShader.pMatrixUniform, false, projMtx);
+				gl.uniformMatrix4fv	(texShader.mvMatrixUniform, false, logoMtx);
+				gl.drawArrays		(gl.TRIANGLES, 0, logoVBO.numItems);
+				
+				// Second logo
+				gl.bindTexture		(gl.TEXTURE_2D, wasHereTexture);
+				mat4.identity		(logoMtx);
+				mat4.translate		(logoMtx, [360.0, 480-logoOffset, 0.0]);
+				gl.uniformMatrix4fv	(texShader.pMatrixUniform, false, projMtx);
+				gl.uniformMatrix4fv	(texShader.mvMatrixUniform, false, logoMtx);
+				gl.drawArrays		(gl.TRIANGLES, 0, logoVBO.numItems);
+
+				gl.disable		(gl.BLEND);
+				gl.enable		(gl.DEPTH_TEST);
+
+			}
+
+
+			/************************************************************
+			 * Borrowed from a google source (webgl-utils.js).
+			 * This is a cross-brower way to get animRequest simply
+			 */
+			window.requestAnimFrame = (function()
+			{
+			  return window.requestAnimationFrame		||
+					 window.webkitRequestAnimationFrame	||
+					 window.mozRequestAnimationFrame	||
+					 window.oRequestAnimationFrame		||
+					 window.msRequestAnimationFrame		||
+					 function(/* function FrameRequestCallback */ callback, /* DOMElement Element */ element)
+					 {
+					   window.setTimeout(callback, 1000/60);
+					 };
+			})();
+
+
+			/*
+			 * C'est l'histoire de tick et tack, qui sont sur un bateau bien évidement
+			 * mais tack est tombé dans l'eau...
+			 * Du coup il reste que tick.
+			 */
+			function tick()
+			{
+				requestAnimFrame	(tick);
+				render				();
+			}
+
+
+			/************************************************************
+			 * Entry point
+			 */ 
+			function main()
+			{
+				// Try to get the WebGL context
+				var canvas			= document.getElementById("iimdemojs");
+				try
+				{
+					gl				= canvas.getContext("experimental-webgl");
+					gl.viewportWidth	= canvas.width;
+					gl.viewportHeight	= canvas.height;
+				}
+				catch(e)
+				{
+					alert("Could not initialise WebGL.\nPlease ensure that your brower support it.\n\n" + e);
+				}
+
+				initGL	();
+				
+				var audio = document.getElementById("sound");
+				audio.play();
+
+				tick	(); // Si vous cherchez tack il est dans l'eau
+			}
+			]]>
+		</script>
+	</head>
+	<body onload="main();">
+		<div id="mainContent">
+			<audio id="sound" src="./data/xtrium__chip_your_wii.ogg">
+				WTF ??!!!!!!<br/>To listen to this audio file you need a HTML5 compliant web browser. (eg <a href="http://www.mozilla-europe.org/fr/firefox/">Firefox</a>!)
+			</audio>
+			<span class="big">Get hight and go into the starfield !!!</span>
+			<div class="spacer"/>
+			<canvas id="iimdemojs"/>
+			<div class="spacer"/>
+			<span class="tiny">demosj 2011<br/>0xc0de/gfx: Rom#1 / !!M<br/>sound: xtrium / FRequency<br/>Special thanx to latortue - maracuja - audrey</span>
+		</div>
+	</body>
+</html>

@@ -1,10 +1,15 @@
 *{
   letter-spacing  : 0.05em;
   word-spacing    : 0.1em;
+  color : #333;
 }
 
 html, body{
   height : 100%;
+  background: black;
+}
+div{
+  background: black;
 }
 
 p, ol, ul, blockquote, pre, code{
@@ -23,76 +28,59 @@ a{
   text-decoration: none;
 }
 a:hover{
-  color           : inherit;
+  color           : rgb(250, 105,0);
   text-decoration : underline;
 }
-li:nth-child(6n):hover a, li:nth-child(6n) a.current{
-  color : red;
-}
-li:nth-child(6n+1):hover a, li:nth-child(6n+1) a.current{
-  color : orange;
-}
-li:nth-child(6n+2):hover a, li:nth-child(6n+2) a.current{
-  color : yellow;
-}
-li:nth-child(6n+3):hover a, li:nth-child(6n+3) a.current{
-  color : green;
-}
-li:nth-child(6n+4):hover a, li:nth-child(6n+4) a.current {
-  color : blue;
-}
-li:nth-child(6n+5):hover a, li:nth-child(6n+5) a.current{
-  color : purple;
-}
-
 h1, h2, h3, h4, h5, h6 {
+  font-family: 'Exo', sans-serif;
   letter-spacing: -0.05em;
   color         : #606060;
 }
 
-h1 {
-  line-height : 0.5;
-}
-
-h2 {
-  line-height : 1; 
-}
-
-h3{
-  line-height : 1.28;
-}
 
 body {
-  overflow : hidden;
 }
 .wrapper{
-  position  : relative;
-  width     : 100%;
-  height    : 100%;
-  top       : 0;
-  left      : 0;
 }
 
 .wrapper > * {
-  position    : absolute;
-  top         : 0;
-  left        : 0;
   background  : #fff;
-  background  : rgba(255,255,255,0.9);
+  background  : transparent;
 }
 
-.wrapper > nav {
-  position  : fixed;
-  top       : 2px;
-  left      : 0;
-  right     : 0;
+.navContainer {
+  position:relative;
+}
+
+nav {
+  background: rgba(245, 245, 245, 0.90);
   z-index   : 100;
   padding   : 5px 50px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+nav.topNav {
+  position:fixed;
+  top:0;
+  left:0;
+}
+
+nav.flowNav {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+nav.spacing{
+  visibility:hidden;
 }
 
 nav > ul {
-  padding-left: 50px;
+  padding: 0;
   margin : auto;
+  max-width: 670px;
 }
 
 nav > ul > li{
@@ -102,6 +90,11 @@ nav > ul > li{
 
 nav > ul.social > li{
   padding-right : 5px;
+}
+
+nav a:hover {
+  text-decoration:none;
+  border-bottom: 1px solid;
 }
 
 .social a:hover{
@@ -117,28 +110,16 @@ nav > .social{
 
 nav a {
   text-decoration : none;
-  font-weight     : bold;
+  font-weight     : light;
 }
 
 nav > img.logo{
   position  : absolute;
   top       : 2px;
-  left      : 25px;
+  right     : 25px;
 }
 
-.background{
-  background-color:blue;
-  background-image: -webkit-linear-gradient( rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0) 50%), -webkit-linear-gradient(left, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0) 50%), 
-  -webkit-linear-gradient(top, hsl(0,60%,55%) 0%, hsl(30,60%,55%) 17%, hsl(60,60%,55%) 34%, hsl(120,60%,55%) 51%, hsl(240,60%,55%) 68%, hsl(240,60%,55%) 84%, hsl(300, 60%, 55%) 100% );
-  background-image: -ms-linear-gradient( rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0) 50%), -ms-linear-gradient(left, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0) 50%), 
-  -ms-linear-gradient(top, hsl(0,60%,55%) 0%, hsl(30,60%,55%) 17%, hsl(60,60%,55%) 34%, hsl(120,60%,55%) 51%, hsl(240,60%,55%) 68%, hsl(240,60%,55%) 84%, hsl(300, 60%, 55%) 100% );
-  background-image: -o-linear-gradient( rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0) 50%), -o-linear-gradient(left, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0) 50%), 
-  -o-linear-gradient(top, hsl(0,60%,55%) 0%, hsl(30,60%,55%) 17%, hsl(60,60%,55%) 34%, hsl(120,60%,55%) 51%, hsl(240,60%,55%) 68%, hsl(240,60%,55%) 84%, hsl(300, 60%, 55%) 100% );
-  background-image: -moz-linear-gradient( rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0) 50%), -moz-linear-gradient(left, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0) 50%), 
-  -moz-linear-gradient(top, hsl(0,60%,55%) 0%, hsl(30,60%,55%) 17%, hsl(60,60%,55%) 34%, hsl(120,60%,55%) 51%, hsl(240,60%,55%) 68%, hsl(240,60%,55%) 84%, hsl(300, 60%, 55%) 100% );
-  background-image: linear-gradient( rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0) 50%), linear-gradient(left, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0) 50%), 
-  linear-gradient(top, hsl(0,60%,55%) 0%, hsl(30,60%,55%) 17%, hsl(60,60%,55%) 34%, hsl(120,60%,55%) 51%, hsl(240,60%,55%) 68%, hsl(240,60%,55%) 84%, hsl(300, 60%, 55%) 100% );
-  background-size: 50px 50px, 50px 50px, 500px 500px;
+#background{
 }
 
 section {
@@ -146,31 +127,144 @@ section {
 }
 
 section .content{
-  text-align        : left;
-  background        : rgba(255,255,255,0.9);
+  width: 100%;
+  text-align        : center;
+  background:#cfccc1;
   -moz-box-sizing   : border-box;
   -webkit-box-sizing: border-box;
   box-sizing        : border-box;
-  padding           : 50px;
-  margin            : 50px;
   overflow-y        : auto;
+  -webkit-overflow-scrolling: touch;
+  text-align:left;
 }
 
-
-.sponsors li {
-  display: inline-block;
+section > h1 {
+  background:black;
+  margin-top: 0;
+  padding: 50px;
+  border-bottom: 4px solid grey;
+  margin-bottom:0;
+  text-align:left;
+/*
+ * Could use that for a neat effect...
+  background-attachment: fixed;
+  background-position: 80px 80px;
+  background-repeat:no-repeat;
+  background-image:url("/images/demojs_normal.png");
+  background-size:80px 80px
+*/
 }
+section > h1 > span {
+  max-width: 670px;
+  width: 100%;
+  display: block;
+  margin: auto;
+  color: #726A42;
+}
+
+.content > *{
+  padding           : 0 50px;
+  max-width: 670px;
+  width: 100%;
+  display: block;
+  margin: 20px auto;
+  line-height: 2.5;
+
+}
+
+.content > p {
+  
+}
+
+.content .chapo{
+  font-size: xx-large;
+  text-align: center;
+  padding: 100px;
+  font-weight: 100;
+  font-variant: small-caps;
+}
+
+.content li {
+  list-style-type: square;
+  margin-left: 25px;
+}
+
+#index{
+  font-family: 'Exo', sans-serif;
+  font-size:xx-large
+}
+
+#index .content{
+  background : transparent;
+  position : absolute;
+  top:70px;
+  text-align:center;
+}
+
+#index ul {
+  padding : 0
+}
+#index ul li{
+  display:inline-block;
+}
+#index a{
+  text-decoration: underline;
+  color: rgb(204, 86, 0);
+}
+#index img{
+  max-width: 400px;
+  width: 100%;
+}
+
+.content a {
+  text-decoration : underline;
+}
+.content div{
+  background: transparent;
+}
+
+.map{
+  padding:0;
+  max-width: 100%;
+  margin-top:0;
+  position:relative;
+}
+
+.map > .overlay {
+    display: block;
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 .sponsors {
   list-style: none;
   text-align: center;
+  background: #fff;
+  max-width: 100%;
+  padding: 0;
 }
 
-.background, .content{
-  perspective: 500px;
+.sponsors li {
+  display: inline-block;
+  vertical-align:middle;
 }
 
-p:nth-child(1) {
-  text-align:center
+.background{
+  overflow:hidden;
+  height:100%;
+}
+
+.background canvas{
+  display:block;
+}
+
+
+hr {
+  clear     : both;
+  visibility: hidden;
 }
 
 .bus{
@@ -228,3 +322,4 @@ p:nth-child(1) {
 .m8{
   background-color:rgb(197, 163, 202);
 }
+

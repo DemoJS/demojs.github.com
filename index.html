@@ -1,123 +1,109 @@
 ---
 layout: default
-title: DEMOJS 2013 - June 28th, 29th, 30th 
+title: DEMOJS 2014
 ---
 
-{% capture nav %}{% include nav.md %}{% endcapture %}
-<nav class="rainbow">
-{{ nav | markdownify }}
-<ul class="social">
-  <li>
-    <a href="https://www.facebook.com/DemoJS" ><i class="icon-facebook"></i></a>
-  </li> 
-  <li>
-    <a href="https://plus.google.com/118223385142306295225/posts" ><i class="icon-google-plus"></i></a>
-  </li> 
-  <li>
-    <a href="https://twitter.com/demojsorg/" ><i class="icon-twitter"></i></a>
-  </li>
-</ul>
+<div class="wrapper">
+  <script id="2d-vertex-shader" type="x-shader/x-vertex">
+  attribute vec2 a_position;
 
-<img class="logo" src="images/demojs_logo.png" alt="DemoJS logo" height="29" width="46"/>
+  void main(){
+    gl_Position = vec4(a_position, 0, 1);
+  }
+  </script>
+  <script id="2d-fragment-shader" type="x-shader/x-fragment">
+  precision mediump float;
 
-</nav>
+  uniform vec2 u_center;
+  uniform vec2 u_center2;
 
-<div class="background">
-</div>
+  void main(){
+    float v_comp1 = sin( (distance( gl_FragCoord.xy, u_center ) ) / 200.0 );
+    float v_comp2 = sin( gl_FragCoord.x / 200.0 );
+    float v_comp3 = sin( (distance( gl_FragCoord.xy, u_center2 ) ) / 200.0 );
+    float v_comp4 = (v_comp1 + v_comp2 + v_comp3) / 3.0 ;
+    gl_FragColor = vec4(
+      0.53 + cos( (v_comp4 * 3.14) ) / 4.0 ,
+      0.5 + cos( (v_comp4 * 3.14) ) / 4.0 ,
+      0.4 + cos( (v_comp4 * 3.14) ) / 4.0 ,
+      1
+    );
+  }
+  </script>
 
-<div id="content">
+  <div class="background" id="background"></div>
+    <section id="index">
+      <div class="content">
+        {% capture index %}
+        {% include index.md %}
+        {% endcapture %}
+        {{ index | markdownify }}
+      </div>
+    </section>
+  </div>
 
-<section id="index" class="cloudContent" data-x="0" data-y="0">
-<hgroup>
-<div class="content">
-{% capture index %}
-  {% include index.md %}
-{% endcapture %}
-{{ index | markdownify }}
-</div>
-</hgroup>
-</section>
+  <div class="navContainer">
+    <nav id="mainNav" class="undef">
+      {% include nav.html %}
+    </nav>
+  </div>
 
-<section id="demoparty" class="cloudContent" data-x="2000" data-y="0">
-<hgroup>
-<div class="content">
-{% capture demoparty %}
-  {% include demoparty.md %}
-{% endcapture %}
-{{ demoparty | markdownify }}
-</div>
-</hgroup>
-</section>
+  <div class="wrapper" >
+    <section id="about">
+      <h1><span>DemoJS 2014</span></h1>
+      <div class="content">
+        {% capture demoparty %}
+          {% include demoparty.md %}
+        {% endcapture %}
+        {{ demoparty | markdownify }}
+      </div>
+    </section>
+  </div>
 
-<section id="schedule" class="cloudContent" data-x="0" data-y="2000">
-<hgroup>
-<div class="content">
-{% capture schedule %}
-  {% include schedule.md %}
-{% endcapture %}
-{{ schedule | markdownify }}
-</div>
-</hgroup>
-</section>
+  <div class="wrapper">
+    <section id="come">
+    <h1><span>How to come?</span></h1> 
+      <div class="content">
+        {% capture come %}
+          {% include come.md %}
+        {% endcapture %}
+        {{ come | markdownify }}
+      </div>
+    </section>
+  </div>
 
-<section id="tips" class="cloudContent" data-x="2000" data-y="2000"> 
-<hgroup>
-<div class="content">
-{% capture tips %}
-  {% include tips.md %}
-{% endcapture %}
-{{ tips | markdownify }}
-</div>
-</hgroup>
-</section>
+  <div class="wrapper" >
+    <section id="schedule">
+    <h1><span>Schedule</span></h1>
+      <div class="content">
+        {% capture schedule %}
+          {% include schedule.md %}
+        {% endcapture %}
+        {{ schedule | markdownify }}
+      </div>
+    </section>
+  </div>
 
-<section id="come" class="cloudContent" data-x="000" data-y="3000">
-<hgroup>
-<div class="content">
-{% capture come %}
-  {% include come.md %}
-{% endcapture %}
-{{ come | markdownify }}
-</div>
-</hgroup>
-</section>
+  <div class="wrapper" >
+    <section id="compos">
+    <h1><span>Rules</span></h1>
+      <div class="content">
+        {% capture compos %}
+          {% include compos.md %}
+        {% endcapture %}
+        {{ compos | markdownify }}
+      </div>
+    </section>
+  </div>
 
-<section id="compos" class="cloudContent" data-x="4000" data-y="1000">
-<hgroup>
-<div class="content">
-{% capture compos %}
-  {% include compos.md %}
-{% endcapture %}
-{{ compos | markdownify }}
-</div>
-</hgroup>
-</section>
-
-<section id="about" class="cloudContent" data-x="4000" data-y="4000">
-<hgroup>
-<div class="content">
-{% capture about %}
-  {% include about.md %}
-{% endcapture %}
-{{ about | markdownify }}
-</div>
-</hgroup>
-</section>
-
-<section id="partners" class="cloudContent" data-x="1000" data-y="4000">
-<hgroup>
-<div class="content">
-{% capture sponsors %}
-  {% include sponsors.md %}
-{% endcapture %}
-{{ sponsors | markdownify }}
-</div>
-</hgroup>
-</section>
-
-</div>
-
-<footer>
-
-</footer>
-
+  <div class="wrapper" >
+    <section id="partners">
+    <h1><span>Partners</span></h1>
+      <div class="content">
+        {% capture sponsors %}
+          {% include sponsors.md %}
+        {% endcapture %}
+        {{ sponsors | markdownify }}
+      </div>
+    </section>
+  </div>
