@@ -84,8 +84,8 @@ nav > ul {
 }
 
 nav > ul > li{
-  display       : inline;
-  padding-right : 15px;
+  display : inline;
+  padding : 0 15px;
 }
 
 nav > ul.social > li{
@@ -129,7 +129,7 @@ section {
 section .content{
   width: 100%;
   text-align        : center;
-  background:#cfccc1;
+  background        : #cfccc1;
   -moz-box-sizing   : border-box;
   -webkit-box-sizing: border-box;
   box-sizing        : border-box;
