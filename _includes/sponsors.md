@@ -1,9 +1,9 @@
 
 
-<ul class="sponsors"> 
+<ul class="sponsors main"> 
   <li>
     <a href="http://www.isartdigital.com/">
-        <img src="images/ISARTdigital.png" alt="Isart Digital" height="150" width="330" /></a>
+        <img src="images/ISARTdigital.png" alt="Isart Digital"  /></a>
     </a>
   </li>
 </ul>
@@ -62,25 +62,25 @@
 
 ## Organization and comm' partners
 
-<ul class="sponsors"> 
+<ul class="sponsors comm"> 
   <li>
     <a href="http://www.demoscene.fr/">
-        <img src="images/demoscenefr.png" alt="Demoscene.fr" height="44"  />
+        <img src="images/demoscenefr.png" alt="Demoscene.fr"/>
     </a>
   </li>
   <li>
     <a href="http://www.parisjs.org/">
-        <img src="images/parisjsLogo_white.png" alt="ParisJS" height="75"  />
+        <img src="images/parisjsLogo_white.png" alt="ParisJS"/>
     </a>
   </li>
   <li>
     <a href="http://www.popsyteam.org/">
-        <img src="images/popsyteam_sd.png" alt="Popsy team" width="100" />
+        <img src="images/popsyteam_sd.png" alt="Popsy team"/>
     </a>
   </li>
   <li>
     <a href="http://www.amigavibes.org/">
-        <img src="images/amigavibes.jpg" alt="Amiga vibes" height="75"  />
+        <img src="images/amigavibes.jpg" alt="Amiga vibes"/>
     </a>
   </li>
 </ul>

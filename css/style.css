@@ -244,9 +244,22 @@ section > h1 > span {
   padding: 0;
 }
 
-.sponsors li {
+.sponsors > li {
   display: inline-block;
   vertical-align:middle;
+  margin:auto;
+}
+
+.sponsors > li > a > img{
+  max-width:100%;
+}
+
+.sponsors.main > li > a > img{
+  max-height:150px;
+}
+
+.sponsors.comm > li > a > img{
+  max-height:50px;
 }
 
 .background{
