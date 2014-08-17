@@ -1,6 +1,6 @@
 /*********
  *
- * DEMO JS -- The web only demoparty -- June 28-30 2013 @ Paris/Isart Digital
+ * DEMO JS -- The web only demoparty -- October 10-11 2014
  *
  *********/
 
@@ -17,6 +17,7 @@ window.requestAnimFrame = (function(){
 document.addEventListener("DOMContentLoaded", function(){
 
   function createShaderFromScriptElement(doc, glCtx, scriptId){
+    if(!glCtx) throw new Exception("Incorrect GL context");
     var shaderElt   = doc.getElementById(scriptId),
         shaderSrc   = shaderElt.text,
         shaderType  = (function(ctx, t){
