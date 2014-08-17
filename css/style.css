@@ -84,8 +84,8 @@ nav > ul {
 }
 
 nav > ul > li{
-  display : inline;
-  padding : 0 15px;
+  display       : inline;
+  padding-right : 15px;
 }
 
 nav > ul.social > li{
@@ -333,6 +333,9 @@ hr {
 
 
 @media all and (max-width: 670px){
+  nav > ul > li {
+    padding : 0 15px; 
+  }
   .navContainer span {
     display:none;
   }
