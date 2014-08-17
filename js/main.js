@@ -99,10 +99,11 @@ document.addEventListener("DOMContentLoaded", function(){
   (function setupNavBar( navElement ){
     var parent      = navElement.parentElement,
         src         = parent.innerHTML.replace("mainNav", "").replace("undef", "spacing"),
+        contentSize = document.querySelector("#index .content").getBoundingClientRect(),
         checkNavBar = function check(){
           var top = (document.documentElement && document.documentElement.scrollTop) ||
                     document.body.scrollTop,
-              fullHeight = window.innerHeight;
+              fullHeight = contentSize.height;
           if(top > fullHeight) navElement.className = "topNav";
           else navElement.className = "flowNav";
         };
