@@ -114,15 +114,17 @@ document.addEventListener("DOMContentLoaded", function(){
   // FIXME : this jQuery animate, and we do not like that
   // Script originally found on http://css-tricks.com/snippets/jquery/smooth-scrolling/
   $('a[href*=#]:not([href=#])').click(function(e) {
+    e.preventDefault();
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
+      var hash = this.hash,
+          target = $(hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
       if (target.length) {
         $('html,body').animate({
           scrollTop: target.offset().top
-        }, 1000);
-        window.location.hash=this.hash;
-        e.preventDefault();
+        }, 1000, function(){
+          window.location.hash=hash;
+        });
       }
     }
   });
