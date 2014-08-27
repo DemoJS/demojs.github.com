@@ -43,6 +43,9 @@ body {
 }
 .wrapper{
 }
+.first-page {
+  min-height:100%;
+}
 
 .wrapper > * {
   background  : #fff;

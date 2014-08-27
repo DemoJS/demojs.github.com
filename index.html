@@ -3,7 +3,7 @@ layout: default
 title: DEMOJS 2014
 ---
 
-<div class="wrapper">
+<div class="wrapper first-page">
   <script id="2d-vertex-shader" type="x-shader/x-vertex">
   attribute vec2 a_position;
 
@@ -18,92 +18,90 @@ title: DEMOJS 2014
   uniform vec2 u_center2;
 
   void main(){
-    float v_comp1 = sin( (distance( gl_FragCoord.xy, u_center ) ) / 200.0 );
-    float v_comp2 = sin( gl_FragCoord.x / 200.0 );
-    float v_comp3 = sin( (distance( gl_FragCoord.xy, u_center2 ) ) / 200.0 );
-    float v_comp4 = (v_comp1 + v_comp2 + v_comp3) / 3.0 ;
-    gl_FragColor = vec4(
-      0.53 + cos( (v_comp4 * 3.14) ) / 4.0 ,
-      0.5 + cos( (v_comp4 * 3.14) ) / 4.0 ,
-      0.4 + cos( (v_comp4 * 3.14) ) / 4.0 ,
-      1
-    );
+    float v_comp1   = sin( (distance( gl_FragCoord.xy, u_center ) ) / 200.0 );
+    float v_comp2   = sin( gl_FragCoord.x / 200.0 );
+    float v_comp3   = sin( (distance( gl_FragCoord.xy, u_center2 ) ) / 200.0 );
+    float v_comp4   = (v_comp1 + v_comp2 + v_comp3) / 3.0 ;
+    vec4  v_config  = vec4(0.53, 0.5, 0.4, 1);
+    float magic     = cos( (v_comp4 * 3.14) ) / 4.0;
+    vec4  v_magic   = vec4(magic, magic, magic, 0);
+    gl_FragColor = v_magic + v_config;
   }
   </script>
 
   <div class="background" id="background"></div>
-    <section id="index">
-      <div class="content">
-        {% capture index %}
-        {% include index.md %}
-        {% endcapture %}
-        {{ index | markdownify }}
-      </div>
-    </section>
-  </div>
+  <section id="index">
+    <div class="content">
+      {% capture index %}
+      {% include index.md %}
+      {% endcapture %}
+      {{ index | markdownify }}
+    </div>
+  </section>
+</div>
 
-  <div class="navContainer">
-    <nav id="mainNav" class="undef">
-      {% include nav.html %}
-    </nav>
-  </div>
+<div class="navContainer">
+  <nav id="mainNav" class="undef">
+    {% include nav.html %}
+  </nav>
+</div>
 
-  <div class="wrapper" >
-    <section id="about">
-      <h1><span>DemoJS 2014</span></h1>
-      <div class="content">
-        {% capture demoparty %}
-          {% include demoparty.md %}
-        {% endcapture %}
-        {{ demoparty | markdownify }}
-      </div>
-    </section>
-  </div>
+<div class="wrapper" >
+  <section id="about">
+    <h1><span>DemoJS 2014</span></h1>
+    <div class="content">
+      {% capture demoparty %}
+        {% include demoparty.md %}
+      {% endcapture %}
+      {{ demoparty | markdownify }}
+    </div>
+  </section>
+</div>
 
-  <div class="wrapper">
-    <section id="come">
-    <h1><span>How to come?</span></h1> 
-      <div class="content">
-        {% capture come %}
-          {% include come.md %}
-        {% endcapture %}
-        {{ come | markdownify }}
-      </div>
-    </section>
-  </div>
+<div class="wrapper">
+  <section id="come">
+  <h1><span>How to come?</span></h1> 
+    <div class="content">
+      {% capture come %}
+        {% include come.md %}
+      {% endcapture %}
+      {{ come | markdownify }}
+    </div>
+  </section>
+</div>
 
-  <div class="wrapper" >
-    <section id="schedule">
-    <h1><span>Schedule</span></h1>
-      <div class="content">
-        {% capture schedule %}
-          {% include schedule.md %}
-        {% endcapture %}
-        {{ schedule | markdownify }}
-      </div>
-    </section>
-  </div>
+<div class="wrapper" >
+  <section id="schedule">
+  <h1><span>Schedule</span></h1>
+    <div class="content">
+      {% capture schedule %}
+        {% include schedule.md %}
+      {% endcapture %}
+      {{ schedule | markdownify }}
+    </div>
+  </section>
+</div>
 
-  <div class="wrapper" >
-    <section id="compos">
-    <h1><span>Rules</span></h1>
-      <div class="content">
-        {% capture compos %}
-          {% include compos.md %}
-        {% endcapture %}
-        {{ compos | markdownify }}
-      </div>
-    </section>
-  </div>
+<div class="wrapper" >
+  <section id="compos">
+  <h1><span>Rules</span></h1>
+    <div class="content">
+      {% capture compos %}
+        {% include compos.md %}
+      {% endcapture %}
+      {{ compos | markdownify }}
+    </div>
+  </section>
+</div>
 
-  <div class="wrapper" >
-    <section id="partners">
-    <h1><span>Partners</span></h1>
-      <div class="content">
-        {% capture sponsors %}
-          {% include sponsors.md %}
-        {% endcapture %}
-        {{ sponsors | markdownify }}
-      </div>
-    </section>
-  </div>
+<div class="wrapper" >
+  <section id="partners">
+  <h1><span>Partners</span></h1>
+    <div class="content">
+      {% capture sponsors %}
+        {% include sponsors.md %}
+      {% endcapture %}
+      {{ sponsors | markdownify }}
+    </div>
+  </section>
+</div>
