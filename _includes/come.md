@@ -5,14 +5,14 @@
 
 ## Transportations from Paris and nearby
 
-*Bastille* is one of the most accessible place! Public transportation is a must though, as the neighbourhood is very crowded.
+*Bastille* is one of the easiest place to find in Paris! Use public transportation if possible, as parking spots close to the party place are quite scarce (it's downtown, and crowded).
 
- * Metro (Bastille) :  <span class="metro m1">1</span> <span class="metro m5">5</span> <span class="metro m8">8</span>
- * Bus : <span class="bus b86">86</span> <span class="bus b76">76</span> <span class="bus b65">65</span> <span class="bus b29">29</span> <span class="bus b20">20</span> <span class="bus b69">69</span> <span class="bus b87">87</span> 
- * Velib' (city bike rental) : <a href="http://en.velib.paris.fr/Stations-in-Paris/Find-a-station">Find a station</a>
+ * Metro (Bastille):  <span class="metro m1">1</span> <span class="metro m5">5</span> <span class="metro m8">8</span>
+ * Bus: <span class="bus b86">86</span> <span class="bus b76">76</span> <span class="bus b65">65</span> <span class="bus b29">29</span> <span class="bus b20">20</span> <span class="bus b69">69</span> <span class="bus b87">87</span> 
+ * Velib' (city bike rental): <a href="http://en.velib.paris.fr/Stations-in-Paris/Find-a-station">Find a station</a>
 
 ## Staying at the party place
-There will be a quiet room <strong>friday night</strong> but nothing will be provided like bed or mattress.
+There will be a quiet room <strong>friday night</strong> but you have to bring your own mattress or sleeping bag.
 
 ## Still lost?
-Feel free to reach us [by email](mailto:contact@demojs.org) if you have any other questions.
+Feel free to contact us [by email](mailto:contact@demojs.org) if you have any other questions.
