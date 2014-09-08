@@ -96,11 +96,11 @@ document.addEventListener("DOMContentLoaded", function(){
       ctx.enableVertexAttribArray(posLoc);
       ctx.vertexAttribPointer(posLoc, 2, ctx.FLOAT, false, 0, 0);
 
-      requestAnimFrame(function update(){
-        var x       =  Math.sin( (new Date()).getTime() / 5000 ) * canvas.width,
-            y       =  Math.sin( (new Date()).getTime() / 5000 ) * canvas.height,
-            x2      =  Math.sin( (new Date()).getTime() / 4000 ) * canvas.width,
-            y2      =  Math.sin( (new Date()).getTime() / 7000 ) * canvas.height,
+      requestAnimFrame(function update(timestamp){
+        var x       =  Math.sin( timestamp / 5000 ) * canvas.width,
+            y       =  Math.sin( timestamp / 5000 ) * canvas.height,
+            x2      =  Math.sin( timestamp / 4000 ) * canvas.width,
+            y2      =  Math.sin( timestamp / 7000 ) * canvas.height,
             center  = ctx.uniform2f( centerLoc, x, y),
             center2 = ctx.uniform2f( centerLoc2, x2, y2);
         ctx.drawArrays(ctx.TRIANGLES, 0, 6);
