@@ -18,8 +18,7 @@ var isMobile = (function(a,b){return /(android|bb\d+|meego).+mobile|avantgo|bada
 
 document.addEventListener("DOMContentLoaded", function(){
 
-  var contentSize = document.querySelector("#index .content").getBoundingClientRect(),
-      indexDom = document.querySelector("#index .content");
+  var indexDom = document.querySelector("#index .content");
 
   if(isMobile){
     indexDom.style.position = "inherit";
@@ -50,17 +49,23 @@ document.addEventListener("DOMContentLoaded", function(){
   if(!isMobile) {
     (function setupShaderStuff(container){
       var canvas  = document.createElement("canvas"),
-          ctx     = canvas.getContext("experimental-webgl"),
+          ctx     = canvas.getContext("experimental-webgl", {alpha: false}),
           vShader = createShaderFromScriptElement(document, ctx, "2d-vertex-shader"),
           fShader = createShaderFromScriptElement(document, ctx, "2d-fragment-shader"),
-          program = ctx.createProgram(),
-          X       = contentSize.width,
-          Y       = contentSize.height;
-
-      canvas.width  = X;
-      canvas.height = Y;
-
-      ctx.viewport(0, 0, X, Y);
+          program = ctx.createProgram();
+      
+      container.appendChild(canvas);
+      
+      function resizeCanvas() {
+        canvas.width = canvas.clientWidth / 2;
+        canvas.height = canvas.clientHeight / 2;
+        
+        ctx.viewport(0, 0, canvas.width, canvas.height);
+      }
+      
+      resizeCanvas();
+      
+      $(window).resize(resizeCanvas);
 
       ctx.attachShader(program, vShader);
       ctx.attachShader(program, fShader);
@@ -92,17 +97,15 @@ document.addEventListener("DOMContentLoaded", function(){
       ctx.vertexAttribPointer(posLoc, 2, ctx.FLOAT, false, 0, 0);
 
       requestAnimFrame(function update(){
-        var x       =  Math.sin( (new Date()).getTime() / 5000 ) * X,
-            y       =  Math.sin( (new Date()).getTime() / 5000 ) * Y,
-            x2      =  Math.sin( (new Date()).getTime() / 4000 ) * X,
-            y2      =  Math.sin( (new Date()).getTime() / 7000 ) * Y,
+        var x       =  Math.sin( (new Date()).getTime() / 5000 ) * canvas.width,
+            y       =  Math.sin( (new Date()).getTime() / 5000 ) * canvas.height,
+            x2      =  Math.sin( (new Date()).getTime() / 4000 ) * canvas.width,
+            y2      =  Math.sin( (new Date()).getTime() / 7000 ) * canvas.height,
             center  = ctx.uniform2f( centerLoc, x, y),
             center2 = ctx.uniform2f( centerLoc2, x2, y2);
         ctx.drawArrays(ctx.TRIANGLES, 0, 6);
         requestAnimFrame(update);
       });
-
-      container.appendChild(canvas);
     })(document.getElementById("background"));
   }
 

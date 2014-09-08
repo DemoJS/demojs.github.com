@@ -272,12 +272,17 @@ section > h1 > span {
 }
 
 .background{
-  overflow:hidden;
+  position: absolute;
+  margin: 0px;
+  padding: 0px;
+  width:100%;
   height:100%;
 }
 
 .background canvas{
   display:block;
+  width: 100%;
+  height: 100%;
 }
 
 
