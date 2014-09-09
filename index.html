@@ -22,10 +22,9 @@ title: DEMOJS 2014
     float v_comp2   = sin( gl_FragCoord.x / 200.0 );
     float v_comp3   = sin( (distance( gl_FragCoord.xy, u_center2 ) ) / 200.0 );
     float v_comp4   = (v_comp1 + v_comp2 + v_comp3) / 3.0 ;
-    vec4  v_config  = vec4(0.53, 0.5, 0.4, 1);
+    vec3  v_config  = vec3(0.53, 0.5, 0.4);
     float magic     = cos( (v_comp4 * 3.14) ) / 4.0;
-    vec4  v_magic   = vec4(magic, magic, magic, 0);
-    gl_FragColor = v_magic + v_config;
+    gl_FragColor = vec4(v_config + vec3(magic), 1.0);
   }
   </script>
 
