@@ -59,12 +59,12 @@ document.addEventListener("DOMContentLoaded", function(){
       function resizeCanvas() {
         canvas.width = canvas.clientWidth / 2;
         canvas.height = canvas.clientHeight / 2;
-        
+
         ctx.viewport(0, 0, canvas.width, canvas.height);
       }
-      
+
       resizeCanvas();
-      
+
       $(window).resize(resizeCanvas);
 
       ctx.attachShader(program, vShader);
@@ -136,7 +136,7 @@ document.addEventListener("DOMContentLoaded", function(){
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
       if (target.length) {
         $('html,body').animate({
-          scrollTop: target.offset().top
+          scrollTop: target.offset().top - 40
         }, 1000, function(){
           window.location.hash=hash;
         });

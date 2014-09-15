@@ -3,12 +3,12 @@
 <ul class="sponsors main"> 
   <li>
     <a href="http://www.isartdigital.com/">
-        <img src="images/logo_ISART_seul_noir_300dpi_3100pixel_2013-12.png" alt="Isart Digital" height=150  /></a>
+        <img src="images/logo_ISART_seul_noir_300dpi_3100pixel_2013-12.png" alt="Isart Digital"  /></a>
     </a>
   </li>
   <li>
     <a href="http://www.visibrain.com">
-        <img src="images/Visibrain-couleur-transparent.png" alt="Isart Digital" height=150   /></a>
+        <img src="images/Visibrain-couleur-transparent.png" alt="Isart Digital"  /></a>
     </a>
   </li>
 </ul>

@@ -18,6 +18,10 @@ p, ol, ul, blockquote, pre, code{
   line-height : 1.5;
 }
 
+img{
+  display:block;
+}
+
 a {
   color : #604040;
   -webkit-transition: color 500ms;
@@ -220,6 +224,7 @@ section > h1 > span {
 #index img{
   max-width: 400px;
   width: 100%;
+  margin: auto;
 }
 
 .content a {
