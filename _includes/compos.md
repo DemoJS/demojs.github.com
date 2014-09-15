@@ -2,8 +2,10 @@
 ## General rules
 
  * The production must not have been released previously.
- * You should only submit your own work. In particular, copyrighted material is strictly forbidden.
+ * The production must enter in one of the compos (1k, 8k, 64k or demo) described below
+ * The production must be either JS or FUCK-JS (choose your side) (more infos below)
  * Remote entries are allowed!
+ * You should only submit your own work. In particular, copyrighted material is strictly forbidden.
  * You CAN start working on your production NOW. The production does NOT need to be made 100% at the party place.
  * Deadline is saturday 2014-10-11 @ 7PM CEST
  * Winners will be determined by voting from all visitors.
@@ -15,7 +17,7 @@ If you have questions regarding the rules, feel free to send them to [rules@demo
 ### Size limited (1k, 8k, 64k)
 Play with a few bytes !
 
- * Everything needs to fit in one or more files. 
+ * Everything needs to fit in one or more files.
  * Total size must not exceed the amount allowed, including HTML, JavaScript and all resources required to run the intro.
  * Note that 1k means 1024 bytes or less. We’re not counting in characters, but in bytes (beware of unicode).
  * The production have to work offline. (no http server required, no internet connection)
