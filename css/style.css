@@ -147,7 +147,6 @@ section .content{
   overflow-y        : auto;
   -webkit-overflow-scrolling: touch;
   text-align:left;
-  padding: 0px 20px;
 }
 
 section > h1 {
@@ -351,7 +350,7 @@ hr {
 
 @media all and (max-width: 670px){
   nav > ul > li {
-    padding : 0 15px; 
+    padding : 0 15px;
   }
   .navContainer span {
     display:none;
