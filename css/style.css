@@ -261,7 +261,7 @@ section > h1 > span {
 .sponsors > li {
   display: inline-block;
   vertical-align:middle;
-  margin:auto;
+  margin:10px 20px;
 }
 
 .sponsors > li > a > img{
@@ -273,7 +273,11 @@ section > h1 > span {
 }
 
 .sponsors.comm > li > a > img{
-  max-height:50px;
+  max-height:75px;
+}
+
+.sponsors.comm > li.big > a > img{
+  max-height:100px;
 }
 
 .background{

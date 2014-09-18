@@ -13,58 +13,6 @@
   </li>
 </ul>
 
-<!--
-## Main sponsors
-
-<ul class="sponsors"> 
-  <li>
-    <a href="http://www.mozilla.org/">
-        <img src="images/mozilla.png" alt="Mozilla"  width="330" />
-    </a>
-  </li>
-  <li>
-    <a href="http://www.prologin.org/">
-        <img src="images/prologin.png" alt="Prologin"  width="330" />
-    </a>
-  </li>
-  <li>
-    <a href="http://www.visibrain.com/">
-        <img src="images/visibrain.jpg" alt="Visibrain"  width="330" />
-    </a>
-  </li>
-</ul>
-
-## Compo sponsors
-<ul class="sponsors"> 
-  <li>
-    <a href="http://demodays.org/">
-        <img src="images/demodays.png" alt="Demodays demoparty"  height="100" />
-    </a>
-  </li>
-  <li>
-    <a href="http://www.echojs.com/">
-        <img src="images/echoJS.png" alt="EchoJS"  height="100" />
-    </a>
-  </li>
-
-  <li>
-    <a href="http://www.evoke.eu/">
-        <img src="images/Evoke.jpg" alt="Evoke demoparty"  height=100 />
-    </a>
-  </li>
-  <li>
-    <a href="https://sketchfab.com/">
-        <img src="images/sketchfab.png" alt="Sketchfab"  height="100" />
-    </a>
-  </li>
-  <li>
-    <a href="http://dotjs.eu/">
-        <img src="images/dotjs.png" alt="Dot JS conference"  height="100" />
-    </a>
-  </li>
-</ul>
--->
-
 ## Organization and comm' partners
 
 <ul class="sponsors comm"> 
@@ -73,14 +21,19 @@
         <img src="images/demoscenefr.png" alt="Demoscene.fr"/>
     </a>
   </li>
-  <li>
+  <li class=big>
     <a href="http://www.parisjs.org/">
         <img src="images/parisjsLogo_white.png" alt="ParisJS"/>
     </a>
   </li>
-  <li>
+  <li class=big>
     <a href="http://www.popsyteam.org/">
         <img src="images/popsyteam_sd.png" alt="Popsy team"/>
+    </a>
+  </li>
+  <li class=big>
+    <a href="http://www.webglparis.com/">
+        <img src="images/webglParis.png" alt="WebGL Paris"/>
     </a>
   </li>
   <li>
