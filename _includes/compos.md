@@ -53,6 +53,7 @@ No size limit, but it must be real-time!
  * Really, anything! Bring your toaster :)
  * The compo machine will be a PC with Windows, on which we can install software as needed (e.g DOSBox). For anything funkier than that, please bring your own hardware or
    get in touch with us so that we can prepare the appropriate environment for your production.
+ * we will inform very clearly the audience about the platform & technology used in the FuckJs entries
 
 ## How to submit your work?
 
