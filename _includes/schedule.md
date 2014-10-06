@@ -16,8 +16,8 @@ the best JS prods, and also the best 2014 prods.
 
 ### Saturday afternoon : Tech talks
 
-Saturday afternoon is all about learning and discovering new stuff. [Program will
-be announced very soon](http://twitter.com/demojsorg).
+Saturday afternoon is all about learning and discovering new stuff. [The full
+schedule will be announced very soon](http://twitter.com/demojsorg).
 
 ### Saturday night : The show
 
