@@ -153,6 +153,11 @@ section .content{
   text-align:left;
 }
 
+section strong {
+  font-weight: bold;
+  border-bottom: 1px solid black;
+}
+
 section > h1 {
   background:black;
   margin-top: 0;
