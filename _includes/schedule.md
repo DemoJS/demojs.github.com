@@ -19,6 +19,25 @@ the best JS prods, and also the best 2014 prods.
 Saturday afternoon is all about learning and discovering new stuff. [The full
 schedule will be announced very soon](http://twitter.com/demojsorg).
 
+Starting at **3:00PM**, we'll have some talks around techs and tricks in demos:
+
+<ul>
+  <li><h4>One liner, Labyrinth, screenshot, the A for discovering obscure languages</h4>
+      <p> Presented by Jean François Richard aka Jeffrey/VitalMotion. AmigaVibes co-creator.<br/>
+          Writer for AmigaImpact, Revival and Amiga Power.
+          Organizer of Demoparties.</p>
+  </li>
+  <li><h4>Web demo packing - tricks and hacks behind FuckJS</h4>
+      <p> Presented by Rémi Papillié aka wsmind/tmp<br/>
+          Engine developer at Ubisoft.
+          DemoJS organizer.</p>
+  </li>
+  <li><h4>Web audio API for the demoscene</h4>
+      <p> Presented by Paul Adenot aka evO/tmp<br/>
+          WebAudio developer at Mozilla.</p>
+  </li>
+</ul>
+
 ### Saturday night : The show
 
 At **8:00PM**, [the other days](http://theotherdays.free.fr/) will rock the place
