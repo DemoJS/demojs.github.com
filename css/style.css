@@ -153,6 +153,10 @@ section .content{
   text-align:left;
 }
 
+.content >  h3 {
+  margin: 40px auto 0 auto;
+}
+
 section strong {
   font-weight: bold;
   border-bottom: 1px solid black;
