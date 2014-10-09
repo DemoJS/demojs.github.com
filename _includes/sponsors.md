@@ -1,6 +1,6 @@
 
 
-<ul class="sponsors main"> 
+<ul class="sponsors main">
   <li>
     <a href="http://www.isartdigital.com/">
         <img src="images/logo_ISART_seul_noir_300dpi_3100pixel_2013-12.png" alt="Isart Digital"  /></a>
@@ -13,9 +13,19 @@
   </li>
 </ul>
 
+## Compo machine
+
+<ul class="sponsors main">
+  <li>
+    <a href="http://www.ubi.com/">
+        <img src="images/Ubisoft_logo_hd.jpg" alt="Ubi Soft"  /></a>
+    </a>
+  </li>
+</ul>
+
 ## Organization and comm' partners
 
-<ul class="sponsors comm"> 
+<ul class="sponsors comm">
   <li>
     <a href="http://www.demoscene.fr/">
         <img src="images/demoscenefr.png" alt="Demoscene.fr"/>
