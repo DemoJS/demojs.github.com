@@ -38,8 +38,7 @@ No size limit, but it must be real-time!
 
 ## Compo machine
 
- * Technical description: Intel i5-2500k / 8GB RAM / GeForce GTX 560 Ti 1go / SSD / 1680x1050
- * We are working on getting a better compo machine, stay tuned ;)
+ * Technical description: Intel Xeon E5-1650 @3.2GHz (6 HT core) / 32GB RAM / GeForce GTX 670 4GB / 1920x1080
  * Entries will be run from a local file, not over HTTP - browser options for local file access will be enabled where necessary (e.g. --allow-file-access-from-files on Chrome).
 
 ## Platforms
