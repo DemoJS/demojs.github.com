@@ -6,7 +6,7 @@
 
 <a href="#about">Learn more</a>
 
-<a href="https://demojs.wufoo.com/forms/demojs-2014/" target="_blank">Register</a>
+<a href="https://stream.demojs.org/" target="_blank">LIVESTREAM</a>
 
 <ul class="social">
   <li>
