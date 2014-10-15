@@ -20,10 +20,8 @@ BROWSER 1K
   #12 La 3D en folie - Sector One ................... (155pts, 4)  
   #13 SkrE7ch - Kane ................................ (126pts, 5)                                     
   #14 Catarakt - Kane ............................... (104pts, 6)
- 
- Special prize:
-   DemoJS Matrix - Martin Amps ...................... (jury)
-     
+  #xx DemoJS Matrix - Martin Amps ................... (xxxpts, x)
+  (not shown, prod sent after the beginning of the 1k compo)
                                        
 BROWSER 10K
    #1 mwwnwormer - Rift ............................. (182pts, 2)
