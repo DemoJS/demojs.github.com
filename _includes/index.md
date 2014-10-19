@@ -4,9 +4,9 @@
 <strong>Save the date!<br />
 10-11 october 2014 in Paris</strong>
 
-<a href="#about">Learn more</a>
+<a href="http://www.pouet.net/party.php?which=1570&when=2014" target="_blank">Results</a>
 
-<a href="https://stream.demojs.org/" target="_blank">LIVESTREAM</a>
+<a href=https://www.flickr.com/photos/kokokoki/sets/72157648220202498/" target="_blank">Photos</a>
 
 <ul class="social">
   <li>
