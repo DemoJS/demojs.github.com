@@ -1,7 +1,7 @@
 
 ![DemoJS](images/demojs_normal.png)
 
-<strong>Save the date!<br />
+<strong>Thank you!<br />
 10-11 october 2014 in Paris</strong>
 
 <a href="http://www.pouet.net/party.php?which=1570&when=2014" target="_blank">Results</a>
