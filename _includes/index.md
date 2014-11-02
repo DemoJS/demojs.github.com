@@ -6,7 +6,7 @@
 
 <a href="http://www.pouet.net/party.php?which=1570&when=2014" target="_blank">Results</a>
 
-<a href=https://www.flickr.com/photos/kokokoki/sets/72157648220202498/" target="_blank">Photos</a>
+<a href="https://www.flickr.com/photos/kokokoki/sets/72157648220202498/" target="_blank">Photos</a>
 
 <ul class="social">
   <li>
