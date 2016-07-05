@@ -1,0 +1,339 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+#View {
+position: absolute;
+}
+
+html,body {
+    height:100%;
+    overflow:hidden;
+}
+
+body {
+    background:-moz-radial-gradient(farthest-side, rgba(0,0,0,0) 90%, rgba(0,0,0,0.1) 150%) #fff;
+    background:-webkit-gradient(radial, center center, 500, center center, 1400, from(rgba(0,0,0,0)), to(rgba(0,0,0,0.2))) #fff;
+}
+
+#error {
+    position:absolute;
+    top:50%;
+    left:50%;
+    width:800px;
+    height:300px;
+    margin-top:-150px;
+    margin-left:-400px;
+    font-family:'Droid Sans', arial, sans-serif;
+    font-family: 'Droid Sans', arial, sans-serif;
+    color:#555;
+    font-size:1.0em;
+    text-align:center;
+    text-shadow:0px 1px 0px #eee;
+    z-index:9999;
+    display:block;
+}
+#error a {
+    text-decoration:none;
+    color:#000;
+}
+.credit_loading {
+    text-decoration:none;
+    color:#000;
+    font-size:0.8em;
+    text-shadow:0px 1px 0px #eee;
+    line-height:150%;
+}
+
+#error2 a {
+    text-decoration:none;
+    color:#000;
+}
+#error2 {
+    position:absolute;
+    top:50%;
+    left:50%;
+    width:800px;
+    height:300px;
+    margin-top:-150px;
+    margin-left:-200px;
+    font-family:'Droid Sans', arial, sans-serif;
+    font-family: 'Droid Sans', arial, sans-serif;
+    color:#555;
+    font-size:1.0em;
+    text-align:left;
+    text-shadow:0px 1px 0px #eee;
+    z-index:9999;
+    display:block;
+}
+#error2 a:hover {
+    color:#fa7d00;
+}
+
+#error a:hover {
+    color:#fa7d00;
+}
+
+#loading {
+    position:absolute;
+    top:40%;
+    left:50%;
+    margin-top:-50px;
+    margin-left:-200px;
+    display:none;
+    font-family: 'Droid Sans', arial, sans-serif;
+    color:#bbb;
+    font-size:1.5em;
+    text-align:center;
+    width:400px;
+    height:100px;
+    text-shadow:0px 1px 0px #eee;
+    z-index:9999;
+}
+
+#loading span {
+    display:block;
+    margin:0 0 30px 0;
+}
+
+.loading #loading {
+    display:block;
+}
+
+#credits {
+    position:absolute;
+    top:50%;
+    left:50%;
+    width:900px;
+    height:520px;
+    margin:-285px 0 0 -450px;
+    font-family:'Droid Sans', arial, sans-serif;
+    display:none;
+    z-index:999999;
+}
+
+#credits h1 {
+    font-weight:normal;
+    color:#aaa;
+    font-size:3em;
+    margin-bottom:30px;
+}
+
+#main {
+    float:left;
+    width:50%;
+    border-right:1px solid #ccc;
+}
+
+#main li {
+    margin-bottom:30px;
+}
+
+#main li:last-child, #main li:last-child ul li {
+    margin-bottom:0;
+}
+
+.role {
+    font-size:1em;
+    color:#aaa;
+    display:block;
+    clear:left;
+}
+
+.name {
+    font-size:1.25em;
+    color:#aaa;
+    display:block;
+    margin:8px 0;
+}
+
+.name strong {
+    color:#000;
+}
+
+.links {
+    margin-left:-5px;
+}
+
+.links li {
+    float:left;
+    color:#000;
+    font-size:0.75em;
+    padding:0 5px;
+}
+
+.links li a {
+    text-decoration:none;
+    color:#000;
+}
+
+.links li a:hover {
+    color:#fa7d00;
+}
+
+#greetings {
+    float:right;
+    width:40%;
+}
+
+#greetings h2, .sponsor h2 {
+    font-size:1.5em;
+    color:#aaa;
+    margin:0 0 20px 0;
+}
+
+#greetings ul {
+    margin-left:-4px;
+}
+
+#greetings ul li {
+    float:left;
+    line-height:150%;
+    font-size:0.875em;
+    padding-left:4px;
+}
+
+#greetings ul li a {
+    color:#000;
+    text-decoration:none;
+}
+
+#greetings ul li a:hover {
+    color:#fa7d00;
+}
+
+.sponsor {
+    margin:30px 0 0 0;
+    float:right;
+    width:40%;
+}
+
+.sponsor a {
+    color:#000;
+    text-decoration:none;
+}
+
+.sponsor a:hover {
+    color:#fa7d00;
+}
+
+#replay {
+    position:absolute;
+    bottom:30px;
+    right:30px;
+    display:none;
+    width:115px;
+    text-align:right;
+    font-family:'Droid Sans', arial, sans-serif;
+    font-size:0.75em;
+}
+
+#replay a {
+    color:inherit;
+    text-decoration:none;
+}
+
+#replay img {
+    margin:0 8px 0 0;
+    position:relative;
+    top:2px;
+}
+
+#tweet {
+    display:none;
+}
+
+#tweetButton {
+    display:block;
+    width:21px;
+    height:16px;
+    background:url('twitter.png') no-repeat;
+    position:absolute;
+    bottom:29px;
+    right:137px;
+}
+
+#skip {
+    position:absolute;
+    height:18px;
+    width:20px;
+    bottom:30px;
+    right:30px;
+    z-index:9999;
+    background:#000;
+    border-radius:10px;
+    color:#fff;
+    text-align:center;
+    padding-top:2px;
+    display:block;
+    text-decoration:none;
+}
+
+#skip span {
+    font-family:'Georgia', serif;
+    font-style:italic;
+    font-size:0.75em;
+}
+
+#skip:hover {
+    color:#fa7d00;
+    cursor:pointer;
+}
+
+#skip #notice {
+    position:absolute;
+    color:#000;
+    font-family:'Droid Sans', arial, sans-serif;
+    left:-90px;
+    top:3px;
+    opacity:0;
+    pointer-events:none;
+    -moz-transition:0.25s all ease;
+    -webkit-transition:0.25s all ease;
+    -o-transition:0.25s all ease;
+    -ms-transition:0.25s all ease;
+}
+
+#skip:hover #notice {
+    opacity:1;
+}
